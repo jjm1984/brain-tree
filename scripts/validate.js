@@ -57,9 +57,8 @@ function validate() {
     const content = fs.readFileSync(filePath, 'utf8');
     const { frontmatter } = parseFrontmatter(content);
 
-    if (!frontmatter) {
-      issues.push({ file: rel, issue: 'No frontmatter found' });
-      return;
+	if (!frontmatter) {
+      return; // Skip files without frontmatter — not all .md files are nodes
     }
 
     // Required fields
