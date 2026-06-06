@@ -1,0 +1,87 @@
+{
+  "nodes": [
+    {
+      "id": "feedback-loop",
+      "layer": "meta",
+      "type": "principle",
+      "title": "Brain Tree Feedback Loop",
+      "state": null,
+      "instrument": null,
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "feedback/feedback-loop.md"
+    },
+    {
+      "id": "branch-relationships-family",
+      "layer": "knowledge",
+      "type": "branch",
+      "title": "Relationships & Family",
+      "state": null,
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers/02-knowledge/relationships-family/branch.md"
+    },
+    {
+      "id": "branch-work-vocation",
+      "layer": "knowledge",
+      "type": "branch",
+      "title": "Work & Vocation",
+      "state": null,
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers/02-knowledge/work-vocation/branch.md"
+    },
+    {
+      "id": "layer-code",
+      "layer": "code",
+      "type": "layer",
+      "title": "The Code Layer",
+      "state": null,
+      "instrument": null,
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers/03-code/index.md"
+    },
+    {
+      "id": "layer-map",
+      "layer": "map",
+      "type": "layer",
+      "title": "The Map Layer",
+      "state": null,
+      "instrument": null,
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers/04-map/index.md"
+    },
+    {
+      "id": "epistemology",
+      "layer": "meta",
+      "type": "principle",
+      "title": "How the Tree Holds Knowledge — Five Instruments",
+      "state": null,
+      "instrument": "multi",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "meta/epistemology.md"
+    },
+    {
+      "id": "principles",
+      "layer": "meta",
+      "type": "principle",
+      "title": "Tree Structure Principles",
+      "state": null,
+      "instrument": null,
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "meta/principles.md"
+    }
+  ],
+  "edges": [],
+  "meta": {
+    "nodeCount": 7,
+    "edgeCount": 0,
+    "lastBuilt": "2026-06-05T21:23:02.176Z"
+  }
+}

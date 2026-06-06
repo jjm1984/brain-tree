@@ -1,0 +1,14 @@
+{
+  "name": "brain-tree",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A living library of one mind",
+  "scripts": {
+    "build": "node scripts/build-graph.js",
+    "validate": "node scripts/validate.js",
+    "build:check": "node scripts/validate.js && node scripts/build-graph.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

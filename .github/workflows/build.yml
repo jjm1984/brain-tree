@@ -1,0 +1,35 @@
+name: Build Graph
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate schema
+        run: node scripts/validate.js
+
+      - name: Build graph.json
+        run: node scripts/build-graph.js
+
+      - name: Commit graph.json if changed
+        if: github.event_name == 'push'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add public/graph.json
+          git diff --staged --quiet || git commit -m "chore: rebuild graph.json [skip ci]"
+          git push
