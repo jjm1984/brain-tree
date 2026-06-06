@@ -9,7 +9,150 @@
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "feedback/feedback-loop.md"
+      "filePath": "feedback\\feedback-loop.md"
+    },
+    {
+      "id": "founding-arc",
+      "layer": "meta",
+      "type": "principle",
+      "title": "The Founding Session Arc",
+      "state": null,
+      "instrument": null,
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "founding-arc\\session-arc.md"
+    },
+    {
+      "id": "cross-connections",
+      "layer": "meta",
+      "type": "inference",
+      "title": "Cross-Connections — Named Inferences",
+      "state": null,
+      "instrument": null,
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "inferences\\cross-connections.md"
+    },
+    {
+      "id": "philo-1pct-compounding",
+      "layer": "roots",
+      "type": "philosophy",
+      "title": "1% Gains That Compound",
+      "state": null,
+      "instrument": "philosophy",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\01-roots\\philo-1pct-compounding.md"
+    },
+    {
+      "id": "philo-core-impulse",
+      "layer": "roots",
+      "type": "philosophy",
+      "title": "The Core Impulse",
+      "state": null,
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\01-roots\\philo-core-impulse.md"
+    },
+    {
+      "id": "philo-courage",
+      "layer": "roots",
+      "type": "philosophy",
+      "title": "Courage — Three Kinds, One Capacity",
+      "state": null,
+      "instrument": "philosophy",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\01-roots\\philo-courage.md"
+    },
+    {
+      "id": "philo-embodiment",
+      "layer": "roots",
+      "type": "philosophy",
+      "title": "Philosophy of Embodiment",
+      "state": null,
+      "instrument": "philosophy",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\01-roots\\philo-embodiment.md"
+    },
+    {
+      "id": "philo-ethics",
+      "layer": "roots",
+      "type": "philosophy",
+      "title": "Ethics — The Living Framework",
+      "state": null,
+      "instrument": "philosophy",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\01-roots\\philo-ethics.md"
+    },
+    {
+      "id": "philo-how-to-live",
+      "layer": "roots",
+      "type": "philosophy",
+      "title": "How to Live Well",
+      "state": null,
+      "instrument": "philosophy",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\01-roots\\philo-how-to-live.md"
+    },
+    {
+      "id": "philo-meaning",
+      "layer": "roots",
+      "type": "philosophy",
+      "title": "The Philosophy of Meaning",
+      "state": null,
+      "instrument": "philosophy",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\01-roots\\philo-meaning.md"
+    },
+    {
+      "id": "philo-philosophy-and-action",
+      "layer": "roots",
+      "type": "philosophy",
+      "title": "Philosophy and Action Coexist",
+      "state": null,
+      "instrument": "philosophy",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\01-roots\\philo-philosophy-and-action.md"
+    },
+    {
+      "id": "philo-self-and-relation",
+      "layer": "roots",
+      "type": "philosophy",
+      "title": "The Self and Relation — Groundedness Before Openness",
+      "state": null,
+      "instrument": "philosophy",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\01-roots\\philo-self-and-relation.md"
+    },
+    {
+      "id": "philo-stoicism",
+      "layer": "roots",
+      "type": "philosophy",
+      "title": "Stoicism — Adapted, Not Adopted",
+      "state": null,
+      "instrument": "philosophy",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\01-roots\\philo-stoicism.md"
+    },
+    {
+      "id": "philo-what-people-are-for",
+      "layer": "roots",
+      "type": "philosophy",
+      "title": "What People Are For",
+      "state": null,
+      "instrument": "philosophy",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\01-roots\\philo-what-people-are-for.md"
     },
     {
       "id": "branch-relationships-family",
@@ -20,7 +163,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/02-knowledge/relationships-family/branch.md"
+      "filePath": "layers\\02-knowledge\\relationships-family\\branch.md"
     },
     {
       "id": "branch-work-vocation",
@@ -31,7 +174,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/02-knowledge/work-vocation/branch.md"
+      "filePath": "layers\\02-knowledge\\work-vocation\\branch.md"
     },
     {
       "id": "layer-code",
@@ -42,7 +185,7 @@
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/03-code/index.md"
+      "filePath": "layers\\03-code\\index.md"
     },
     {
       "id": "layer-map",
@@ -53,7 +196,7 @@
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/04-map/index.md"
+      "filePath": "layers\\04-map\\index.md"
     },
     {
       "id": "epistemology",
@@ -64,7 +207,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "meta/epistemology.md"
+      "filePath": "meta\\epistemology.md"
     },
     {
       "id": "principles",
@@ -75,13 +218,13 @@
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "meta/principles.md"
+      "filePath": "meta\\principles.md"
     }
   ],
   "edges": [],
   "meta": {
-    "nodeCount": 7,
+    "nodeCount": 20,
     "edgeCount": 0,
-    "lastBuilt": "2026-06-05T21:23:02.176Z"
+    "lastBuilt": "2026-06-06T12:16:49.500Z"
   }
 }
