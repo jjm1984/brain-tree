@@ -23,6 +23,17 @@
       "filePath": "founding-arc\\session-arc.md"
     },
     {
+      "id": "cross-connections-update",
+      "layer": "meta",
+      "type": "inference",
+      "title": "Cross-Connections Update — Mycelium and Aliveness Inferences",
+      "state": null,
+      "instrument": null,
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "inferences\\cross-connections-update.md"
+    },
+    {
       "id": "cross-connections",
       "layer": "meta",
       "type": "inference",
@@ -98,6 +109,17 @@
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
       "filePath": "layers\\00-mycelium\\nutrition.md"
+    },
+    {
+      "id": "mycelium-os-relationship",
+      "layer": "mycelium",
+      "type": "leaf",
+      "title": "The OS Running on the Mycelium",
+      "state": null,
+      "instrument": "multi",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-03",
+      "filePath": "layers\\00-mycelium\\os-relationship.md"
     },
     {
       "id": "philo-1pct-compounding",
@@ -221,6 +243,17 @@
       "filePath": "layers\\01-roots\\philo-what-people-are-for.md"
     },
     {
+      "id": "sub-conscious-sacrifice",
+      "layer": "roots",
+      "type": "philosophy",
+      "title": "Conscious Sacrifice as Chosen Ethic",
+      "state": null,
+      "instrument": "philosophy",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\01-roots\\sub-conscious-sacrifice.md"
+    },
+    {
       "id": "branch-aliveness",
       "layer": "knowledge",
       "type": "branch",
@@ -296,6 +329,28 @@
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
       "filePath": "layers\\02-knowledge\\aliveness\\leaf-reserves-restoration.md"
+    },
+    {
+      "id": "branch-daily-architecture",
+      "layer": "knowledge",
+      "type": "branch",
+      "title": "Daily Architecture",
+      "state": null,
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\02-knowledge\\daily-architecture\\branch.md"
+    },
+    {
+      "id": "branch-learning-intellectual",
+      "layer": "knowledge",
+      "type": "branch",
+      "title": "Learning & Intellectual Life",
+      "state": null,
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\02-knowledge\\learning-intellectual\\branch.md"
     },
     {
       "id": "branch-physical-wellbeing",
@@ -419,6 +474,17 @@
       "filePath": "layers\\04-map\\index.md"
     },
     {
+      "id": "flowers-and-fruits",
+      "layer": "flowers-fruits",
+      "type": "principle",
+      "title": "Flowers and Fruits — The Living Architecture of the Tree",
+      "state": null,
+      "instrument": null,
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-03",
+      "filePath": "layers\\05-flowers-fruits\\index.md"
+    },
+    {
       "id": "epistemology",
       "layer": "meta",
       "type": "principle",
@@ -443,8 +509,8 @@
   ],
   "edges": [],
   "meta": {
-    "nodeCount": 40,
+    "nodeCount": 46,
     "edgeCount": 0,
-    "lastBuilt": "2026-06-06T12:29:29.701Z"
+    "lastBuilt": "2026-06-06T13:59:18.366Z"
   }
 }
