@@ -34,6 +34,72 @@
       "filePath": "inferences\\cross-connections.md"
     },
     {
+      "id": "mycelium-brain",
+      "layer": "mycelium",
+      "type": "leaf",
+      "title": "Brain — The Hierarchy of Response",
+      "state": null,
+      "instrument": "science",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-03",
+      "filePath": "layers\\00-mycelium\\brain.md"
+    },
+    {
+      "id": "mycelium-hormones",
+      "layer": "mycelium",
+      "type": "leaf",
+      "title": "Hormones — The Chemical Weather",
+      "state": null,
+      "instrument": "science",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-03",
+      "filePath": "layers\\00-mycelium\\hormones.md"
+    },
+    {
+      "id": "layer-mycelium-full",
+      "layer": "mycelium",
+      "type": "layer",
+      "title": "The Mycelium Layer",
+      "state": null,
+      "instrument": "science",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-03",
+      "filePath": "layers\\00-mycelium\\layer.md"
+    },
+    {
+      "id": "mycelium-musculature",
+      "layer": "mycelium",
+      "type": "leaf",
+      "title": "Musculature — Capability Made Physical",
+      "state": null,
+      "instrument": "science",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-03",
+      "filePath": "layers\\00-mycelium\\musculature.md"
+    },
+    {
+      "id": "mycelium-nervous-system",
+      "layer": "mycelium",
+      "type": "leaf",
+      "title": "Nervous System — The Operating Layer",
+      "state": null,
+      "instrument": "science",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-03",
+      "filePath": "layers\\00-mycelium\\nervous-system.md"
+    },
+    {
+      "id": "mycelium-nutrition",
+      "layer": "mycelium",
+      "type": "leaf",
+      "title": "Nutrition — The Quality of the Substrate",
+      "state": null,
+      "instrument": "science",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-03",
+      "filePath": "layers\\00-mycelium\\nutrition.md"
+    },
+    {
       "id": "philo-1pct-compounding",
       "layer": "roots",
       "type": "philosophy",
@@ -155,6 +221,127 @@
       "filePath": "layers\\01-roots\\philo-what-people-are-for.md"
     },
     {
+      "id": "branch-aliveness",
+      "layer": "knowledge",
+      "type": "branch",
+      "title": "Aliveness",
+      "state": null,
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-03",
+      "filePath": "layers\\02-knowledge\\aliveness\\branch.md"
+    },
+    {
+      "id": "leaf-borrowed-peace",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Borrowed Peace — The Restorative Function of External Order",
+      "state": null,
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-03",
+      "filePath": "layers\\02-knowledge\\aliveness\\leaf-borrowed-peace.md"
+    },
+    {
+      "id": "leaf-ecstasy-adjacent",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Ecstasy — Adjacent to Aliveness, Not Identical",
+      "state": null,
+      "instrument": "philosophy",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-03",
+      "filePath": "layers\\02-knowledge\\aliveness\\leaf-ecstasy-adjacent.md"
+    },
+    {
+      "id": "leaf-inner-witness",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "The Inner Witness — Sixth Condition of Aliveness",
+      "state": null,
+      "instrument": "multi",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-03",
+      "filePath": "layers\\02-knowledge\\aliveness\\leaf-inner-witness.md"
+    },
+    {
+      "id": "leaf-peace-as-ingredient",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Peace as Ingredient, Not Destination",
+      "state": null,
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-03",
+      "filePath": "layers\\02-knowledge\\aliveness\\leaf-peace-as-ingredient.md"
+    },
+    {
+      "id": "leaf-purposeful-purposelessness",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Purposeful Purposelessness — Doing-Worth and Beauty-in-Action",
+      "state": null,
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-03",
+      "filePath": "layers\\02-knowledge\\aliveness\\leaf-purposeful-purposelessness.md"
+    },
+    {
+      "id": "leaf-reserves-restoration",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Reserves and Restoration — What Refills the Tank",
+      "state": null,
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-03",
+      "filePath": "layers\\02-knowledge\\aliveness\\leaf-reserves-restoration.md"
+    },
+    {
+      "id": "branch-physical-wellbeing",
+      "layer": "knowledge",
+      "type": "branch",
+      "title": "Physical & Mental Wellbeing",
+      "state": null,
+      "instrument": "multi",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\02-knowledge\\physical-wellbeing\\branch.md"
+    },
+    {
+      "id": "leaf-body-framework",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Body Systems Framework",
+      "state": null,
+      "instrument": "science",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\02-knowledge\\physical-wellbeing\\leaf-body-framework.md"
+    },
+    {
+      "id": "leaf-consistency-gap",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "The Consistency Gap",
+      "state": null,
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\02-knowledge\\physical-wellbeing\\leaf-consistency-gap.md"
+    },
+    {
+      "id": "leaf-triad",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "The Personal Triad — Happy, Strong, Healthy",
+      "state": null,
+      "instrument": "philosophy",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\02-knowledge\\physical-wellbeing\\leaf-triad.md"
+    },
+    {
       "id": "branch-relationships-family",
       "layer": "knowledge",
       "type": "branch",
@@ -164,6 +351,39 @@
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
       "filePath": "layers\\02-knowledge\\relationships-family\\branch.md"
+    },
+    {
+      "id": "audit-framework",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "The Audit Framework — Distinguishing Conscious Sacrifice from Worth-Machine Drift",
+      "state": null,
+      "instrument": "philosophy",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\02-knowledge\\self-worth-identity\\audit-framework.md"
+    },
+    {
+      "id": "branch-self-worth-identity",
+      "layer": "knowledge",
+      "type": "branch",
+      "title": "Self-Worth & Identity",
+      "state": null,
+      "instrument": "multi",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\02-knowledge\\self-worth-identity\\branch.md"
+    },
+    {
+      "id": "leaf-coherence-worth",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Coherence Worth — Primary Running Engine",
+      "state": null,
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-06-06",
+      "addedOn": "2026-06-06",
+      "filePath": "layers\\02-knowledge\\self-worth-identity\\leaves.md"
     },
     {
       "id": "branch-work-vocation",
@@ -223,8 +443,8 @@
   ],
   "edges": [],
   "meta": {
-    "nodeCount": 20,
+    "nodeCount": 40,
     "edgeCount": 0,
-    "lastBuilt": "2026-06-06T12:16:49.500Z"
+    "lastBuilt": "2026-06-06T12:29:29.701Z"
   }
 }
