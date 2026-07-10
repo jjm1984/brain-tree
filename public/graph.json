@@ -9,7 +9,7 @@
       "instrument": null,
       "lastUpdated": "2026-07-10",
       "addedOn": "2026-06-06",
-      "filePath": "feedback\\feedback-loop.md"
+      "filePath": "feedback/feedback-loop.md"
     },
     {
       "id": "founding-arc",
@@ -20,7 +20,7 @@
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "founding-arc\\session-arc.md"
+      "filePath": "founding-arc/session-arc.md"
     },
     {
       "id": "cross-connections-update",
@@ -31,7 +31,7 @@
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "inferences\\cross-connections-update.md"
+      "filePath": "inferences/cross-connections-update.md"
     },
     {
       "id": "cross-connections",
@@ -42,7 +42,7 @@
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "inferences\\cross-connections.md"
+      "filePath": "inferences/cross-connections.md"
     },
     {
       "id": "mycelium-brain",
@@ -55,7 +55,7 @@
       "instrument": "science",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers\\00-mycelium\\brain.md"
+      "filePath": "layers/00-mycelium/brain.md"
     },
     {
       "id": "mycelium-default-mode-network",
@@ -68,7 +68,7 @@
       "instrument": "science",
       "lastUpdated": "2026-07-05",
       "addedOn": "2026-07-05",
-      "filePath": "layers\\00-mycelium\\default-mode-network.md"
+      "filePath": "layers/00-mycelium/default-mode-network.md"
     },
     {
       "id": "mycelium-hormones",
@@ -81,7 +81,7 @@
       "instrument": "science",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers\\00-mycelium\\hormones.md"
+      "filePath": "layers/00-mycelium/hormones.md"
     },
     {
       "id": "layer-mycelium-full",
@@ -94,7 +94,7 @@
       "instrument": "science",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers\\00-mycelium\\layer.md"
+      "filePath": "layers/00-mycelium/layer.md"
     },
     {
       "id": "leaf-self-affirmation-mechanism",
@@ -107,7 +107,7 @@
       "instrument": "science",
       "lastUpdated": "2026-07-09",
       "addedOn": "2026-07-09",
-      "filePath": "layers\\00-mycelium\\leaf-self-affirmation-mechanism.md"
+      "filePath": "layers/00-mycelium/leaf-self-affirmation-mechanism.md"
     },
     {
       "id": "mycelium-musculature",
@@ -120,7 +120,7 @@
       "instrument": "science",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers\\00-mycelium\\musculature.md"
+      "filePath": "layers/00-mycelium/musculature.md"
     },
     {
       "id": "mycelium-nervous-system",
@@ -133,7 +133,7 @@
       "instrument": "science",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers\\00-mycelium\\nervous-system.md"
+      "filePath": "layers/00-mycelium/nervous-system.md"
     },
     {
       "id": "mycelium-nutrition",
@@ -146,7 +146,7 @@
       "instrument": "science",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers\\00-mycelium\\nutrition.md"
+      "filePath": "layers/00-mycelium/nutrition.md"
     },
     {
       "id": "mycelium-os-relationship",
@@ -159,7 +159,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers\\00-mycelium\\os-relationship.md"
+      "filePath": "layers/00-mycelium/os-relationship.md"
     },
     {
       "id": "mycelium-repetition-as-compiler",
@@ -172,7 +172,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-07-09",
       "addedOn": "2026-07-09",
-      "filePath": "layers\\00-mycelium\\repetition-as-compiler.md"
+      "filePath": "layers/00-mycelium/repetition-as-compiler.md"
     },
     {
       "id": "philo-1pct-compounding",
@@ -185,7 +185,7 @@
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\01-roots\\philo-1pct-compounding.md"
+      "filePath": "layers/01-roots/philo-1pct-compounding.md"
     },
     {
       "id": "phil-art-beholder-meaning",
@@ -198,7 +198,7 @@
       "instrument": null,
       "lastUpdated": "2026-07-09",
       "addedOn": "2026-07-09",
-      "filePath": "layers\\01-roots\\philo-art-beholder-meaning.md"
+      "filePath": "layers/01-roots/philo-art-beholder-meaning.md"
     },
     {
       "id": "trunk-belief-release-when-no-longer-serves",
@@ -211,7 +211,7 @@
       "instrument": null,
       "lastUpdated": "2026-07-09",
       "addedOn": "2026-07-09",
-      "filePath": "layers\\01-roots\\philo-belief-release.md"
+      "filePath": "layers/01-roots/philo-belief-release.md"
     },
     {
       "id": "philo-core-impulse",
@@ -224,7 +224,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\01-roots\\philo-core-impulse.md"
+      "filePath": "layers/01-roots/philo-core-impulse.md"
     },
     {
       "id": "philo-courage",
@@ -237,7 +237,7 @@
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\01-roots\\philo-courage.md"
+      "filePath": "layers/01-roots/philo-courage.md"
     },
     {
       "id": "philo-embodiment",
@@ -250,7 +250,7 @@
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\01-roots\\philo-embodiment.md"
+      "filePath": "layers/01-roots/philo-embodiment.md"
     },
     {
       "id": "philo-ethics",
@@ -263,7 +263,7 @@
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\01-roots\\philo-ethics.md"
+      "filePath": "layers/01-roots/philo-ethics.md"
     },
     {
       "id": "philo-how-to-live",
@@ -276,7 +276,7 @@
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\01-roots\\philo-how-to-live.md"
+      "filePath": "layers/01-roots/philo-how-to-live.md"
     },
     {
       "id": "philo-meaning",
@@ -289,7 +289,7 @@
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\01-roots\\philo-meaning.md"
+      "filePath": "layers/01-roots/philo-meaning.md"
     },
     {
       "id": "philo-people-before-process",
@@ -302,7 +302,7 @@
       "instrument": null,
       "lastUpdated": "2026-07-05",
       "addedOn": "2026-07-05",
-      "filePath": "layers\\01-roots\\philo-people-before-process.md"
+      "filePath": "layers/01-roots/philo-people-before-process.md"
     },
     {
       "id": "philo-philosophy-and-action",
@@ -315,7 +315,7 @@
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\01-roots\\philo-philosophy-and-action.md"
+      "filePath": "layers/01-roots/philo-philosophy-and-action.md"
     },
     {
       "id": "philo-self-and-relation",
@@ -328,7 +328,7 @@
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\01-roots\\philo-self-and-relation.md"
+      "filePath": "layers/01-roots/philo-self-and-relation.md"
     },
     {
       "id": "philo-stoicism",
@@ -341,7 +341,7 @@
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\01-roots\\philo-stoicism.md"
+      "filePath": "layers/01-roots/philo-stoicism.md"
     },
     {
       "id": "phil-truth-seeking",
@@ -354,7 +354,7 @@
       "instrument": null,
       "lastUpdated": "2026-07-09",
       "addedOn": "2026-07-09",
-      "filePath": "layers\\01-roots\\philo-truth-seeking.md"
+      "filePath": "layers/01-roots/philo-truth-seeking.md"
     },
     {
       "id": "philo-what-people-are-for",
@@ -367,7 +367,7 @@
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\01-roots\\philo-what-people-are-for.md"
+      "filePath": "layers/01-roots/philo-what-people-are-for.md"
     },
     {
       "id": "sub-conscious-sacrifice",
@@ -380,7 +380,7 @@
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\01-roots\\sub-conscious-sacrifice.md"
+      "filePath": "layers/01-roots/sub-conscious-sacrifice.md"
     },
     {
       "id": "branch-aliveness",
@@ -393,7 +393,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-07-05",
       "addedOn": "2026-06-03",
-      "filePath": "layers\\02-knowledge\\aliveness\\branch.md"
+      "filePath": "layers/02-knowledge/aliveness/branch.md"
     },
     {
       "id": "leaf-borrowed-peace",
@@ -406,7 +406,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers\\02-knowledge\\aliveness\\leaf-borrowed-peace.md"
+      "filePath": "layers/02-knowledge/aliveness/leaf-borrowed-peace.md"
     },
     {
       "id": "leaf-case-woodworking-purposeful-purposelessness",
@@ -419,7 +419,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-07-05",
       "addedOn": "2026-07-05",
-      "filePath": "layers\\02-knowledge\\aliveness\\leaf-case-woodworking-purposeful-purposelessness.md"
+      "filePath": "layers/02-knowledge/aliveness/leaf-case-woodworking-purposeful-purposelessness.md"
     },
     {
       "id": "leaf-ecstasy-adjacent",
@@ -432,7 +432,7 @@
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers\\02-knowledge\\aliveness\\leaf-ecstasy-adjacent.md"
+      "filePath": "layers/02-knowledge/aliveness/leaf-ecstasy-adjacent.md"
     },
     {
       "id": "leaf-inner-witness",
@@ -445,7 +445,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers\\02-knowledge\\aliveness\\leaf-inner-witness.md"
+      "filePath": "layers/02-knowledge/aliveness/leaf-inner-witness.md"
     },
     {
       "id": "leaf-peace-as-ingredient",
@@ -458,7 +458,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers\\02-knowledge\\aliveness\\leaf-peace-as-ingredient.md"
+      "filePath": "layers/02-knowledge/aliveness/leaf-peace-as-ingredient.md"
     },
     {
       "id": "leaf-purposeful-purposelessness",
@@ -471,7 +471,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers\\02-knowledge\\aliveness\\leaf-purposeful-purposelessness.md"
+      "filePath": "layers/02-knowledge/aliveness/leaf-purposeful-purposelessness.md"
     },
     {
       "id": "leaf-reserves-restoration",
@@ -484,7 +484,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-07-05",
       "addedOn": "2026-06-03",
-      "filePath": "layers\\02-knowledge\\aliveness\\leaf-reserves-restoration.md"
+      "filePath": "layers/02-knowledge/aliveness/leaf-reserves-restoration.md"
     },
     {
       "id": "branch-art-and-meaning",
@@ -497,7 +497,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-07-09",
       "addedOn": "2026-07-09",
-      "filePath": "layers\\02-knowledge\\art-and-meaning\\branch.md"
+      "filePath": "layers/02-knowledge/art-and-meaning/branch.md"
     },
     {
       "id": "leaf-last-post-reveille",
@@ -510,7 +510,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-07-09",
       "addedOn": "2026-07-09",
-      "filePath": "layers\\02-knowledge\\art-and-meaning\\leaf-last-post-reveille.md"
+      "filePath": "layers/02-knowledge/art-and-meaning/leaf-last-post-reveille.md"
     },
     {
       "id": "leaf-music",
@@ -523,7 +523,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-07-09",
       "addedOn": "2026-07-09",
-      "filePath": "layers\\02-knowledge\\art-and-meaning\\leaf-music.md"
+      "filePath": "layers/02-knowledge/art-and-meaning/leaf-music.md"
     },
     {
       "id": "leaf-poetry",
@@ -536,7 +536,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-07-09",
       "addedOn": "2026-07-09",
-      "filePath": "layers\\02-knowledge\\art-and-meaning\\leaf-poetry.md"
+      "filePath": "layers/02-knowledge/art-and-meaning/leaf-poetry.md"
     },
     {
       "id": "leaf-visual-art",
@@ -549,7 +549,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-07-09",
       "addedOn": "2026-07-09",
-      "filePath": "layers\\02-knowledge\\art-and-meaning\\leaf-visual-art.md"
+      "filePath": "layers/02-knowledge/art-and-meaning/leaf-visual-art.md"
     },
     {
       "id": "branch-daily-architecture",
@@ -562,7 +562,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\02-knowledge\\daily-architecture\\branch.md"
+      "filePath": "layers/02-knowledge/daily-architecture/branch.md"
     },
     {
       "id": "branch-learning-intellectual",
@@ -575,7 +575,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\02-knowledge\\learning-intellectual\\branch.md"
+      "filePath": "layers/02-knowledge/learning-intellectual/branch.md"
     },
     {
       "id": "branch-physical-wellbeing",
@@ -588,7 +588,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\02-knowledge\\physical-wellbeing\\branch.md"
+      "filePath": "layers/02-knowledge/physical-wellbeing/branch.md"
     },
     {
       "id": "leaf-body-framework",
@@ -601,7 +601,7 @@
       "instrument": "science",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\02-knowledge\\physical-wellbeing\\leaf-body-framework.md"
+      "filePath": "layers/02-knowledge/physical-wellbeing/leaf-body-framework.md"
     },
     {
       "id": "leaf-consistency-gap",
@@ -614,7 +614,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\02-knowledge\\physical-wellbeing\\leaf-consistency-gap.md"
+      "filePath": "layers/02-knowledge/physical-wellbeing/leaf-consistency-gap.md"
     },
     {
       "id": "leaf-triad",
@@ -627,7 +627,7 @@
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\02-knowledge\\physical-wellbeing\\leaf-triad.md"
+      "filePath": "layers/02-knowledge/physical-wellbeing/leaf-triad.md"
     },
     {
       "id": "branch-relationships-family",
@@ -640,7 +640,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-07-09",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\02-knowledge\\relationships-family\\branch.md"
+      "filePath": "layers/02-knowledge/relationships-family/branch.md"
     },
     {
       "id": "leaf-marriage-as-intentional-correction",
@@ -653,7 +653,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-07-09",
       "addedOn": "2026-07-09",
-      "filePath": "layers\\02-knowledge\\relationships-family\\leaf-marriage-as-intentional-correction.md"
+      "filePath": "layers/02-knowledge/relationships-family/leaf-marriage-as-intentional-correction.md"
     },
     {
       "id": "leaf-trait-inheritance-theory",
@@ -666,7 +666,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-07-09",
       "addedOn": "2026-07-09",
-      "filePath": "layers\\02-knowledge\\relationships-family\\leaf-trait-inheritance-theory.md"
+      "filePath": "layers/02-knowledge/relationships-family/leaf-trait-inheritance-theory.md"
     },
     {
       "id": "audit-framework",
@@ -679,7 +679,7 @@
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\02-knowledge\\self-worth-identity\\audit-framework.md"
+      "filePath": "layers/02-knowledge/self-worth-identity/audit-framework.md"
     },
     {
       "id": "branch-self-worth-identity",
@@ -692,7 +692,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\02-knowledge\\self-worth-identity\\branch.md"
+      "filePath": "layers/02-knowledge/self-worth-identity/branch.md"
     },
     {
       "id": "leaf-coherence-worth",
@@ -705,7 +705,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\02-knowledge\\self-worth-identity\\leaves.md"
+      "filePath": "layers/02-knowledge/self-worth-identity/leaves.md"
     },
     {
       "id": "branch-work-vocation",
@@ -718,7 +718,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-07-05",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\02-knowledge\\work-vocation\\branch.md"
+      "filePath": "layers/02-knowledge/work-vocation/branch.md"
     },
     {
       "id": "leaf-ancestral-roots-work-vocation",
@@ -731,7 +731,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-07-09",
       "addedOn": "2026-07-09",
-      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-ancestral-roots.md"
+      "filePath": "layers/02-knowledge/work-vocation/leaf-ancestral-roots.md"
     },
     {
       "id": "leaf-military-service-gap",
@@ -744,7 +744,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-07-09",
       "addedOn": "2026-07-05",
-      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-military-service-gap.md"
+      "filePath": "layers/02-knowledge/work-vocation/leaf-military-service-gap.md"
     },
     {
       "id": "leaf-role-agco",
@@ -757,7 +757,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-07-05",
       "addedOn": "2026-07-05",
-      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-role-agco.md"
+      "filePath": "layers/02-knowledge/work-vocation/leaf-role-agco.md"
     },
     {
       "id": "leaf-role-bigsky",
@@ -770,7 +770,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-07-05",
       "addedOn": "2026-07-05",
-      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-role-bigsky.md"
+      "filePath": "layers/02-knowledge/work-vocation/leaf-role-bigsky.md"
     },
     {
       "id": "leaf-role-diesel-mechanic",
@@ -783,7 +783,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-07-05",
       "addedOn": "2026-07-05",
-      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-role-diesel-mechanic.md"
+      "filePath": "layers/02-knowledge/work-vocation/leaf-role-diesel-mechanic.md"
     },
     {
       "id": "leaf-role-swarmfarm",
@@ -796,7 +796,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-07-05",
       "addedOn": "2026-07-05",
-      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-role-swarmfarm.md"
+      "filePath": "layers/02-knowledge/work-vocation/leaf-role-swarmfarm.md"
     },
     {
       "id": "leaf-role-trimble",
@@ -809,7 +809,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-07-05",
       "addedOn": "2026-07-05",
-      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-role-trimble.md"
+      "filePath": "layers/02-knowledge/work-vocation/leaf-role-trimble.md"
     },
     {
       "id": "leaf-role-turnkey-bi",
@@ -822,7 +822,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-07-05",
       "addedOn": "2026-07-05",
-      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-role-turnkey-bi.md"
+      "filePath": "layers/02-knowledge/work-vocation/leaf-role-turnkey-bi.md"
     },
     {
       "id": "leaf-role-wideland-gps",
@@ -835,7 +835,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-07-05",
       "addedOn": "2026-07-05",
-      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-role-wideland-gps.md"
+      "filePath": "layers/02-knowledge/work-vocation/leaf-role-wideland-gps.md"
     },
     {
       "id": "leaf-skill-audience-motivation-mapping",
@@ -848,7 +848,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-07-05",
       "addedOn": "2026-07-05",
-      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-skill-audience-motivation-mapping.md"
+      "filePath": "layers/02-knowledge/work-vocation/leaf-skill-audience-motivation-mapping.md"
     },
     {
       "id": "leaf-skill-people-first-prioritization",
@@ -861,7 +861,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-07-05",
       "addedOn": "2026-07-05",
-      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-skill-people-first-prioritization.md"
+      "filePath": "layers/02-knowledge/work-vocation/leaf-skill-people-first-prioritization.md"
     },
     {
       "id": "leaf-skill-translator-role",
@@ -874,7 +874,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-07-05",
       "addedOn": "2026-07-05",
-      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-skill-translator-role.md"
+      "filePath": "layers/02-knowledge/work-vocation/leaf-skill-translator-role.md"
     },
     {
       "id": "layer-code",
@@ -887,7 +887,7 @@
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\03-code\\index.md"
+      "filePath": "layers/03-code/index.md"
     },
     {
       "id": "leaf-moore-staircase-structural-method",
@@ -900,7 +900,7 @@
       "instrument": "philosophy",
       "lastUpdated": "2026-07-09",
       "addedOn": "2026-07-09",
-      "filePath": "layers\\03-code\\leaf-moore-staircase-method.md"
+      "filePath": "layers/03-code/leaf-moore-staircase-method.md"
     },
     {
       "id": "layer-map",
@@ -913,7 +913,7 @@
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers\\04-map\\index.md"
+      "filePath": "layers/04-map/index.md"
     },
     {
       "id": "flowers-and-fruits",
@@ -924,7 +924,7 @@
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers\\05-flowers-fruits\\index.md"
+      "filePath": "layers/05-flowers-fruits/index.md"
     },
     {
       "id": "epistemology",
@@ -935,7 +935,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "meta\\epistemology.md"
+      "filePath": "meta/epistemology.md"
     },
     {
       "id": "principles",
@@ -946,7 +946,7 @@
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "meta\\principles.md"
+      "filePath": "meta/principles.md"
     }
   ],
   "edges": [
@@ -1574,6 +1574,6 @@
   "meta": {
     "nodeCount": 74,
     "edgeCount": 124,
-    "lastBuilt": "2026-07-10T10:25:14.504Z"
+    "lastBuilt": "2026-07-10T10:39:12.678Z"
   }
 }
