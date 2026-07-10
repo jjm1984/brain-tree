@@ -5,7 +5,7 @@ type: branch
 title: Aliveness
 state:
   leaf: green
-last-updated: 2026-06-06
+last-updated: 2026-07-05
 added-on: 2026-06-03
 instrument: lived-experience
 connections:

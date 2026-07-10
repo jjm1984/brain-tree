@@ -7,9 +7,9 @@
       "title": "Brain Tree Feedback Loop",
       "state": null,
       "instrument": null,
-      "lastUpdated": "2026-06-06",
+      "lastUpdated": "2026-07-10",
       "addedOn": "2026-06-06",
-      "filePath": "feedback/feedback-loop.md"
+      "filePath": "feedback\\feedback-loop.md"
     },
     {
       "id": "founding-arc",
@@ -20,7 +20,7 @@
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "founding-arc/session-arc.md"
+      "filePath": "founding-arc\\session-arc.md"
     },
     {
       "id": "cross-connections-update",
@@ -31,7 +31,7 @@
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "inferences/cross-connections-update.md"
+      "filePath": "inferences\\cross-connections-update.md"
     },
     {
       "id": "cross-connections",
@@ -42,436 +42,878 @@
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "inferences/cross-connections.md"
+      "filePath": "inferences\\cross-connections.md"
     },
     {
       "id": "mycelium-brain",
       "layer": "mycelium",
       "type": "leaf",
       "title": "Brain — The Hierarchy of Response",
-      "state": null,
+      "state": {
+        "leaf": "yellow"
+      },
       "instrument": "science",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers/00-mycelium/brain.md"
+      "filePath": "layers\\00-mycelium\\brain.md"
+    },
+    {
+      "id": "mycelium-default-mode-network",
+      "layer": "mycelium",
+      "type": "leaf",
+      "title": "Default Mode Network (DMN)",
+      "state": {
+        "leaf": "green"
+      },
+      "instrument": "science",
+      "lastUpdated": "2026-07-05",
+      "addedOn": "2026-07-05",
+      "filePath": "layers\\00-mycelium\\default-mode-network.md"
     },
     {
       "id": "mycelium-hormones",
       "layer": "mycelium",
       "type": "leaf",
       "title": "Hormones — The Chemical Weather",
-      "state": null,
+      "state": {
+        "leaf": "yellow"
+      },
       "instrument": "science",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers/00-mycelium/hormones.md"
+      "filePath": "layers\\00-mycelium\\hormones.md"
     },
     {
       "id": "layer-mycelium-full",
       "layer": "mycelium",
       "type": "layer",
       "title": "The Mycelium Layer",
-      "state": null,
+      "state": {
+        "leaf": "yellow"
+      },
       "instrument": "science",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers/00-mycelium/layer.md"
+      "filePath": "layers\\00-mycelium\\layer.md"
+    },
+    {
+      "id": "leaf-self-affirmation-mechanism",
+      "layer": "mycelium",
+      "type": "leaf",
+      "title": "Self-Affirmation and Behavioral Activation — Mixed Empirical Grounding",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "science",
+      "lastUpdated": "2026-07-09",
+      "addedOn": "2026-07-09",
+      "filePath": "layers\\00-mycelium\\leaf-self-affirmation-mechanism.md"
     },
     {
       "id": "mycelium-musculature",
       "layer": "mycelium",
       "type": "leaf",
       "title": "Musculature — Capability Made Physical",
-      "state": null,
+      "state": {
+        "leaf": "yellow"
+      },
       "instrument": "science",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers/00-mycelium/musculature.md"
+      "filePath": "layers\\00-mycelium\\musculature.md"
     },
     {
       "id": "mycelium-nervous-system",
       "layer": "mycelium",
       "type": "leaf",
       "title": "Nervous System — The Operating Layer",
-      "state": null,
+      "state": {
+        "leaf": "yellow"
+      },
       "instrument": "science",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers/00-mycelium/nervous-system.md"
+      "filePath": "layers\\00-mycelium\\nervous-system.md"
     },
     {
       "id": "mycelium-nutrition",
       "layer": "mycelium",
       "type": "leaf",
       "title": "Nutrition — The Quality of the Substrate",
-      "state": null,
+      "state": {
+        "leaf": "yellow"
+      },
       "instrument": "science",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers/00-mycelium/nutrition.md"
+      "filePath": "layers\\00-mycelium\\nutrition.md"
     },
     {
       "id": "mycelium-os-relationship",
       "layer": "mycelium",
       "type": "leaf",
       "title": "The OS Running on the Mycelium",
-      "state": null,
+      "state": {
+        "leaf": "yellow"
+      },
       "instrument": "multi",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers/00-mycelium/os-relationship.md"
+      "filePath": "layers\\00-mycelium\\os-relationship.md"
+    },
+    {
+      "id": "mycelium-repetition-as-compiler",
+      "layer": "mycelium",
+      "type": "leaf",
+      "title": "Repetition as the Compiler — How Chosen Words Become the OS",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-09",
+      "addedOn": "2026-07-09",
+      "filePath": "layers\\00-mycelium\\repetition-as-compiler.md"
     },
     {
       "id": "philo-1pct-compounding",
       "layer": "roots",
       "type": "philosophy",
       "title": "1% Gains That Compound",
-      "state": null,
+      "state": {
+        "philosophy": "grounded"
+      },
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/01-roots/philo-1pct-compounding.md"
+      "filePath": "layers\\01-roots\\philo-1pct-compounding.md"
+    },
+    {
+      "id": "phil-art-beholder-meaning",
+      "layer": "roots",
+      "type": "philosophy",
+      "title": "Art & Beholder-Conferred Meaning",
+      "state": {
+        "philosophy": "forming"
+      },
+      "instrument": null,
+      "lastUpdated": "2026-07-09",
+      "addedOn": "2026-07-09",
+      "filePath": "layers\\01-roots\\philo-art-beholder-meaning.md"
+    },
+    {
+      "id": "trunk-belief-release-when-no-longer-serves",
+      "layer": "roots",
+      "type": "philosophy",
+      "title": "Hold Belief Firmly — Release It When It No Longer Serves You",
+      "state": {
+        "philosophy": "grounded"
+      },
+      "instrument": null,
+      "lastUpdated": "2026-07-09",
+      "addedOn": "2026-07-09",
+      "filePath": "layers\\01-roots\\philo-belief-release.md"
     },
     {
       "id": "philo-core-impulse",
       "layer": "roots",
       "type": "philosophy",
       "title": "The Core Impulse",
-      "state": null,
+      "state": {
+        "philosophy": "forming"
+      },
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/01-roots/philo-core-impulse.md"
+      "filePath": "layers\\01-roots\\philo-core-impulse.md"
     },
     {
       "id": "philo-courage",
       "layer": "roots",
       "type": "philosophy",
       "title": "Courage — Three Kinds, One Capacity",
-      "state": null,
+      "state": {
+        "philosophy": "growing"
+      },
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/01-roots/philo-courage.md"
+      "filePath": "layers\\01-roots\\philo-courage.md"
     },
     {
       "id": "philo-embodiment",
       "layer": "roots",
       "type": "philosophy",
       "title": "Philosophy of Embodiment",
-      "state": null,
+      "state": {
+        "philosophy": "grounded"
+      },
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/01-roots/philo-embodiment.md"
+      "filePath": "layers\\01-roots\\philo-embodiment.md"
     },
     {
       "id": "philo-ethics",
       "layer": "roots",
       "type": "philosophy",
       "title": "Ethics — The Living Framework",
-      "state": null,
+      "state": {
+        "philosophy": "forming"
+      },
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/01-roots/philo-ethics.md"
+      "filePath": "layers\\01-roots\\philo-ethics.md"
     },
     {
       "id": "philo-how-to-live",
       "layer": "roots",
       "type": "philosophy",
       "title": "How to Live Well",
-      "state": null,
+      "state": {
+        "philosophy": "grounded"
+      },
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/01-roots/philo-how-to-live.md"
+      "filePath": "layers\\01-roots\\philo-how-to-live.md"
     },
     {
       "id": "philo-meaning",
       "layer": "roots",
       "type": "philosophy",
       "title": "The Philosophy of Meaning",
-      "state": null,
+      "state": {
+        "philosophy": "grounded"
+      },
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/01-roots/philo-meaning.md"
+      "filePath": "layers\\01-roots\\philo-meaning.md"
+    },
+    {
+      "id": "philo-people-before-process",
+      "layer": "roots",
+      "type": "philosophy",
+      "title": "People Before Process (working title)",
+      "state": {
+        "philosophy": "forming"
+      },
+      "instrument": null,
+      "lastUpdated": "2026-07-05",
+      "addedOn": "2026-07-05",
+      "filePath": "layers\\01-roots\\philo-people-before-process.md"
     },
     {
       "id": "philo-philosophy-and-action",
       "layer": "roots",
       "type": "philosophy",
       "title": "Philosophy and Action Coexist",
-      "state": null,
+      "state": {
+        "philosophy": "grounded"
+      },
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/01-roots/philo-philosophy-and-action.md"
+      "filePath": "layers\\01-roots\\philo-philosophy-and-action.md"
     },
     {
       "id": "philo-self-and-relation",
       "layer": "roots",
       "type": "philosophy",
       "title": "The Self and Relation — Groundedness Before Openness",
-      "state": null,
+      "state": {
+        "philosophy": "growing"
+      },
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/01-roots/philo-self-and-relation.md"
+      "filePath": "layers\\01-roots\\philo-self-and-relation.md"
     },
     {
       "id": "philo-stoicism",
       "layer": "roots",
       "type": "philosophy",
       "title": "Stoicism — Adapted, Not Adopted",
-      "state": null,
+      "state": {
+        "philosophy": "growing"
+      },
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/01-roots/philo-stoicism.md"
+      "filePath": "layers\\01-roots\\philo-stoicism.md"
+    },
+    {
+      "id": "phil-truth-seeking",
+      "layer": "roots",
+      "type": "philosophy",
+      "title": "Fallibilist Realism — Truth Tested, Not Declared",
+      "state": {
+        "philosophy": "growing"
+      },
+      "instrument": null,
+      "lastUpdated": "2026-07-09",
+      "addedOn": "2026-07-09",
+      "filePath": "layers\\01-roots\\philo-truth-seeking.md"
     },
     {
       "id": "philo-what-people-are-for",
       "layer": "roots",
       "type": "philosophy",
       "title": "What People Are For",
-      "state": null,
+      "state": {
+        "philosophy": "grounded"
+      },
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/01-roots/philo-what-people-are-for.md"
+      "filePath": "layers\\01-roots\\philo-what-people-are-for.md"
     },
     {
       "id": "sub-conscious-sacrifice",
       "layer": "roots",
       "type": "philosophy",
       "title": "Conscious Sacrifice as Chosen Ethic",
-      "state": null,
+      "state": {
+        "philosophy": "growing"
+      },
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/01-roots/sub-conscious-sacrifice.md"
+      "filePath": "layers\\01-roots\\sub-conscious-sacrifice.md"
     },
     {
       "id": "branch-aliveness",
       "layer": "knowledge",
       "type": "branch",
       "title": "Aliveness",
-      "state": null,
+      "state": {
+        "leaf": "green"
+      },
       "instrument": "lived-experience",
-      "lastUpdated": "2026-06-06",
+      "lastUpdated": "2026-07-05",
       "addedOn": "2026-06-03",
-      "filePath": "layers/02-knowledge/aliveness/branch.md"
+      "filePath": "layers\\02-knowledge\\aliveness\\branch.md"
     },
     {
       "id": "leaf-borrowed-peace",
       "layer": "knowledge",
       "type": "leaf",
       "title": "Borrowed Peace — The Restorative Function of External Order",
-      "state": null,
+      "state": {
+        "leaf": "yellow"
+      },
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers/02-knowledge/aliveness/leaf-borrowed-peace.md"
+      "filePath": "layers\\02-knowledge\\aliveness\\leaf-borrowed-peace.md"
+    },
+    {
+      "id": "leaf-case-woodworking-purposeful-purposelessness",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Case: Woodworking — Test Case for Purposeful Purposelessness",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-07-05",
+      "addedOn": "2026-07-05",
+      "filePath": "layers\\02-knowledge\\aliveness\\leaf-case-woodworking-purposeful-purposelessness.md"
     },
     {
       "id": "leaf-ecstasy-adjacent",
       "layer": "knowledge",
       "type": "leaf",
       "title": "Ecstasy — Adjacent to Aliveness, Not Identical",
-      "state": null,
+      "state": {
+        "leaf": "yellow"
+      },
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers/02-knowledge/aliveness/leaf-ecstasy-adjacent.md"
+      "filePath": "layers\\02-knowledge\\aliveness\\leaf-ecstasy-adjacent.md"
     },
     {
       "id": "leaf-inner-witness",
       "layer": "knowledge",
       "type": "leaf",
       "title": "The Inner Witness — Sixth Condition of Aliveness",
-      "state": null,
+      "state": {
+        "leaf": "yellow"
+      },
       "instrument": "multi",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers/02-knowledge/aliveness/leaf-inner-witness.md"
+      "filePath": "layers\\02-knowledge\\aliveness\\leaf-inner-witness.md"
     },
     {
       "id": "leaf-peace-as-ingredient",
       "layer": "knowledge",
       "type": "leaf",
       "title": "Peace as Ingredient, Not Destination",
-      "state": null,
+      "state": {
+        "leaf": "green"
+      },
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers/02-knowledge/aliveness/leaf-peace-as-ingredient.md"
+      "filePath": "layers\\02-knowledge\\aliveness\\leaf-peace-as-ingredient.md"
     },
     {
       "id": "leaf-purposeful-purposelessness",
       "layer": "knowledge",
       "type": "leaf",
       "title": "Purposeful Purposelessness — Doing-Worth and Beauty-in-Action",
-      "state": null,
+      "state": {
+        "leaf": "green"
+      },
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers/02-knowledge/aliveness/leaf-purposeful-purposelessness.md"
+      "filePath": "layers\\02-knowledge\\aliveness\\leaf-purposeful-purposelessness.md"
     },
     {
       "id": "leaf-reserves-restoration",
       "layer": "knowledge",
       "type": "leaf",
       "title": "Reserves and Restoration — What Refills the Tank",
-      "state": null,
-      "instrument": "lived-experience",
-      "lastUpdated": "2026-06-06",
+      "state": {
+        "leaf": "green"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-05",
       "addedOn": "2026-06-03",
-      "filePath": "layers/02-knowledge/aliveness/leaf-reserves-restoration.md"
+      "filePath": "layers\\02-knowledge\\aliveness\\leaf-reserves-restoration.md"
+    },
+    {
+      "id": "branch-art-and-meaning",
+      "layer": "knowledge",
+      "type": "branch",
+      "title": "Art & Meaning",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-09",
+      "addedOn": "2026-07-09",
+      "filePath": "layers\\02-knowledge\\art-and-meaning\\branch.md"
+    },
+    {
+      "id": "leaf-last-post-reveille",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "The Last Post and Reveille — Cultural Meaning Personified in Music",
+      "state": {
+        "leaf": "green"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-09",
+      "addedOn": "2026-07-09",
+      "filePath": "layers\\02-knowledge\\art-and-meaning\\leaf-last-post-reveille.md"
+    },
+    {
+      "id": "leaf-music",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Music",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-09",
+      "addedOn": "2026-07-09",
+      "filePath": "layers\\02-knowledge\\art-and-meaning\\leaf-music.md"
+    },
+    {
+      "id": "leaf-poetry",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Poetry",
+      "state": {
+        "leaf": "peripheral"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-09",
+      "addedOn": "2026-07-09",
+      "filePath": "layers\\02-knowledge\\art-and-meaning\\leaf-poetry.md"
+    },
+    {
+      "id": "leaf-visual-art",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Visual Art",
+      "state": {
+        "leaf": "peripheral"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-09",
+      "addedOn": "2026-07-09",
+      "filePath": "layers\\02-knowledge\\art-and-meaning\\leaf-visual-art.md"
     },
     {
       "id": "branch-daily-architecture",
       "layer": "knowledge",
       "type": "branch",
       "title": "Daily Architecture",
-      "state": null,
+      "state": {
+        "leaf": "peripheral"
+      },
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/02-knowledge/daily-architecture/branch.md"
+      "filePath": "layers\\02-knowledge\\daily-architecture\\branch.md"
     },
     {
       "id": "branch-learning-intellectual",
       "layer": "knowledge",
       "type": "branch",
       "title": "Learning & Intellectual Life",
-      "state": null,
+      "state": {
+        "leaf": "peripheral"
+      },
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/02-knowledge/learning-intellectual/branch.md"
+      "filePath": "layers\\02-knowledge\\learning-intellectual\\branch.md"
     },
     {
       "id": "branch-physical-wellbeing",
       "layer": "knowledge",
       "type": "branch",
       "title": "Physical & Mental Wellbeing",
-      "state": null,
+      "state": {
+        "leaf": "yellow"
+      },
       "instrument": "multi",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/02-knowledge/physical-wellbeing/branch.md"
+      "filePath": "layers\\02-knowledge\\physical-wellbeing\\branch.md"
     },
     {
       "id": "leaf-body-framework",
       "layer": "knowledge",
       "type": "leaf",
       "title": "Body Systems Framework",
-      "state": null,
+      "state": {
+        "leaf": "yellow"
+      },
       "instrument": "science",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/02-knowledge/physical-wellbeing/leaf-body-framework.md"
+      "filePath": "layers\\02-knowledge\\physical-wellbeing\\leaf-body-framework.md"
     },
     {
       "id": "leaf-consistency-gap",
       "layer": "knowledge",
       "type": "leaf",
       "title": "The Consistency Gap",
-      "state": null,
+      "state": {
+        "leaf": "yellow"
+      },
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/02-knowledge/physical-wellbeing/leaf-consistency-gap.md"
+      "filePath": "layers\\02-knowledge\\physical-wellbeing\\leaf-consistency-gap.md"
     },
     {
       "id": "leaf-triad",
       "layer": "knowledge",
       "type": "leaf",
       "title": "The Personal Triad — Happy, Strong, Healthy",
-      "state": null,
+      "state": {
+        "leaf": "green"
+      },
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/02-knowledge/physical-wellbeing/leaf-triad.md"
+      "filePath": "layers\\02-knowledge\\physical-wellbeing\\leaf-triad.md"
     },
     {
       "id": "branch-relationships-family",
       "layer": "knowledge",
       "type": "branch",
       "title": "Relationships & Family",
-      "state": null,
-      "instrument": "lived-experience",
-      "lastUpdated": "2026-06-06",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-09",
       "addedOn": "2026-06-06",
-      "filePath": "layers/02-knowledge/relationships-family/branch.md"
+      "filePath": "layers\\02-knowledge\\relationships-family\\branch.md"
+    },
+    {
+      "id": "leaf-marriage-as-intentional-correction",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Marriage as the Site of Intentional Change — Patriarchal/Matriarchal Balance",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-09",
+      "addedOn": "2026-07-09",
+      "filePath": "layers\\02-knowledge\\relationships-family\\leaf-marriage-as-intentional-correction.md"
+    },
+    {
+      "id": "leaf-trait-inheritance-theory",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Inherited Traits Transmit Independent of Visible Influence",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-09",
+      "addedOn": "2026-07-09",
+      "filePath": "layers\\02-knowledge\\relationships-family\\leaf-trait-inheritance-theory.md"
     },
     {
       "id": "audit-framework",
       "layer": "knowledge",
       "type": "leaf",
       "title": "The Audit Framework — Distinguishing Conscious Sacrifice from Worth-Machine Drift",
-      "state": null,
+      "state": {
+        "leaf": "yellow"
+      },
       "instrument": "philosophy",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/02-knowledge/self-worth-identity/audit-framework.md"
+      "filePath": "layers\\02-knowledge\\self-worth-identity\\audit-framework.md"
     },
     {
       "id": "branch-self-worth-identity",
       "layer": "knowledge",
       "type": "branch",
       "title": "Self-Worth & Identity",
-      "state": null,
+      "state": {
+        "leaf": "green"
+      },
       "instrument": "multi",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/02-knowledge/self-worth-identity/branch.md"
+      "filePath": "layers\\02-knowledge\\self-worth-identity\\branch.md"
     },
     {
       "id": "leaf-coherence-worth",
       "layer": "knowledge",
       "type": "leaf",
       "title": "Coherence Worth — Primary Running Engine",
-      "state": null,
+      "state": {
+        "leaf": "green"
+      },
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/02-knowledge/self-worth-identity/leaves.md"
+      "filePath": "layers\\02-knowledge\\self-worth-identity\\leaves.md"
     },
     {
       "id": "branch-work-vocation",
       "layer": "knowledge",
       "type": "branch",
       "title": "Work & Vocation",
-      "state": null,
-      "instrument": "lived-experience",
-      "lastUpdated": "2026-06-06",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-05",
       "addedOn": "2026-06-06",
-      "filePath": "layers/02-knowledge/work-vocation/branch.md"
+      "filePath": "layers\\02-knowledge\\work-vocation\\branch.md"
+    },
+    {
+      "id": "leaf-ancestral-roots-work-vocation",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Ancestral Roots — Vocation Inherited, Not Chosen",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-07-09",
+      "addedOn": "2026-07-09",
+      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-ancestral-roots.md"
+    },
+    {
+      "id": "leaf-military-service-gap",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Role: Combat Engineer, 2nd Field Engineer Regiment (confirmed 2026-07-09)",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-07-09",
+      "addedOn": "2026-07-05",
+      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-military-service-gap.md"
+    },
+    {
+      "id": "leaf-role-agco",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Role: Regional Tactical Marketing Manager APA, AGCO Australia Limited",
+      "state": {
+        "leaf": "peripheral"
+      },
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-07-05",
+      "addedOn": "2026-07-05",
+      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-role-agco.md"
+    },
+    {
+      "id": "leaf-role-bigsky",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Role: Co-Founder, Big Sky Technologies",
+      "state": {
+        "leaf": "peripheral"
+      },
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-07-05",
+      "addedOn": "2026-07-05",
+      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-role-bigsky.md"
+    },
+    {
+      "id": "leaf-role-diesel-mechanic",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Role: Diesel Mechanic — Apprenticeship & Trade",
+      "state": {
+        "leaf": "peripheral"
+      },
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-07-05",
+      "addedOn": "2026-07-05",
+      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-role-diesel-mechanic.md"
+    },
+    {
+      "id": "leaf-role-swarmfarm",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Role: Customer Success Manager → Head of Field Operations, SwarmFarm Robotics",
+      "state": {
+        "leaf": "peripheral"
+      },
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-07-05",
+      "addedOn": "2026-07-05",
+      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-role-swarmfarm.md"
+    },
+    {
+      "id": "leaf-role-trimble",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Role: Precision Farming Specialist, Trimble Agriculture (APAC)",
+      "state": {
+        "leaf": "peripheral"
+      },
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-07-05",
+      "addedOn": "2026-07-05",
+      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-role-trimble.md"
+    },
+    {
+      "id": "leaf-role-turnkey-bi",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Role: Business Intelligence & Field Operations, Turnkey BI",
+      "state": {
+        "leaf": "peripheral"
+      },
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-07-05",
+      "addedOn": "2026-07-05",
+      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-role-turnkey-bi.md"
+    },
+    {
+      "id": "leaf-role-wideland-gps",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Role: GPS & Precision Farming Specialist, Wideland Ag & Construction",
+      "state": {
+        "leaf": "peripheral"
+      },
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-07-05",
+      "addedOn": "2026-07-05",
+      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-role-wideland-gps.md"
+    },
+    {
+      "id": "leaf-skill-audience-motivation-mapping",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Skill: Audience Motivation Mapping",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-07-05",
+      "addedOn": "2026-07-05",
+      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-skill-audience-motivation-mapping.md"
+    },
+    {
+      "id": "leaf-skill-people-first-prioritization",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Skill: Task Prioritization — People First",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-05",
+      "addedOn": "2026-07-05",
+      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-skill-people-first-prioritization.md"
+    },
+    {
+      "id": "leaf-skill-translator-role",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Skill: The Translator Role — Multi-Stakeholder Motivation Alignment",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-05",
+      "addedOn": "2026-07-05",
+      "filePath": "layers\\02-knowledge\\work-vocation\\leaf-skill-translator-role.md"
     },
     {
       "id": "layer-code",
       "layer": "code",
       "type": "layer",
       "title": "The Code Layer",
-      "state": null,
+      "state": {
+        "leaf": "peripheral"
+      },
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/03-code/index.md"
+      "filePath": "layers\\03-code\\index.md"
+    },
+    {
+      "id": "leaf-moore-staircase-structural-method",
+      "layer": "code",
+      "type": "leaf",
+      "title": "Geoffrey Moore's 'Infinite Staircase' — Structural Method vs. Content Authority",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "philosophy",
+      "lastUpdated": "2026-07-09",
+      "addedOn": "2026-07-09",
+      "filePath": "layers\\03-code\\leaf-moore-staircase-method.md"
     },
     {
       "id": "layer-map",
       "layer": "map",
       "type": "layer",
       "title": "The Map Layer",
-      "state": null,
+      "state": {
+        "leaf": "peripheral"
+      },
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "layers/04-map/index.md"
+      "filePath": "layers\\04-map\\index.md"
     },
     {
       "id": "flowers-and-fruits",
@@ -482,7 +924,7 @@
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers/05-flowers-fruits/index.md"
+      "filePath": "layers\\05-flowers-fruits\\index.md"
     },
     {
       "id": "epistemology",
@@ -493,7 +935,7 @@
       "instrument": "multi",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "meta/epistemology.md"
+      "filePath": "meta\\epistemology.md"
     },
     {
       "id": "principles",
@@ -504,13 +946,634 @@
       "instrument": null,
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-06",
-      "filePath": "meta/principles.md"
+      "filePath": "meta\\principles.md"
     }
   ],
-  "edges": [],
+  "edges": [
+    {
+      "source": "mycelium-brain",
+      "target": "mycelium-nervous-system",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-brain",
+      "target": "leaf-inner-witness",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-default-mode-network",
+      "target": "mycelium-brain",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-default-mode-network",
+      "target": "mycelium-nervous-system",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-default-mode-network",
+      "target": "leaf-reserves-restoration",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-hormones",
+      "target": "mycelium-nervous-system",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-hormones",
+      "target": "mycelium-brain",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-hormones",
+      "target": "leaf-body-framework",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-self-affirmation-mechanism",
+      "target": "trunk-belief-release-when-no-longer-serves",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-musculature",
+      "target": "philo-courage",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-musculature",
+      "target": "philo-embodiment",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-musculature",
+      "target": "leaf-triad",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-musculature",
+      "target": "leaf-consistency-gap",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-nervous-system",
+      "target": "mycelium-hormones",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-nervous-system",
+      "target": "mycelium-brain",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-nervous-system",
+      "target": "leaf-borrowed-peace",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-nutrition",
+      "target": "mycelium-hormones",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-nutrition",
+      "target": "leaf-body-framework",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-os-relationship",
+      "target": "layer-mycelium-full",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-os-relationship",
+      "target": "leaf-inner-witness",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-os-relationship",
+      "target": "audit-framework",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-repetition-as-compiler",
+      "target": "mycelium-brain",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-repetition-as-compiler",
+      "target": "philo-meaning",
+      "type": "supports"
+    },
+    {
+      "source": "philo-1pct-compounding",
+      "target": "leaf-consistency-gap",
+      "type": "supports"
+    },
+    {
+      "source": "philo-1pct-compounding",
+      "target": "philo-courage",
+      "type": "supports"
+    },
+    {
+      "source": "phil-art-beholder-meaning",
+      "target": "branch-art-and-meaning",
+      "type": "supports"
+    },
+    {
+      "source": "trunk-belief-release-when-no-longer-serves",
+      "target": "philo-how-to-live",
+      "type": "supports"
+    },
+    {
+      "source": "philo-core-impulse",
+      "target": "philo-what-people-are-for",
+      "type": "supports"
+    },
+    {
+      "source": "philo-core-impulse",
+      "target": "branch-work-vocation",
+      "type": "supports"
+    },
+    {
+      "source": "philo-courage",
+      "target": "philo-ethics",
+      "type": "supports"
+    },
+    {
+      "source": "philo-courage",
+      "target": "philo-meaning",
+      "type": "supports"
+    },
+    {
+      "source": "philo-courage",
+      "target": "leaf-consistency-gap",
+      "type": "supports"
+    },
+    {
+      "source": "philo-embodiment",
+      "target": "branch-physical-wellbeing",
+      "type": "supports"
+    },
+    {
+      "source": "philo-embodiment",
+      "target": "leaf-triad",
+      "type": "supports"
+    },
+    {
+      "source": "philo-embodiment",
+      "target": "branch-aliveness",
+      "type": "supports"
+    },
+    {
+      "source": "philo-ethics",
+      "target": "philo-courage",
+      "type": "supports"
+    },
+    {
+      "source": "philo-ethics",
+      "target": "philo-meaning",
+      "type": "supports"
+    },
+    {
+      "source": "philo-ethics",
+      "target": "philo-stoicism",
+      "type": "supports"
+    },
+    {
+      "source": "philo-how-to-live",
+      "target": "philo-meaning",
+      "type": "supports"
+    },
+    {
+      "source": "philo-how-to-live",
+      "target": "philo-stoicism",
+      "type": "supports"
+    },
+    {
+      "source": "philo-how-to-live",
+      "target": "philo-ethics",
+      "type": "supports"
+    },
+    {
+      "source": "philo-how-to-live",
+      "target": "philo-courage",
+      "type": "supports"
+    },
+    {
+      "source": "philo-how-to-live",
+      "target": "philo-embodiment",
+      "type": "supports"
+    },
+    {
+      "source": "philo-meaning",
+      "target": "leaf-consistency-gap",
+      "type": "supports"
+    },
+    {
+      "source": "philo-meaning",
+      "target": "philo-courage",
+      "type": "supports"
+    },
+    {
+      "source": "philo-meaning",
+      "target": "philo-1pct-compounding",
+      "type": "supports"
+    },
+    {
+      "source": "philo-meaning",
+      "target": "philo-stoicism",
+      "type": "challenges"
+    },
+    {
+      "source": "philo-people-before-process",
+      "target": "branch-work-vocation",
+      "type": "supports"
+    },
+    {
+      "source": "philo-philosophy-and-action",
+      "target": "philo-meaning",
+      "type": "supports"
+    },
+    {
+      "source": "philo-philosophy-and-action",
+      "target": "philo-embodiment",
+      "type": "supports"
+    },
+    {
+      "source": "philo-philosophy-and-action",
+      "target": "sub-conscious-sacrifice",
+      "type": "supports"
+    },
+    {
+      "source": "philo-self-and-relation",
+      "target": "branch-relationships-family",
+      "type": "supports"
+    },
+    {
+      "source": "philo-self-and-relation",
+      "target": "branch-self-worth-identity",
+      "type": "supports"
+    },
+    {
+      "source": "philo-stoicism",
+      "target": "philo-ethics",
+      "type": "supports"
+    },
+    {
+      "source": "philo-stoicism",
+      "target": "sub-conscious-sacrifice",
+      "type": "supports"
+    },
+    {
+      "source": "philo-stoicism",
+      "target": "philo-meaning",
+      "type": "challenges"
+    },
+    {
+      "source": "phil-truth-seeking",
+      "target": "trunk-belief-release-when-no-longer-serves",
+      "type": "supports"
+    },
+    {
+      "source": "philo-what-people-are-for",
+      "target": "branch-relationships-family",
+      "type": "supports"
+    },
+    {
+      "source": "philo-what-people-are-for",
+      "target": "philo-self-and-relation",
+      "type": "supports"
+    },
+    {
+      "source": "sub-conscious-sacrifice",
+      "target": "philo-how-to-live",
+      "type": "supports"
+    },
+    {
+      "source": "sub-conscious-sacrifice",
+      "target": "philo-philosophy-and-action",
+      "type": "supports"
+    },
+    {
+      "source": "sub-conscious-sacrifice",
+      "target": "philo-embodiment",
+      "type": "supports"
+    },
+    {
+      "source": "sub-conscious-sacrifice",
+      "target": "branch-self-worth-identity",
+      "type": "supports"
+    },
+    {
+      "source": "branch-aliveness",
+      "target": "philo-how-to-live",
+      "type": "supports"
+    },
+    {
+      "source": "branch-aliveness",
+      "target": "philo-meaning",
+      "type": "supports"
+    },
+    {
+      "source": "branch-aliveness",
+      "target": "philo-embodiment",
+      "type": "supports"
+    },
+    {
+      "source": "branch-aliveness",
+      "target": "philo-courage",
+      "type": "supports"
+    },
+    {
+      "source": "branch-aliveness",
+      "target": "branch-self-worth-identity",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-borrowed-peace",
+      "target": "leaf-peace-as-ingredient",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-borrowed-peace",
+      "target": "leaf-reserves-restoration",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-case-woodworking-purposeful-purposelessness",
+      "target": "branch-aliveness",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-case-woodworking-purposeful-purposelessness",
+      "target": "leaf-purposeful-purposelessness",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-ecstasy-adjacent",
+      "target": "branch-aliveness",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-ecstasy-adjacent",
+      "target": "leaf-inner-witness",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-inner-witness",
+      "target": "branch-aliveness",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-inner-witness",
+      "target": "mycelium-brain",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-inner-witness",
+      "target": "leaf-peace-as-ingredient",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-peace-as-ingredient",
+      "target": "branch-aliveness",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-peace-as-ingredient",
+      "target": "leaf-inner-witness",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-purposeful-purposelessness",
+      "target": "branch-aliveness",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-purposeful-purposelessness",
+      "target": "branch-self-worth-identity",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-reserves-restoration",
+      "target": "branch-aliveness",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-reserves-restoration",
+      "target": "leaf-borrowed-peace",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-reserves-restoration",
+      "target": "mycelium-default-mode-network",
+      "type": "supports"
+    },
+    {
+      "source": "branch-art-and-meaning",
+      "target": "phil-art-beholder-meaning",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-last-post-reveille",
+      "target": "phil-art-beholder-meaning",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-last-post-reveille",
+      "target": "mycelium-repetition-as-compiler",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-last-post-reveille",
+      "target": "leaf-military-service-gap",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-last-post-reveille",
+      "target": "leaf-ancestral-roots-work-vocation",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-music",
+      "target": "mycelium-repetition-as-compiler",
+      "type": "supports"
+    },
+    {
+      "source": "branch-daily-architecture",
+      "target": "philo-how-to-live",
+      "type": "supports"
+    },
+    {
+      "source": "branch-daily-architecture",
+      "target": "philo-1pct-compounding",
+      "type": "supports"
+    },
+    {
+      "source": "branch-learning-intellectual",
+      "target": "philo-core-impulse",
+      "type": "supports"
+    },
+    {
+      "source": "branch-learning-intellectual",
+      "target": "philo-meaning",
+      "type": "supports"
+    },
+    {
+      "source": "branch-learning-intellectual",
+      "target": "philo-what-people-are-for",
+      "type": "supports"
+    },
+    {
+      "source": "branch-physical-wellbeing",
+      "target": "philo-embodiment",
+      "type": "supports"
+    },
+    {
+      "source": "branch-physical-wellbeing",
+      "target": "philo-philosophy-and-action",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-body-framework",
+      "target": "branch-physical-wellbeing",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-body-framework",
+      "target": "mycelium-nutrition",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-body-framework",
+      "target": "mycelium-hormones",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-consistency-gap",
+      "target": "branch-physical-wellbeing",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-consistency-gap",
+      "target": "branch-self-worth-identity",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-consistency-gap",
+      "target": "philo-meaning",
+      "type": "challenges"
+    },
+    {
+      "source": "leaf-consistency-gap",
+      "target": "philo-courage",
+      "type": "challenges"
+    },
+    {
+      "source": "leaf-triad",
+      "target": "philo-embodiment",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-triad",
+      "target": "branch-aliveness",
+      "type": "supports"
+    },
+    {
+      "source": "branch-relationships-family",
+      "target": "philo-what-people-are-for",
+      "type": "supports"
+    },
+    {
+      "source": "branch-relationships-family",
+      "target": "philo-self-and-relation",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-marriage-as-intentional-correction",
+      "target": "philo-what-people-are-for",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-marriage-as-intentional-correction",
+      "target": "leaf-ancestral-roots-work-vocation",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-trait-inheritance-theory",
+      "target": "leaf-ancestral-roots-work-vocation",
+      "type": "supports"
+    },
+    {
+      "source": "audit-framework",
+      "target": "branch-self-worth-identity",
+      "type": "supports"
+    },
+    {
+      "source": "audit-framework",
+      "target": "sub-conscious-sacrifice",
+      "type": "supports"
+    },
+    {
+      "source": "audit-framework",
+      "target": "philo-stoicism",
+      "type": "supports"
+    },
+    {
+      "source": "branch-self-worth-identity",
+      "target": "philo-how-to-live",
+      "type": "supports"
+    },
+    {
+      "source": "branch-self-worth-identity",
+      "target": "philo-stoicism",
+      "type": "supports"
+    },
+    {
+      "source": "branch-self-worth-identity",
+      "target": "philo-meaning",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-coherence-worth",
+      "target": "branch-self-worth-identity",
+      "type": "supports"
+    },
+    {
+      "source": "branch-work-vocation",
+      "target": "philo-meaning",
+      "type": "supports"
+    },
+    {
+      "source": "branch-work-vocation",
+      "target": "philo-core-impulse",
+      "type": "supports"
+    },
+    {
+      "source": "branch-work-vocation",
+      "target": "philo-philosophy-and-action",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-ancestral-roots-work-vocation",
+      "target": "leaf-skill-translator-role",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-military-service-gap",
+      "target": "philo-stoicism",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-moore-staircase-structural-method",
+      "target": "philo-courage",
+      "type": "supports"
+    }
+  ],
   "meta": {
-    "nodeCount": 46,
-    "edgeCount": 0,
-    "lastBuilt": "2026-06-06T13:59:37.696Z"
+    "nodeCount": 74,
+    "edgeCount": 124,
+    "lastBuilt": "2026-07-10T10:25:14.504Z"
   }
 }

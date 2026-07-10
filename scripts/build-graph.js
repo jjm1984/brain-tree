@@ -3,15 +3,25 @@
 const fs = require('fs');
 const path = require('path');
 
-// Simple frontmatter extractor — gets top-level key: value pairs only
-// Nested YAML is left as raw strings and not traversed (avoiding infinite loops)
+// Simple frontmatter extractor — gets top-level key: value pairs, plus one level
+// of nesting (both "subkey: value" and "subkey: [array]"). Deeper nesting (e.g.
+// exposed-roots list-of-objects) is left uncaptured, avoiding a full YAML parser.
+function parseScalar(val) {
+  if (val.startsWith('[') && val.endsWith(']')) {
+    return val.slice(1, -1).split(',').map(s => s.trim()).filter(Boolean);
+  }
+  if (val === 'true') return true;
+  if (val === 'false') return false;
+  return val.replace(/^['"]|['"]$/g, '');
+}
+
 function parseFrontmatter(content) {
   const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (!match) return {};
   const raw = match[1];
   const result = {};
   const lines = raw.split('\n');
-  
+
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     if (!line.trim() || line.startsWith(' ') || line.startsWith('\t')) continue;
@@ -20,21 +30,40 @@ function parseFrontmatter(content) {
     const key = line.slice(0, colonIdx).trim();
     const val = line.slice(colonIdx + 1).trim();
     if (!key) continue;
-    
+
     if (val === '' || val === '|' || val === '>') {
-      // Collect indented block as array or skip
+      // Collect indented block: dash-list items, or one level of "subkey: value" pairs
       const items = [];
+      const nested = {};
+      let hasNested = false;
       while (i + 1 < lines.length && (lines[i+1].startsWith('  ') || lines[i+1].startsWith('\t'))) {
         i++;
-        const item = lines[i].trim();
-        if (item.startsWith('- ')) items.push(item.slice(2).trim());
+        const nextLine = lines[i];
+        const trimmed = nextLine.trim();
+        if (trimmed.startsWith('- ')) {
+          items.push(trimmed.slice(2).trim());
+          continue;
+        }
+        // Only treat as a nested key at exactly one level of indent (2 spaces / 1 tab)
+        const isOneLevelDeep = (nextLine.startsWith('  ') && !nextLine.startsWith('    ') && !nextLine.startsWith('   ')) ||
+          (nextLine.startsWith('\t') && !nextLine.startsWith('\t\t'));
+        if (isOneLevelDeep) {
+          const subColon = trimmed.indexOf(':');
+          if (subColon !== -1) {
+            const subkey = trimmed.slice(0, subColon).trim();
+            const subval = trimmed.slice(subColon + 1).trim();
+            if (subkey && subval !== '') {
+              nested[subkey] = parseScalar(subval);
+              hasNested = true;
+            }
+          }
+        }
       }
-      if (items.length > 0) result[key] = items;
-    } else if (val.startsWith('[') && val.endsWith(']')) {
-      result[key] = val.slice(1, -1).split(',').map(s => s.trim()).filter(Boolean);
-    } else if (val === 'true') result[key] = true;
-    else if (val === 'false') result[key] = false;
-    else result[key] = val.replace(/^['"]|['"]$/g, '');
+      if (hasNested) result[key] = nested;
+      else if (items.length > 0) result[key] = items;
+    } else {
+      result[key] = parseScalar(val);
+    }
   }
   return result;
 }

@@ -4,18 +4,19 @@ layer: knowledge
 type: branch
 title: Relationships & Family
 state:
-  leaf: peripheral
-last-updated: 2026-06-06
+  leaf: yellow
+last-updated: 2026-07-09
 added-on: 2026-06-06
 connections:
   supports: [philo-what-people-are-for, philo-self-and-relation]
+  leaves: [leaf-marriage-as-intentional-correction, leaf-trait-inheritance-theory]
   challenges: []
-instrument: lived-experience
+instrument: multi
 ---
 
 # Relationships & Family
 
-*Peripheral — but load-bearing. Needs planting.*
+*Promoted from peripheral to yellow on 2026-07-09 — first real content planted (leaf-marriage-as-intentional-correction). The branch itself still needs its own shape (parenting, partnership, extended family) rather than growing ad hoc from whatever surfaces elsewhere.*
 
 This branch surfaces repeatedly through other branches — the daughter, parenting, being understood, the worth-machine's relational configuration — but has never had its own space. The Us v2.0 project is the first direct, sustained deployment of it against reality.
 

@@ -4,12 +4,12 @@ layer: knowledge
 type: leaf
 title: Reserves and Restoration — What Refills the Tank
 state:
-  leaf: yellow
-last-updated: 2026-06-06
+  leaf: green
+last-updated: 2026-07-05
 added-on: 2026-06-03
-instrument: lived-experience
+instrument: multi
 connections:
-  supports: [branch-aliveness, leaf-grit-without-signal, leaf-borrowed-peace]
+  supports: [branch-aliveness, leaf-grit-without-signal, leaf-borrowed-peace, mycelium-default-mode-network]
 ---
 
 # Reserves and Restoration
@@ -37,3 +37,13 @@ When work loses meaning or purpose becomes unclear, the motion continues — gri
 **The crash-recompile cycle connection:** The crash during leave is not failure and not rest. It is the parasympathetic system enforcing the maintenance the worth-machine would not permit voluntarily. Bushwalking and music work as reserves precisely because they activate the parasympathetic state — not by avoiding demand, but by removing the cortisol trigger. The body recompiles through purposeful purposelessness.
 
 Connected to: body-as-oracle (updated), audit-1-measurable-tripwires, force-preservation-principle.
+
+---
+
+## Confirmed and extended, 2026-07-05: nature/beach walking, science mechanism added
+
+J confirmed bushwalking-type activity (specifically beach/nature walking) as a genuine purposeless reserve form: no output, no audience, mind allowed to wander. In J's own account, purposelessness lets the mind enter default mode, which unlocks creativity and starts unpacking unprocessed thoughts — described directly as a 'reset/defrag.'
+
+This promotes the leaf from yellow to green: not just lived-experience confirmation but a named science mechanism (see mycelium-default-mode-network) — and an independent, unprompted echo of the same 'reset/defrag' language J used for the nervous system's crash-recompile cycle. The same underlying phenomenon, named twice, from two directions.
+
+**Clarifies (does not resolve) an open case:** this suggests J is not missing access to purposeful purposelessness generally — nature walking already occupies that category cleanly. See leaf-case-woodworking-purposeful-purposelessness for the harder, still-open case: woodworking may simply be a different thing — genuinely enjoyable, process-led, but still running through doing-worth/output rather than being purposeless. Not the same gap — possibly no gap at all, just two different categories of good.
