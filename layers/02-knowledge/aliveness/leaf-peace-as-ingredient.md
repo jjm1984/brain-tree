@@ -35,3 +35,9 @@ Path B: Internal peace is not available this season. The worth-machine is too lo
 *This crossroads is not a failing. Moving between these paths is not inconsistency — it is honest navigation of a real condition. The person who always claims to generate peace internally may not be telling the truth.*
 
 Open question: What determines which season you are in — and is the capacity to generate internal peace something that can be cultivated, or only recognised when present? The tree does not yet answer this.
+
+## Financial reserve as borrowed peace (2026-07-10, tension-held)
+
+"3 months for peace" — specific dollar figures named for J and Michelle individually to cover 3 months of expenses. On reflection, the seed here isn't the budgeting, it's the framing: financial reserve named explicitly as "peace," not just safety margin.
+
+**Tension:** This branch defines peace as internal alignment, not external calm, though it allows peace to be "borrowed from outside when not available internally." Money-as-peace is squarely the external-borrowing case — useful, but a substitute, not the source. If the reserve runs dry and internal peace was never built, the borrowing stops working. See philo-wealth-freedom for the fuller wealth/freedom material this connects to.

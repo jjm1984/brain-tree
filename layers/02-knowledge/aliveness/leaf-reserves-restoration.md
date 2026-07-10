@@ -38,6 +38,8 @@ When work loses meaning or purpose becomes unclear, the motion continues — gri
 
 Connected to: body-as-oracle (updated), audit-1-measurable-tripwires, force-preservation-principle.
 
+**Lived instance (2022, "I feel miserable"):** mid-life-crisis-came-early. Tired of working self to the bone, struggling to stay motivated at work, cranky with the kids. So busy doing things he doesn't want to do that there's no time or clarity on what he actually wants. Possible purpose vacuum — valuable additions like exercise feel empty without serving a purpose. Money earned no longer produces satisfaction; feels wasted rather than invested in anything valued. No part of life currently feels like a source of pride. J requested this be held open for a full dedicated working session, not filed as closed case-evidence — flagged as the likely dated origin-point for the wealth-freedom/purpose search that recurs through 2023-2025 (see philo-wealth-freedom), and as a direct lived instance of this leaf's grit-without-signal concept — but not to be treated as resolved by that framing alone.
+
 ---
 
 ## Confirmed and extended, 2026-07-05: nature/beach walking, science mechanism added

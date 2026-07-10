@@ -39,3 +39,11 @@ Eustress — positive, productive stress — as the trained operating fuel. The 
 **Philosophy made physiological:** The worth-machine is not only a conceptual framework — it has a biological substrate. The cortisol dependency IS the worth-machine expressed in the nervous system. Philosophy expressed as physiology.
 
 **What it is not:** Not weakness. Not dysfunction. Not a character failing. A trained configuration — built through years of high-demand, high-output living. The system did exactly what it was trained to do. The question is whether the configuration serves the values, or whether it is running on autopilot past its useful range.
+
+## Boredom as liminal space (2023-11-30)
+
+"Boredom is not nothing, it's not even the absence of inspiration. It's the inbetween, the transition from something your heart is dissatisfied with to something new." Image: going deep into the outback with lights on and seeing nothing; turning the lights off reveals more stars than ever seen, each with a string attached — pulling the string brings the idea, what the heart desires, closer and into greater detail. J clarified this functions inside default-mode-network state regardless of whether purpose ever emerges from it — see mycelium-default-mode-network as the primary placement, this leaf as a secondary cross-link, not a precursor stage to purposeful-purposelessness.
+
+## Quiet as a personal goal (2023-11-30)
+
+Personal goal, named directly: "live or regularly stay somewhere quiet so my mind can find rest." Connects to leaf-inner-witness — the conditions under which the witness stays audible.

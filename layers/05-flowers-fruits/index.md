@@ -111,6 +111,14 @@ When aliveness is present — the arrow in flight — you cannot tell which is w
 
 ---
 
+## philo-wealth-freedom
+
+**Flower:** The quiet that comes from imagining life with no limitations — what the image of a finished house, a paid-off loan, a long funded holiday actually feels like before it's earned. Named specific satisfaction drivers (2024-03-03): a finished house and shed, a ute, a funded long holiday, 100ac of property, a $3000 glasshouse. "Where does our family want to be planted" — mountains, cool climate, near family, 200+ac.
+
+**Fruit:** Passive income targets held as concrete milestones: $100/wk this year, $500/wk in 2-5 years, $100k/yr long term. "Freedom from slavery to the grindstone" named as the why — though the why itself is left underdeveloped, a genuine open thread rather than a resolved answer.
+
+---
+
 ## Dear reader
 
 This section exists because the aliveness branch revealed something the tree had not named: that every branch has a feeling-dimension and an action-dimension, and that when aliveness is fully present, the distinction collapses. The flowers listed here are not decorative. They are the signal that the branch is doing what it is supposed to do — not just producing fruit, but being alive in the producing.

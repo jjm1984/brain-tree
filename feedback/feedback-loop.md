@@ -547,6 +547,53 @@ Poetry branch intentionally left empty of deep leaves this session per J's instr
 
 ---
 
+### entry-038
+**Date:** 2026-07-10
+**State:** open
+**Type:** architectural-insight
+**Provenance:** Brain Builder project — session designing how the tree can train work-facing AI agents without personal information leaking into work context, while morals/philosophy still cross over.
+
+**Domain-split architecture (grounded — design complete, not yet implemented).** Roots and Trunk remain always-shared (domain: shared) since they are architecturally cross-cutting. Knowledge/Branches split explicitly per node via a required 'domain' field: personal | work | shared. Code and Map will likely fork per-domain once Code crystallises, both deriving from the same Roots/Trunk.
+
+**Correction to an earlier, wrong proposal.** The original idea (build-time lint rejecting personal↔work links) was wrong per J's steer: personal-scope viewers should see ALL connections. Fix: the full graph keeps every node/edge unfiltered; restriction is serve-time only. graph-personal.json = full graph, unfiltered. graph-work.json = filtered projection (work + shared nodes only, edges to personal nodes stripped at export time, not at authoring time). Same source data, two renders, scoped by viewer/agent access rather than by what's allowed to be authored.
+
+**Principle/genesis field split.** Every Roots/Trunk node splits into two fields within the same file (not two files), to preserve the provenance trail: 'principle' (abstracted, portable claim — work-agent reasoning reads ONLY this) and 'genesis' (voice samples, lived-experience exemplars, provenance narrative — personal-only, never exposed to work-scoped reasoning). This makes the abstraction itself the anonymization mechanism rather than a bolted-on redaction layer. Canonical file always retains both fields; only bounded derived exports omit genesis.
+
+**Portability field.** New required frontmatter field 'portability' with three states: grounded-standalone (principle holds on its own logic independent of personal grounding — safe to reason over at full weight anywhere it's shared), grounding-dependent (principle is real but its truth leans on the specific personal case that produced it — flagged as such, not faked as universal), ungrounded-abstract (not yet assessed; blocks work-export until resolved). J explicitly confirmed it's acceptable and consistent with his ethos for a principle to hold only because of specific personal grounding — what matters is that this is marked clearly, not hidden.
+
+**Portability-as-domain-weight resolves the earlier domain-relative-authority framing.** J's direction: portability should wire into Code-layer synthesis as a per-domain weight, following the same shape as the domain-relative-authority epistemology reframe (each instrument supreme within its own jurisdiction). Mechanism: grounded-standalone principles default to weight 1.0 in every domain they're tagged shared for. Grounding-dependent principles carry a domain_weight map (e.g. personal: 1.0, work: 0.4) — weight in the originating domain starts high; weight in other domains starts conservative (not zero — not excluded; not 1.0 — would recreate false universality) and must be EARNED through independent evidence in that domain, not inherited from the originating domain. When a grounding-dependent principle earns comparable weight in multiple domains through independently logged evidence, it can be promoted to grounded-standalone — promotion is a logged event (which domain closed the gap, when), not a silent field flip.
+
+**Leak-detection heuristic (forming, not yet implemented).** Flagged as a future build/monitoring implication: if a grounding-dependent principle's work-domain weight climbs without a corresponding logged work-domain evidence event, that's a signal of leakage around the principle/genesis split rather than honestly-earned weight. Worth building as an integrity check once Code-layer synthesis and evidence-logging exist.
+
+**Open question, not fully closed:** J confirmed work-agent reasoning gets access to Roots and Trunk (not just Knowledge/Branches), since Roots/Trunk are domain: shared — the principle/genesis split is the mechanism that prevents source-acknowledgment leakage at this layer specifically. Whether a sufficiently clever query chain against 'principle' text alone could still triangulate personal context indirectly through phrasing or implied exemplification, even with genesis fully withheld, is held as a residual risk to watch, not resolved this session.
+
+**Task:** Add required frontmatter field 'domain: personal | work | shared' to all Knowledge/Branch nodes (Roots/Trunk default to shared). Split all Roots/Trunk node content into 'principle' and 'genesis' fields per spec above. Add required frontmatter field 'portability: grounded-standalone | grounding-dependent | ungrounded-abstract' to all Roots/Trunk nodes. Add 'domain_weight' map field (per-domain float) to grounding-dependent nodes, with a logged promotion-event mechanism for transitions to grounded-standalone. Build script: emit graph-personal.json (full, unfiltered) and graph-work.json (work + shared nodes only, personal-linked edges stripped at export) instead of a single graph.json. Work-agent MCP server config: hard-point search_tree()/get_gap_queue() at graph-work.json specifically (a physical access boundary, not a runtime filter). Code-layer synthesis logic (when built): read domain_weight[requesting_domain] as a multiplier on principle contribution per domain-specific Code-strand. Future: leak-detection heuristic once Code layer and evidence-logging exist.
+
+**Suggested state:** grounded (design), not implemented — this is a substantial schema migration across every Roots/Trunk node plus a build-script rework, and should be a deliberate, separate engineering pass rather than something retrofitted silently.
+**Cross-connections:** entry-013 (epistemic_tag enforcement), entry-015 (Obsidian/GitHub port gap), entry-014 (domain-relative-authority epistemology reframe — the conceptual ancestor of the domain-weight mechanism, though a different axis: instruments vs. personal/work domains)
+
+---
+
+### entry-039
+**Date:** 2026-07-10
+**State:** open
+**Type:** architectural-insight
+**Provenance:** Brain Builder project — consolidated backlog audit pass across 13 project chats (2026-05-16 to 2026-07-10) and the /goal dev-agent spec, cross-checking what's designed against what's actually committed to the canonical GitHub repo.
+
+Two infrastructure specs designed in prior sessions, not yet implemented, worth preserving here so they aren't lost between Drive and GitHub:
+
+**VIZ_SPEC (viewer design).** Written in full in an earlier session: the trunk visualised as a braid of N principle-strands, layout computed once in the build script and baked into graph.json (not recomputed client-side), colour mapped to epistemic instrument, brightness mapped to leaf/philosophy state, branch vs. web edges rendered as different geometries. Not yet implemented in the current index.html viewer, which colours by layer (not instrument) and doesn't distinguish branch/web edge geometry — a simpler v1, not this spec. Worth revisiting if the viewer gets a deeper pass.
+
+**Dev agent (MCP server + SQLite + sqlite-vec).** Per the /goal spec: search_tree(), get_gap_queue(), pin_item(), record_review_decision(). A background agent that surfaces gap findings as reflective questions/references only — never drafts or commits on its own. Phase 1: chat-triggered pinning. Phase 2: standalone app with an OS share target. The "mindstone" repo was flagged elsewhere as a pattern reference for this.
+
+**Also flagged, not actioned:** superseded Drive files (multiple old ai-brain*.json versions, plus an original empty file) should be cleaned up — no delete capability available to Claude, requires manual action by J.
+
+**Suggested state:** both specs logged as designed-not-built; not blocking current work.
+**Cross-connections:** entry-013, entry-015, entry-038 (domain-portability-split, which the dev agent's graph-work.json access boundary directly depends on)
+**Epistemic tag:** philosophy
+
+---
+
 ## Harvest Log
 
 *(Empty — no entries harvested yet)*

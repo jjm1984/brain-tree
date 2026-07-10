@@ -29,3 +29,7 @@ The blood panel is the diagnostic instrument. Without it, the other systems cann
 ## Key principle
 
 You cannot audit the worth-machine clearly when the substrate it runs on is depleted. The inner witness becomes harder to access when the system is running on poor fuel. Nutrition is not vanity infrastructure — it is a precondition for the philosophical work.
+
+## Daily logistics (peripheral, 2023-11-30)
+
+Meal planning → grocery list, streamlined breakfast, easy dinners and lunches, homework tutor, dinner-to-bedtime focus on kids. Plain Map-layer logistics — named here as the operational layer this mycelium node eventually cashes out into, not yet built out further.

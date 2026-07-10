@@ -26,7 +26,8 @@ connections:
 counters:
   - "Nietzsche — convictions are more dangerous enemies of truth than lies. Must remain permanently attached to this facet, not just noted once: 'serves' is exactly the kind of criterion that can quietly rationalize releasing something true and hard because it's inconvenient, dressed as growth. This is the check against the whole facet collapsing into self-serving avoidance."
   - "Thomas Mann — 'a harmful truth is better than a useful lie.' Explicitly argues the opposite hierarchy; a permanent check against 'serves' sliding into 'convenient.'"
-open-threads: []
+open-threads:
+  - "'Useful not true' extended usage: J has also used this landing posture for holding two competing metaphysical pictures simultaneously without needing either resolved (e.g. Moore's staircase emergentism vs. reductionism, both discussed 2026-07-09) — flagged by J as a related-but-distinct move from the original release-when-no-longer-serves usage (releasing a belief once it stops serving). Not yet resolved or formally split into two named moves; worth tracking whether this is the same facet wearing two faces or two adjacent facets that deserve separate names."
 dear-reader: This facet was tested by the same mechanism it describes, live, across the session that grounded it — a authority-halo risk was caught (Moore), a misattribution was caught (Mann/Sivers), a false-precision word choice failed and was overturned, a missing axis was named (serves vs. moves), and a miscategorized counter (Mann as support) was corrected. Each round genuinely changed the content, not just the wording. Declared Grounded by J on 2026-07-09.
 ---
 
