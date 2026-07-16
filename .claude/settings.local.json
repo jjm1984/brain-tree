@@ -17,7 +17,8 @@
       "mcp__claude_ai_Google_Drive__read_file_content",
       "Bash(gh repo *)",
       "Bash(gh api *)",
-      "mcp__claude_ai_Google_Drive__get_file_metadata"
+      "mcp__claude_ai_Google_Drive__get_file_metadata",
+      "Bash(rm \"C:\\\\Users\\\\urban\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Projects-brain-tree\\\\040f1c2a-1d00-4d82-8a4b-9503e08311b1\\\\scratchpad\\\\viz_spec.b64\")"
     ]
   }
 }
