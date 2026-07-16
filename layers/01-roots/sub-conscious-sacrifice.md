@@ -62,3 +62,4 @@ The toxic job departure. Named value: the family system and the life being built
 - **Bushido / warrior ethics** — the willingness as non-negotiable; the act as subject to code. `yellow resonant`
 - **Just war theory** — proportionality as a condition of legitimate action. `yellow resonant`
 - **Roman officium** — duty that flows from role, but role bounded by what the instrument can sustain. `yellow peripheral`
+- **Jordan Peterson — Maps of Meaning, voluntary confrontation with chaos** (2026-07-11) — voluntary engagement with uncertainty/suffering produces meaning rather than resentment, distinguishing chosen hardship from imposed hardship. Cross-validated: converges independently with Frankl's logotherapy (meaning through voluntarily-metabolized suffering) and Csikszentmihalyi's flow (optimal experience at the edge of capacity, entered by choice) — three independent traditions arriving at the same shape. `yellow resonant`

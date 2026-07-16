@@ -53,6 +53,16 @@ The audit's job is to figure out which.
 
 **5. Body as oracle** — Treating physical signals as DATA, not nuisance. The body knows when it's broken; the question is whether you've trained yourself to hear or override. Works in both directions — signals depletion AND restoration. The worth-machine only listens to the depletion report — because restoration is not productive. The audit framework must listen to both. Acknowledged: 'this is how I got here — looking to hack the body, get an octane boost because the check engine light is on!' The worth-machine's signature move is trying to disable the warning light to keep driving.
 
+## Trigger reframe: resentment, not phrase (2026-07-11, resolved)
+
+The candidate "Nobody cares, work harder" trigger phrase (feedback-loop entry-008) is reframed: the trigger is not the PHRASE but RESENTMENT specifically — the tell that necessary responsibility has become an unvoiced invoice.
+
+Motivation is kept as valid and unaudited: most force-solvable problems (income, physical capacity, task) genuinely do yield to effort. Caution scoped explicitly: the belief misfires on relational/presence-based problems (marriage, a child, "no dragon" problems) which are not force-solvable, and applying it there risks producing the very overfunctioning it's meant to catch.
+
+**Crossroads named, not collapsed:** "owning it" (effort chosen and closed, no debt) vs. Martha syndrome (serving while resentment silently accrues for being unseen) — same external behaviour, opposite internal accounting.
+
+**Pre-committed response:** when resentment-flavour fires, the move is "voice the cost out loud, to someone, before it compounds" — not "work less."
+
 ## Operational next move
 
 Write the code, v0.1. Deliverables:

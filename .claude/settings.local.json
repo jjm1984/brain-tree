@@ -14,7 +14,10 @@
       "Bash(npx --yes playwright screenshot --wait-for-timeout=4500 --viewport-size=1400,900 http://localhost:8791/index.html \"viewer-fitted.png\")",
       "Bash(npx --yes playwright screenshot --wait-for-timeout=4500 --viewport-size=1400,900 http://localhost:8791/index.html \"viewer-fitted2.png\")",
       "Bash(pkill -f \"serve.js\")",
-      "mcp__claude_ai_Google_Drive__read_file_content"
+      "mcp__claude_ai_Google_Drive__read_file_content",
+      "Bash(gh repo *)",
+      "Bash(gh api *)",
+      "mcp__claude_ai_Google_Drive__get_file_metadata"
     ]
   }
 }

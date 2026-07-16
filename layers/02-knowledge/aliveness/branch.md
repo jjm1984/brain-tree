@@ -9,7 +9,7 @@ last-updated: 2026-07-05
 added-on: 2026-06-03
 instrument: lived-experience
 connections:
-  supports: [philo-how-to-live, philo-meaning, philo-embodiment, philo-courage, branch-self-worth-identity]
+  supports: [philo-how-to-live, philo-meaning, philo-embodiment, philo-courage, branch-self-worth-identity, leaf-desire-and-embodied-need]
 ---
 
 # Aliveness

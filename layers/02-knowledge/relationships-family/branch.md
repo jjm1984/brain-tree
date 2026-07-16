@@ -9,7 +9,7 @@ last-updated: 2026-07-09
 added-on: 2026-06-06
 connections:
   supports: [philo-what-people-are-for, philo-self-and-relation]
-  leaves: [leaf-marriage-as-intentional-correction, leaf-trait-inheritance-theory]
+  leaves: [leaf-marriage-as-intentional-correction, leaf-trait-inheritance-theory, leaf-withdrawal-repair-pattern]
   challenges: []
 instrument: multi
 ---

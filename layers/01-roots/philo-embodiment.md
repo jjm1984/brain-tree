@@ -9,7 +9,7 @@ last-updated: 2026-06-06
 added-on: 2026-06-06
 instrument: philosophy
 connections:
-  supports: [branch-physical-wellbeing, leaf-triad, branch-aliveness]
+  supports: [branch-physical-wellbeing, leaf-triad, branch-aliveness, leaf-desire-and-embodied-need]
   challenges: []
 ---
 

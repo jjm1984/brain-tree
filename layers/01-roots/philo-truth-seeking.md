@@ -30,6 +30,22 @@ Triggered by the Moore dialogic-humility thread. J explicitly rejects relativism
 
 This is the philosophical justification underneath the tree's own structural principles (Counters, Crossroads, Dear Reader) — they exist because this is how J believes truth is actually approached.
 
+## Philosophy-Science Migration — The Alchemy Principle (2026-07-11)
+
+Philosophy and science were historically undifferentiated (natural philosophy; "scientist" was not coined until Whewell, 1833). A philosophical claim about how the world works migrates into science's jurisdiction at the moment it becomes falsifiable in principle AND is actually tested and survives (Popper's demarcation criterion) — this is the tree's own belief earn/lose loop (Trunk line 2: idea → hypothesis → testing → provisional theory → action) operating at civilisational scale across centuries rather than within one person's reasoning.
+
+Concrete historical case: alchemy contained real proto-chemical technique (distillation, substance isolation, systematic experiment — Boyle, Newton) wrapped in a mystical transmutation framework. The mystical wrapper and the emerging chemistry were not separate activities — they were the same activity, differentiated only in retrospect once testable claims were isolated from untestable ones. "Yesterday's magic is today's alchemy, tomorrow's science."
+
+**Critical scope boundary:** applies ONLY to empirical/natural-philosophy claims (claims about how the world works, testable in principle). Does NOT apply to normative/value claims (ethics, meaning, aesthetics) — these are categorically different (Hume's is-ought gap, already used in leaf-moore-staircase-structural-method) and are not science-in-waiting. Without this boundary, the migration principle would quietly demote all of philosophy to "science we haven't gotten to yet," collapsing the five-instrument architecture's core claim that each instrument is supreme in its own jurisdiction, not ranked by maturity.
+
+**Contrast with Peterson:** Peterson runs science → philosophy → myth and blurs the seams — using earned authority from peer-reviewed trait science (Big Five, Openness; see DeYoung, Quilty & Peterson 2007 under leaf-trait-worth) to backstop an untested mythological claim (order/chaos as universal meaning-source) without marking where the science stops and the myth begins. J's stated approach runs the reverse direction (philosophy → science) with the seam kept visible: philosophy generates the hypothesis; it earns science's jurisdiction only once actually tested; the crossing is tracked with provenance, not smuggled. This is the key structural difference between the two approaches, not just a difference of direction.
+
+Candidate schema implication, not yet implemented: a `migration-candidate: true/false` frontmatter marker for philosophy leaves, naming what would need to be tested for a claim to earn science's jurisdiction.
+
+## A lived example of naming an expertise boundary (2026-07-11)
+
+J explicitly named reaching the edge of his own domain expertise on the epistemology question (entry-014 — the jurisdictional-authority wording now resolved in meta/epistemology.md) rather than forcing an answer. This is a live instance of this philosophy's own stance — honestly naming the boundary of what one can judge is itself intellectual honesty, not a gap in the work.
+
 ## Three axes for weighing corroborating sources (2026-07-09)
 
 Surfaced while grounding trunk-belief-release-when-no-longer-serves: J caught an unintended chronological-primacy bias in how sources were being weighted (older treated as more foundational than modern). Correcting the framing separated three distinct axes that had been collapsed into one:

@@ -28,4 +28,16 @@ Generalizes leaf-skill-audience-motivation-mapping from a single listener to N s
 
 **Open question (sharper version of the one already open on philo-people-before-process):** J described the circumspect frame as specifically NOT getting stuck in his own motivations — attention moves outward, toward others. Worth asking directly: does that same circumspect attention ever turn reflexively onto J's own motivations, examined with the same rigor applied to everyone else at the table? Or does the technique work partly *because* it routes attention away from self-examination in the moment? Not answered here — named as the sharper version of the question already open.
 
+## Extension: Organic Audience Concentration — distinct from the deliberate translator-move (2026-07-11)
+
+This leaf already grounds a DELIBERATE mechanism: consciously choosing language/instrument native to a specific audience to help a claim land (the Cain-and-Abel move in leaf-moore-staircase-structural-method is the clearest existing instance). A second, distinct mechanism is named here: ORGANIC audience concentration, where the same underlying translation capacity produces audience skew without any targeting at all — because certain source material has pre-existing conceptual furniture that a specific readership already owns, so the fit happens on contact.
+
+J's example: Jordan Peterson's readership skewing religious, Stoic-adjacent, and right-leaning is plausibly not deliberate targeting but organic growth from his source palette (Christian myth reinterpretation, hierarchy-of-competence, individual-responsibility framing) resonating with pre-existing frameworks his readers already hold. Resonance and targeting are separate mechanisms that can produce the same visible outcome (audience concentration) by entirely different routes — one intentional, one emergent.
+
+**Self-applied caution:** named as a real, live caution for this tree specifically, not just an observation about Peterson — this tree's own source palette (Stoicism, warrior ethics, Bushido, Roman officium, capacity-and-hardship framing, philo-orthodoxy-orthopraxy) is structurally similar to the palette that organically concentrated Peterson's readership. See meta/principles.md (Dear Reader section) for the full statement of this caution.
+
+## Speculative addition: bisociation (2026-07-11, held open per J's explicit caution against overclaiming)
+
+Arthur Koestler's bisociation theory (*The Act of Creation*) argues creative novelty in humor, art, and discovery arises specifically from connecting two previously unconnected frames of reference, not from recombination within a single existing space. J's translator-role skill (finding how one initiative genuinely serves stakeholders whose goals had no prior connection) may be a live instance of bisociative work rather than pure combinational translation — but this is NOT asserted as resolved. Flagged as a real possibility worth holding, in tension with J's own self-assessment as "translator, not creator." `state: yellow, speculative, explicitly not asserted as settled` `epistemic tag: philosophy`
+
 Replication readiness: draft. Confidentiality: open.

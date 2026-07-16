@@ -31,6 +31,8 @@ I am worthy because I have desirable properties. Self-as-property: bravery, pers
 
 Original sub-questions: 'Am I someone who succeeds? Am I someone who gives up when it's tough? Do I think I am at least moderately attractive? Am I someone who lets people down?'
 
+**Scientific backbone (2026-07-11, epistemic tag: science):** DeYoung, C.G., Quilty, L.C., & Peterson, J.B. (2007) factor-analyzed the Big Five into 10 aspects (two per trait) and proposed distinct biological substrates for each, using cross-correlated data samples from the International Personality Item Pool. Genuinely peer-reviewed, independently citable — distinct from Peterson's *Maps of Meaning* and *12 Rules for Life*, and correctly tagged `science` rather than `philosophy` or `myth-form`. Gives this leaf real scientific backbone if developed further.
+
 ---
 
 ## Leaf: Inherent Worth
@@ -90,3 +92,35 @@ The asymmetry between being loved (Validation) and loving well (Caring) is criti
 I am worthy because I belong to the web of being. Ubuntu, agape, Buddhist interdependence. The empty cell in the substrate × source matrix. Surfaced 2026-05-31 as a known gap. No leaf currently planted here.
 
 Speculative inference: Purposeful purposelessness may be the closest lived experience to belonging-worth — worth prior to evaluation, prior to relationship, prior to the worth-machine. The walk that asks nothing of you. This may be where the empty cell starts to fill.
+
+---
+
+## Leaf: Legend/Legacy Worth
+
+**id:** leaf-legend-legacy-worth
+**State:** green — placed, 2026-07-11
+
+Proof of worth through a single, externally-recorded, permanent, public moment. Doing-substrate (same as coherence-worth) but a distinct source-of-validation metadata axis: historical record, not who's-watching. Binary — never partially achieved.
+
+Confirmed by J as held consciously, not targeted for retirement ("I don't shy away from real or felt things") — distinguish explicitly from the audit-framework's pattern-(c) worth-machine hijack, since this is named/examined, not running unverbalized.
+
+Domain-specific, not a constant background hum: active in vocation/army-record material (confirmed twice independently — the original Africa case, and the reserve-soldier/dragon material), explicitly NOT active in the financial-reserve domain (years of unwitnessed effort there accepted without needing a legend-moment — see leaf-peace-as-ingredient).
+
+Cross-link to entry-034 (self-generated coherence-worth reframe: "twenty-five years of faithful work, not a few months of notoriety") — the reframe was real but did not fully close the brotherhood-recognition-tier gap specifically (see Recognition Taxonomy below).
+
+---
+
+## Leaf: Recognition Taxonomy
+
+**id:** leaf-recognition-taxonomy
+**State:** green — placed, lived-experience tagged, explicitly not generalized, 2026-07-11
+
+Three-tier taxonomy, personal mechanism only. J explicit: "this isn't normal, should live as personal experience not a transmutable/universal concept."
+
+1. **Contestable recognition** (ordinary compliments) — doesn't land for J; inner voice always finds a counter/reason-not-truly-worthy.
+2. **Stranger-legible recognition** (medal, legend) — lands because it requires zero context to decode; cost is self-evident in the object/story itself, no digging required, immune to contest because it's historical fact, not opinion.
+3. **Brotherhood recognition** (peer-status within a specific trained community) — the hardest tier, requires shared context rather than none. J names a real, confirmed-external (not self-inferred) gap: trained as hard and longer than peers, holds long-service and integrity/work-well-done commendations, but lacks the operational marker that would grant full peer-recognized status within that specific community. Explicitly confirmed by J as a real external loss, not a distortion to audit away — held as such, not routed back into the audit framework for correction.
+
+**Diagnostic surfaced:** what makes tier-2/3 land where tier-1 doesn't is CONTESTABILITY, not scale — the inner critic needs room to argue, and immutable/externally-confirmed fact doesn't leave any.
+
+**Open question (not resolved):** whether legend-worth is fully immune to the inner critic or just relocates the contestable edge (e.g. Africa grief surfaced after genuinely extraordinary unwitnessed action — "it wasn't recorded/public enough" may be the critic finding a new foothold).

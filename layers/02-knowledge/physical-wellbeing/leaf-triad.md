@@ -9,7 +9,7 @@ last-updated: 2026-06-06
 added-on: 2026-06-06
 instrument: philosophy
 connections:
-  supports: [philo-embodiment, branch-aliveness]
+  supports: [philo-embodiment, branch-aliveness, leaf-desire-and-embodied-need]
 ---
 
 # The Personal Triad — Happy, Strong, Healthy
