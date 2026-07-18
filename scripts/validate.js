@@ -11,7 +11,12 @@ const path = require('path');
 
 // Reuse frontmatter parser from build-graph
 function parseFrontmatter(content) {
-  const match = content.match(/^---\n([\s\S]*?)\n---/);
+  // \r?\n tolerates both LF and CRLF line endings -- the working tree can end up
+  // with either depending on git's core.autocrlf and what last touched a file
+  // (checkout/rebase can silently convert LF to CRLF), and this parser previously
+  // required a literal \n, which meant CRLF files failed to match at all and were
+  // silently skipped as "not a node" rather than validated.
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (!match) return { frontmatter: null };
   // Minimal parse — just extract key: value pairs at top level
   const raw = match[1];
@@ -42,15 +47,26 @@ function walkDir(dir, fileList = []) {
   return fileList;
 }
 
-const VALID_LAYERS = ['mycelium', 'roots', 'knowledge', 'code', 'map', 'flowers-fruits', 'meta'];
-const VALID_TYPES = ['layer', 'branch', 'philosophy', 'leaf', 'inference', 'feedback-entry', 'principle'];
+const VALID_LAYERS = ['mycelium', 'roots', 'knowledge', 'code', 'map', 'flowers-fruits', 'meta', 'skills-meta'];
+const VALID_TYPES = ['layer', 'branch', 'philosophy', 'leaf', 'inference', 'feedback-entry', 'principle', 'skill-reference', 'meta-skill'];
 const VALID_INSTRUMENTS = ['philosophy', 'science', 'lived-experience', 'myth-form', 'religion', 'multi'];
+
+// SKILL.md files (skills/SKILL-CREATION.md) are a deliberately different artifact,
+// not a tree node -- short, in-the-moment instruments with their own frontmatter
+// contract (skill/title/for/written-for/grounded-in/full-reference/status), not
+// id/layer/type. Validated against that contract instead of the universal schema.
+const SKILL_REQUIRED_FIELDS = ['skill', 'title', 'for', 'written-for', 'grounded-in', 'full-reference', 'status'];
+// description is required by SKILL-CREATION.md but reported separately (not blocking)
+// since it postdates the first two skills built before the spec existed.
+const SKILL_RECOMMENDED_FIELDS = ['description'];
 
 function validate() {
   const repoRoot = path.join(__dirname, '..');
   const files = walkDir(repoRoot);
   const issues = [];
+  const warnings = [];
   const ids = new Set();
+  const skillIds = new Set();
 
   files.forEach(filePath => {
     const rel = path.relative(repoRoot, filePath);
@@ -61,11 +77,41 @@ function validate() {
       return; // Skip files without frontmatter — not all .md files are nodes
     }
 
-    // Required fields
-    if (!frontmatter.id) issues.push({ file: rel, issue: 'Missing required field: id' });
-    if (!frontmatter.layer) issues.push({ file: rel, issue: 'Missing required field: layer' });
-    if (!frontmatter.type) issues.push({ file: rel, issue: 'Missing required field: type' });
-    if (!frontmatter.title) issues.push({ file: rel, issue: 'Missing required field: title' });
+    if (path.basename(filePath) === 'SKILL.md') {
+      // frontmatter[field] === undefined means the key never appeared at all.
+      // An empty string means the key appeared with a block-style YAML value
+      // (e.g. `grounded-in:` followed by indented `- item` lines) -- present,
+      // just not inline-parseable by this minimal parser. Only true absence
+      // should fail the required-field check.
+      SKILL_REQUIRED_FIELDS.forEach(field => {
+        if (frontmatter[field] === undefined) issues.push({ file: rel, issue: `Missing required field: ${field}` });
+      });
+      SKILL_RECOMMENDED_FIELDS.forEach(field => {
+        if (frontmatter[field] === undefined) warnings.push({ file: rel, issue: `Missing recommended field: ${field} (per skills/SKILL-CREATION.md)` });
+      });
+      if (frontmatter.skill) {
+        if (skillIds.has(frontmatter.skill)) {
+          issues.push({ file: rel, issue: `Duplicate skill ID: "${frontmatter.skill}"` });
+        }
+        skillIds.add(frontmatter.skill);
+      }
+      if (frontmatter['written-for'] && !['human', 'agent', 'multi'].includes(frontmatter['written-for'])) {
+        issues.push({ file: rel, issue: `Invalid written-for: "${frontmatter['written-for']}" (expected human, agent, or multi)` });
+      }
+      const dateFields = ['last-updated', 'added-on'];
+      dateFields.forEach(field => {
+        if (frontmatter[field] && !/^\d{4}-\d{2}-\d{2}$/.test(frontmatter[field])) {
+          issues.push({ file: rel, issue: `Invalid date format for ${field}: "${frontmatter[field]}" (expected YYYY-MM-DD)` });
+        }
+      });
+      return; // SKILL.md doesn't carry id/layer/type/instrument -- skip the universal checks below
+    }
+
+    // Required fields (=== undefined, not falsy -- see the SKILL.md block above for why)
+    if (frontmatter.id === undefined) issues.push({ file: rel, issue: 'Missing required field: id' });
+    if (frontmatter.layer === undefined) issues.push({ file: rel, issue: 'Missing required field: layer' });
+    if (frontmatter.type === undefined) issues.push({ file: rel, issue: 'Missing required field: type' });
+    if (frontmatter.title === undefined) issues.push({ file: rel, issue: 'Missing required field: title' });
 
     // Valid values
     if (frontmatter.layer && !VALID_LAYERS.includes(frontmatter.layer)) {
@@ -94,6 +140,14 @@ function validate() {
       }
     });
   });
+
+  if (warnings.length > 0) {
+    console.warn(`⚠ ${warnings.length} warning(s) (non-blocking):\n`);
+    warnings.forEach(({ file, issue }) => {
+      console.warn(`  ${file}\n    → ${issue}`);
+    });
+    console.warn('');
+  }
 
   if (issues.length === 0) {
     console.log(`✓ All ${files.length} files valid`);
