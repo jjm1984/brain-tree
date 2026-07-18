@@ -1,6 +1,7 @@
 ---
-skill: things-to-teach-kids
+name: things-to-teach-kids
 title: Raising Kids Who Can Spot What's Healthy and Have Room to Become Who They Are
+description: A two-pillar guide for raising kids toward relational literacy (recognising love bombing, gaslighting, and control; knowing what a securely attached, well-adjusted person looks like) and toward a grounded, independent sense of identity (land connection, working with hands, structured independence). Use when a human is deciding what to teach their kids about relationships, character, or identity, or what to spend family time on instead of screens.
 for: [parents raising kids toward relational literacy and a grounded, independent sense of self]
 written-for: human
 status: forming — second skill in the family skills library, drafted 2026-07-18, explicit schema test of skill #1's format

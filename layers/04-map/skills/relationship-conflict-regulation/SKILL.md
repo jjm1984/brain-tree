@@ -1,6 +1,7 @@
 ---
-skill: relationship-conflict-regulation
+name: relationship-conflict-regulation
 title: Understanding and Responding to Relationship Conflict
+description: A five-step in-the-moment sequence (recognise the shape, regulate, borrow peace, inner witness, reconnect) for responding to relationship conflict, disproportionate reactions, or withdrawal. Use when a human is navigating a partner or family conflict, a meltdown, or someone shutting down mid-conversation, and wants language for de-escalating in the moment rather than after the fact.
 for: cost-gated care — for anyone the regulation cost is worth bearing for (typically partners, children, close friends). Not for relationships where the cost isn't reciprocated or isn't yours to bear (coworkers, acquaintances, strangers). The criterion is the cost-worth-bearing test itself, not relationship category.
 keywords: [parenting, partner conflict, relationship regulation, co-regulation, family conflict, kids meltdown, couples communication, relational skills, de-escalation, withdrawal, nervous system regulation]
 written-for: human

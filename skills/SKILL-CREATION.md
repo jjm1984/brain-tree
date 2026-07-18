@@ -41,22 +41,23 @@ Every skill is two files in its own directory:
 
 ## Required frontmatter fields
 
+`name` and `description` are not just this project's convention — they
+are the exact two fields Claude's real Agent Skills mechanism reads
+for discovery (see "Matching the real Agent Skills format" below).
+Field names and constraints must match precisely, even though nothing
+in this repo auto-triggers today.
+
 ```yaml
-skill: kebab-case-id
+name: kebab-case-id
 title: Human-readable title
-description: >
-  ONE line, written for an agent deciding whether to load this skill.
-  What triggers it, what it's for. This is the equivalent of a real
-  SKILL.md's trigger description — write it the same way you'd write
-  one for a coding tool: specific enough to match, not so broad it
-  fires on everything adjacent.
-for: >
-  A testable CRITERION, not a category list. E.g. "cost-gated care —
-  for anyone the regulation cost is worth bearing for" rather than
-  "for partners and family." A criterion generalizes; a category list
-  has to be manually extended every time a new relationship type comes
-  up. See cost-gated-care as the reusable pattern for any skill that
-  costs the executor something.
+description: ONE line, written for an agent deciding whether to load this skill. What triggers it, what it's for. This is the equivalent of a real Agent Skill's trigger description — write it the same way you'd write one for a coding tool: specific enough to match, not so broad it fires on everything adjacent.
+  # Write this as a SINGLE LINE, not a YAML folded scalar (`>`). This
+  # repo's frontmatter parser (scripts/validate.js, scripts/build-
+  # graph.js) is a minimal flat key:value reader, not a real YAML
+  # parser -- a multi-line `>` block gets misread and can silently
+  # corrupt other fields (this happened once already, in a reference.md
+  # provenance field). Keep every frontmatter value on one line.
+for: A testable CRITERION, not a category list. E.g. "cost-gated care — for anyone the regulation cost is worth bearing for" rather than "for partners and family." A criterion generalizes; a category list has to be manually extended every time a new relationship type comes up. See cost-gated-care as the reusable pattern for any skill that costs the executor something.
 written-for: human | agent | multi
   # See "written-for, precisely" below. This is NOT the same field as
   # `for` — do not collapse them.
@@ -80,6 +81,35 @@ grounded-in: [tree-node-ids this skill draws from]
 full-reference: reference.md
 status: forming | tested-once | stable
 ```
+
+## Matching the real Agent Skills format
+
+These are not skills the current Claude Code instance can load or
+auto-trigger — confirmed 2026-07-18, and by design (see Placement
+below). But the frontmatter is deliberately kept format-compatible
+with Claude's actual Agent Skills mechanism, on the explicit basis
+that agent capability will grow and this shouldn't need a rewrite
+later. Per Anthropic's published spec (docs.claude.com,
+agents-and-tools/agent-skills/overview, confirmed 2026-07-18):
+
+- **Only `name` and `description` are read by the real mechanism.**
+  Every other field here (`for`, `written-for`, `keywords`,
+  `source-leaf`, `relationship`, `composes-with`, `grounded-in`,
+  `full-reference`, `status`, `title`) is this project's own
+  extension — harmless to a real Skill loader (extra frontmatter keys
+  are simply ignored), but not load-bearing for real discovery.
+- **`name` constraints:** max 64 characters. Lowercase letters,
+  numbers, and hyphens only. No XML tags. Cannot contain the words
+  "anthropic" or "claude".
+- **`description` constraints:** non-empty, max 1024 characters, no
+  XML tags. Must state both *what the skill does* and *when to use
+  it* — matching this spec's own `description` field guidance above,
+  which was already written this way independently.
+- **Discovery location:** Claude Code only auto-discovers skills from
+  `.claude/skills/` (project) or `~/.claude/skills/` (personal).
+  Nothing under `skills/` or `layers/04-map/skills/` is scanned —
+  this is why nothing here can trigger today, independent of
+  frontmatter correctness.
 
 ## `written-for`, precisely
 
@@ -152,3 +182,13 @@ its own top-level layer or stays a Map-layer sub-type is an open
 architectural question — see `layers/04-map/index.md` and
 `meta/principles.md`. Do not resolve this unilaterally when building a
 new skill; if it comes up, flag it, don't decide it.
+
+**Deliberately not placed in `.claude/skills/`.** Confirmed with J,
+2026-07-18: these skills are not meant to auto-trigger for this Claude
+Code instance. They're written for a human (J) to call up and
+translate into his own workflow, or for a future agent whose
+capabilities have grown beyond what's available today — not for this
+session to load automatically. Do not move any skill into
+`.claude/skills/` or `~/.claude/skills/` without an explicit decision
+to actually enable auto-triggering; format-compatibility and
+discoverability are intentionally kept separate.

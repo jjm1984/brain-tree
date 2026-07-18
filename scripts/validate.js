@@ -53,12 +53,15 @@ const VALID_INSTRUMENTS = ['philosophy', 'science', 'lived-experience', 'myth-fo
 
 // SKILL.md files (skills/SKILL-CREATION.md) are a deliberately different artifact,
 // not a tree node -- short, in-the-moment instruments with their own frontmatter
-// contract (skill/title/for/written-for/grounded-in/full-reference/status), not
-// id/layer/type. Validated against that contract instead of the universal schema.
-const SKILL_REQUIRED_FIELDS = ['skill', 'title', 'for', 'written-for', 'grounded-in', 'full-reference', 'status'];
-// description is required by SKILL-CREATION.md but reported separately (not blocking)
-// since it postdates the first two skills built before the spec existed.
-const SKILL_RECOMMENDED_FIELDS = ['description'];
+// contract (name/title/description/for/written-for/grounded-in/full-reference/
+// status), not id/layer/type. `name` and `description` are also the exact two
+// fields Claude's real Agent Skills mechanism reads for discovery, so their
+// format constraints below are enforced precisely, even though nothing in this
+// repo is placed where it would actually auto-trigger (see SKILL-CREATION.md
+// "Placement" -- deliberate, not an oversight).
+const SKILL_REQUIRED_FIELDS = ['name', 'title', 'description', 'for', 'written-for', 'grounded-in', 'full-reference', 'status'];
+const SKILL_NAME_PATTERN = /^[a-z0-9-]{1,64}$/;
+const SKILL_RESERVED_WORDS = ['anthropic', 'claude'];
 
 function validate() {
   const repoRoot = path.join(__dirname, '..');
@@ -86,14 +89,32 @@ function validate() {
       SKILL_REQUIRED_FIELDS.forEach(field => {
         if (frontmatter[field] === undefined) issues.push({ file: rel, issue: `Missing required field: ${field}` });
       });
-      SKILL_RECOMMENDED_FIELDS.forEach(field => {
-        if (frontmatter[field] === undefined) warnings.push({ file: rel, issue: `Missing recommended field: ${field} (per skills/SKILL-CREATION.md)` });
-      });
-      if (frontmatter.skill) {
-        if (skillIds.has(frontmatter.skill)) {
-          issues.push({ file: rel, issue: `Duplicate skill ID: "${frontmatter.skill}"` });
+      if (frontmatter.name) {
+        // Real Agent Skills `name` constraints (docs.claude.com/agents-and-tools/
+        // agent-skills/overview): lowercase letters, numbers, hyphens only; max 64
+        // chars; no XML tags; cannot contain "anthropic" or "claude".
+        if (!SKILL_NAME_PATTERN.test(frontmatter.name)) {
+          issues.push({ file: rel, issue: `Invalid name: "${frontmatter.name}" (must be lowercase letters, numbers, and hyphens only, max 64 chars, to match Claude's real Agent Skills format)` });
         }
-        skillIds.add(frontmatter.skill);
+        const lowerName = frontmatter.name.toLowerCase();
+        SKILL_RESERVED_WORDS.forEach(word => {
+          if (lowerName.includes(word)) issues.push({ file: rel, issue: `Invalid name: "${frontmatter.name}" (cannot contain reserved word "${word}")` });
+        });
+        if (skillIds.has(frontmatter.name)) {
+          issues.push({ file: rel, issue: `Duplicate skill name: "${frontmatter.name}"` });
+        }
+        skillIds.add(frontmatter.name);
+      }
+      if (frontmatter.description !== undefined) {
+        // Real Agent Skills `description` constraints: non-empty, max 1024 chars, no XML tags.
+        if (frontmatter.description.length === 0) {
+          issues.push({ file: rel, issue: 'Invalid description: must be non-empty' });
+        } else if (frontmatter.description.length > 1024) {
+          issues.push({ file: rel, issue: `Invalid description: ${frontmatter.description.length} chars (max 1024, to match Claude's real Agent Skills format)` });
+        }
+        if (/<[^>]+>/.test(frontmatter.description)) {
+          issues.push({ file: rel, issue: 'Invalid description: cannot contain XML/HTML-like tags' });
+        }
       }
       if (frontmatter['written-for'] && !['human', 'agent', 'multi'].includes(frontmatter['written-for'])) {
         issues.push({ file: rel, issue: `Invalid written-for: "${frontmatter['written-for']}" (expected human, agent, or multi)` });
