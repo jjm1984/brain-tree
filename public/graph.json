@@ -422,6 +422,19 @@
       "filePath": "layers/01-roots/sub-conscious-sacrifice.md"
     },
     {
+      "id": "branch-borrowed-peace",
+      "layer": "knowledge",
+      "type": "branch",
+      "title": "Borrowed Peace",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-18",
+      "addedOn": "2026-07-18",
+      "filePath": "layers/02-knowledge/aliveness/branch-borrowed-peace.md"
+    },
+    {
       "id": "branch-aliveness",
       "layer": "knowledge",
       "type": "branch",
@@ -435,7 +448,20 @@
       "filePath": "layers/02-knowledge/aliveness/branch.md"
     },
     {
-      "id": "leaf-borrowed-peace",
+      "id": "leaf-borrowed-peace-co-regulation",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Borrowed Peace — Co-Regulation",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-18",
+      "addedOn": "2026-07-18",
+      "filePath": "layers/02-knowledge/aliveness/leaf-borrowed-peace-co-regulation.md"
+    },
+    {
+      "id": "leaf-borrowed-peace-indifferent-order",
       "layer": "knowledge",
       "type": "leaf",
       "title": "Borrowed Peace — The Restorative Function of External Order",
@@ -445,7 +471,7 @@
       "instrument": "lived-experience",
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
-      "filePath": "layers/02-knowledge/aliveness/leaf-borrowed-peace.md"
+      "filePath": "layers/02-knowledge/aliveness/leaf-borrowed-peace-indifferent-order.md"
     },
     {
       "id": "leaf-case-woodworking-purposeful-purposelessness",
@@ -1150,6 +1176,28 @@
       "filePath": "layers/04-map/index.md"
     },
     {
+      "id": "skill-reference-relationship-conflict-regulation",
+      "layer": "map",
+      "type": "skill-reference",
+      "title": "Reference — Understanding and Responding to Relationship Conflict",
+      "state": null,
+      "instrument": "multi",
+      "lastUpdated": "2026-07-18",
+      "addedOn": "2026-07-18",
+      "filePath": "layers/04-map/skills/relationship-conflict-regulation/reference.md"
+    },
+    {
+      "id": "skill-reference-things-to-teach-kids",
+      "layer": "map",
+      "type": "skill-reference",
+      "title": "Reference — Raising Kids Who Can Spot What's Healthy and Have Room to Become Who They Are",
+      "state": null,
+      "instrument": "multi",
+      "lastUpdated": "2026-07-18",
+      "addedOn": "2026-07-18",
+      "filePath": "layers/04-map/skills/things-to-teach-kids/reference.md"
+    },
+    {
       "id": "flowers-and-fruits",
       "layer": "flowers-fruits",
       "type": "principle",
@@ -1159,6 +1207,17 @@
       "lastUpdated": "2026-06-06",
       "addedOn": "2026-06-03",
       "filePath": "layers/05-flowers-fruits/index.md"
+    },
+    {
+      "id": "tree-building-process",
+      "layer": "meta",
+      "type": "meta-skill",
+      "title": "How to Run a Brain Tree Session",
+      "state": null,
+      "instrument": null,
+      "lastUpdated": "2026-07-18",
+      "addedOn": "2026-07-18",
+      "filePath": "meta/TREE-BUILDING.md"
     },
     {
       "id": "epistemology",
@@ -1181,6 +1240,28 @@
       "lastUpdated": "2026-07-11",
       "addedOn": "2026-06-06",
       "filePath": "meta/principles.md"
+    },
+    {
+      "id": "staging-protocol",
+      "layer": "meta",
+      "type": "principle",
+      "title": "Staging and Multi-File Dependency Protocol",
+      "state": null,
+      "instrument": null,
+      "lastUpdated": "2026-07-18",
+      "addedOn": "2026-07-18",
+      "filePath": "meta/staging-protocol.md"
+    },
+    {
+      "id": "skill-creation-spec",
+      "layer": "skills-meta",
+      "type": "meta-skill",
+      "title": "How to Build a Brain Tree Skill",
+      "state": null,
+      "instrument": null,
+      "lastUpdated": "2026-07-18",
+      "addedOn": "2026-07-18",
+      "filePath": "skills/SKILL-CREATION.md"
     }
   ],
   "edges": [
@@ -1192,6 +1273,11 @@
     {
       "source": "mycelium-brain",
       "target": "leaf-inner-witness",
+      "type": "supports"
+    },
+    {
+      "source": "mycelium-brain",
+      "target": "leaf-borrowed-peace-co-regulation",
       "type": "supports"
     },
     {
@@ -1261,7 +1347,7 @@
     },
     {
       "source": "mycelium-nervous-system",
-      "target": "leaf-borrowed-peace",
+      "target": "leaf-borrowed-peace-indifferent-order",
       "type": "supports"
     },
     {
@@ -1535,6 +1621,21 @@
       "type": "supports"
     },
     {
+      "source": "branch-borrowed-peace",
+      "target": "leaf-peace-as-ingredient",
+      "type": "supports"
+    },
+    {
+      "source": "branch-borrowed-peace",
+      "target": "leaf-reserves-restoration",
+      "type": "supports"
+    },
+    {
+      "source": "branch-borrowed-peace",
+      "target": "branch-aliveness",
+      "type": "supports"
+    },
+    {
       "source": "branch-aliveness",
       "target": "philo-how-to-live",
       "type": "supports"
@@ -1565,12 +1666,27 @@
       "type": "supports"
     },
     {
-      "source": "leaf-borrowed-peace",
+      "source": "leaf-borrowed-peace-co-regulation",
+      "target": "branch-borrowed-peace",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-borrowed-peace-co-regulation",
+      "target": "leaf-withdrawal-repair-pattern",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-borrowed-peace-co-regulation",
+      "target": "mycelium-brain",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-borrowed-peace-indifferent-order",
       "target": "leaf-peace-as-ingredient",
       "type": "supports"
     },
     {
-      "source": "leaf-borrowed-peace",
+      "source": "leaf-borrowed-peace-indifferent-order",
       "target": "leaf-reserves-restoration",
       "type": "supports"
     },
@@ -1651,7 +1767,7 @@
     },
     {
       "source": "leaf-reserves-restoration",
-      "target": "leaf-borrowed-peace",
+      "target": "leaf-borrowed-peace-indifferent-order",
       "type": "supports"
     },
     {
@@ -1935,6 +2051,16 @@
       "type": "supports"
     },
     {
+      "source": "leaf-moore-staircase-structural-method",
+      "target": "leaf-borrowed-peace-co-regulation",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-moore-staircase-structural-method",
+      "target": "mycelium-brain",
+      "type": "supports"
+    },
+    {
       "source": "layer-map",
       "target": "leaf-withdrawal-repair-pattern",
       "type": "supports"
@@ -1951,8 +2077,8 @@
     }
   ],
   "meta": {
-    "nodeCount": 92,
-    "edgeCount": 153,
-    "lastBuilt": "2026-07-18T01:45:04.874Z"
+    "nodeCount": 99,
+    "edgeCount": 162,
+    "lastBuilt": "2026-07-18T08:55:02.196Z"
   }
 }
