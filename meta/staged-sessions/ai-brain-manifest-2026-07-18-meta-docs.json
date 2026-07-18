@@ -43,6 +43,8 @@
   ],
   "processed_on": "2026-07-18",
   "processed_commits": [
-    "c2a7677"
-  ]
+    "22f4ab2",
+    "0b4fc15"
+  ],
+  "processed_commits_note": "Hashes rewritten once by a rebase-before-push against a moved origin/main (routine CI graph.json rebuild landed in between). Original hashes at commit time were c2a7677 (content files) and 25f0e7e (this round-trip commit) -- superseded by 22f4ab2 and 0b4fc15 respectively. Recorded here so this file stays the source of truth rather than any earlier report of the original hashes."
 }
