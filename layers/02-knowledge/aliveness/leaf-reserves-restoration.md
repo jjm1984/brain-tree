@@ -9,7 +9,7 @@ last-updated: 2026-07-05
 added-on: 2026-06-03
 instrument: multi
 connections:
-  supports: [branch-aliveness, leaf-grit-without-signal, leaf-borrowed-peace, mycelium-default-mode-network]
+  supports: [branch-aliveness, leaf-grit-without-signal, leaf-borrowed-peace-indifferent-order, mycelium-default-mode-network]
 ---
 
 # Reserves and Restoration

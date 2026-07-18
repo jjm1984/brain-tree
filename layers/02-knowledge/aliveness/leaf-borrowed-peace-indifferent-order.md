@@ -1,10 +1,11 @@
 ---
-id: leaf-borrowed-peace
+id: leaf-borrowed-peace-indifferent-order
 layer: knowledge
 type: leaf
 title: Borrowed Peace — The Restorative Function of External Order
 state:
   leaf: yellow
+parent-branch: branch-borrowed-peace
 last-updated: 2026-06-06
 added-on: 2026-06-03
 instrument: lived-experience

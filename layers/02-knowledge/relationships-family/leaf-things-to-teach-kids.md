@@ -11,7 +11,7 @@ last-updated: 2026-07-10
 added-on: 2026-07-10
 instrument: philosophy
 open-threads:
-  - "'Advice to Boys' and 'Advice to Girls' appear as headers only in the source material, with no content under either — named gaps, not yet filled."
+  - "'Advice to Boys' and 'Advice to Girls' appear as headers only in the source material, with no content under either — named gaps, not yet filled. Resolved (2026-07-18, judgment call, revisitable) in the skill-#2 build at layers/04-map/skills/things-to-teach-kids/: no gender split was introduced — content reads as equally applicable either way, and inventing a split to fill an empty header risked manufacturing a distinction that isn't there. See that skill's reference.md, Dear Reader section, for the full reasoning."
 ---
 
 # Things to Teach the Kids

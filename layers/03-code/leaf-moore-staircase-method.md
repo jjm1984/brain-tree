@@ -9,7 +9,7 @@ last-updated: 2026-07-09
 added-on: 2026-07-09
 instrument: philosophy
 connections:
-  supports: [philo-courage]
+  supports: [philo-courage, leaf-borrowed-peace-co-regulation, mycelium-brain]
   exposed-roots:
     - tradition: "Moore's dialogic posture — stating a position, actively seeking worthy opponents, holding belief only until genuinely overturned"
       connection: Directly mirrors this tree's own Dear Reader principle (reader as eminent decider, nothing declared final) and Counters/Crossroads architecture (ideas held with their counters until resolved). More specifically, it is the Inner Witness's 'observing without identification' applied outward and socially to belief-holding rather than inward to emotion/sensation — holding a view firmly enough to state, loosely enough to lose without ego collapse.
@@ -53,3 +53,9 @@ Per J's explicit instruction on commit: these are held as **tension-held**, not 
 Not a change to the three-ledger self-worth framework (coherence/validation/legacy-worth), which stays intact and unweighted for the reader. J's own personal calibration on top of it: legacy-worth carries the most weight in strategic contexts; coherence-worth carries the most weight in everyday action; validation-worth has rarely helped J directly, except where it folds toward self-validation, which J experiences as close to coherence-worth. Resolved on clarification: self-validation is explicitly a measurement tool used to gauge coherence-worth, not a separate value ledger running parallel to it — they are not two axes at all; self-validation is instrumentation, coherence-worth is the thing being measured. J also named a tentative, hedged cause for why validation-by-others has never carried much weight: early isolation — offered as "likely," not settled fact, and logged as lived-experience with that hedge preserved, not to be treated as diagnostic or built on further unless J raises it again.
 
 J's own words: "A three legged stool can still balance well, and I think it is for the reader to decide. For me, legacy is important in strategy, coherence in everyday action, and validation worth has never helped me much unless you count self validation which is close to coherence." And: "validation by others hasn't really hit home for me, likely due to the early isolation."
+
+## Second independent instance: the staircase logic in nervous-system communication (2026-07-18)
+
+Moore's staircase names a structural rule — each rung requires the one below it to be accessible before the next is reachable — previously applied in this tree only to metaphysics/epistemology. The co-regulation material (`leaf-borrowed-peace-co-regulation`, `mycelium-brain`) is a second, independent instance of the *same* structural principle operating in the biology of communication: nervous-system regulation (the lower rung) must be accessible before verbal/philosophical repair (the higher rung) is reachable at all — already implicit in `leaf-borrowed-peace`'s own sequence (external safety → nervous system regulation → cognitive restoration → philosophical access), now explicitly named as the same staircase logic, not a coincidental resemblance. J's own framing, direct quote basis: "the accessible modes of communication are hierarchical" — nervous system and body language are accessible before language.
+
+Status: yellow — forming, a genuine structural parallel, not yet tested for whether it holds in a third domain beyond these two.

@@ -22,7 +22,7 @@ connections:
 counters:
   - "The damage is done, it might be repaired but the scar stays — repair means integration without erasure, not undoing. Stated as a correction to an earlier conflation of 'repair possible' with 'damage erasable'; stands unmodified."
 open-threads:
-  - "Design questions for the repair trigger, left open: who initiates (risk of asymmetry if the faster-regulating partner always initiates), fixed signal vs. information-carrying signal, and a built-in 'not yet' response for mismatched readiness."
+  - "Design questions for the repair trigger, left open: who initiates (risk of asymmetry if the faster-regulating partner always initiates), fixed signal vs. information-carrying signal, and a built-in 'not yet' response for mismatched readiness. Same fork now also held as the Crossroads on leaf-borrowed-peace-co-regulation (co-regulation or space?) — one question, two entry points, not a duplicate."
 dear-reader: Not painting the withdrawer as more ethical than the pursuer. The actual key is in-the-moment awareness/articulability on EITHER side, not which role is chosen.
 ---
 

@@ -9,7 +9,7 @@ last-updated: 2026-06-06
 added-on: 2026-06-03
 instrument: science
 connections:
-  supports: [mycelium-hormones, mycelium-brain, leaf-grit-without-signal, leaf-borrowed-peace]
+  supports: [mycelium-hormones, mycelium-brain, leaf-grit-without-signal, leaf-borrowed-peace-indifferent-order]
 ---
 
 # Nervous System — The Operating Layer

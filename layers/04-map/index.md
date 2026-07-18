@@ -43,3 +43,7 @@ Final "why," resolved by J directly: necessary because he has watched what happe
 **Cost named and accepted without negation of value:** years of unrewarded effort building the buffer, possibly never "cashed in" or felt as reward — parallel to the hold-fast/no-dragon material in `leaf-just-cause-motivation-architecture`, though J notably does not rebel against this instance of it the way he did against "outlast" generally. Open, unflagged distinction worth noting: this domain may simply never have been asked to provide aliveness/meaning, only security, so the earlier rebellion doesn't apply here.
 
 See `philo-wealth-freedom` for the fuller Roots-layer wealth/freedom material this connects to.
+
+## Skills library (provisional location)
+
+`layers/04-map/skills/` holds a new, first-of-its-kind artifact: short `SKILL.md` files for humans, backed by full `reference.md` files, started 2026-07-18. Placed here as a conservative default only — whether this becomes its own top-level layer or stays a Map sub-type is an explicit open question, not yet resolved. See `layers/04-map/skills/README.md`.
