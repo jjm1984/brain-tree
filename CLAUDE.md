@@ -33,7 +33,15 @@ There is no test suite or linter. `public/graph.json` is regenerated automatical
 | `04-map` | Daily practice; depends on `03-code` existing first. |
 | `05-flowers-fruits` | Feeling-dimension (flowers) and action-dimension (fruits) per branch — not a separate ontology, just another facet of each node. |
 
-Other top-level dirs: `feedback/feedback-loop.md` (permanent staging layer — raw gaps/contradictions/insights surfaced against reality, never emptied, provenance kept forever), `inferences/cross-connections.md` (named inferences between nodes), `founding-arc/session-arc.md` (origin story), `meta/` (schema + operating principles, read these before writing nodes).
+Other top-level dirs: `feedback/feedback-loop.md` (permanent staging layer — raw gaps/contradictions/insights surfaced against reality, never emptied, provenance kept forever), `inferences/cross-connections.md` (named inferences between nodes), `founding-arc/session-arc.md` (origin story), `meta/` (schema + operating principles, read these before writing nodes), `skills/` (short, in-the-moment `SKILL.md` + `reference.md` pairs — see `skills/SKILL-CREATION.md` before building one; placement note below).
+
+### Process docs (read before running a session, not just before writing a node)
+
+- `meta/TREE-BUILDING.md` — the session-level process for acting as thinking partner/filing agent: search-first discipline, when to ask vs. assume, claims travel with their structural apparatus, manifests for multi-file sessions, closing audits.
+- `meta/staging-protocol.md` — how content moves from a chat session through Drive staging to a GitHub commit, including the manifest schema (`ai-brain-manifest-YYYY-MM-DD-[topic].json`) required for any session staging more than one file, and the read-before-extending rule. Processed manifests are archived in `meta/staged-sessions/`.
+- `skills/SKILL-CREATION.md` — the skill-authoring spec (frontmatter fields, the two-file `SKILL.md`/`reference.md` pattern, `written-for` vs. `for`, cost-gated-care scoping). Explicitly marked not-settled — iterate and report proposed changes, don't silently patch it.
+
+**Known inconsistency, not yet resolved:** `SKILL-CREATION.md` states skills "currently live in `skills/[skill-id]/`" (repo-root), but the two skills built 2026-07-18 (`relationship-conflict-regulation`, `things-to-teach-kids`) were placed under `layers/04-map/skills/[skill-id]/` as a conservative default at the time, before this spec existed. Both locations currently exist. Do not move either without an explicit decision — this is the same open layer-placement question the spec itself declines to resolve, just surfaced a level earlier than expected.
 
 ### Node file format
 

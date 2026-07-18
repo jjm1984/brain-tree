@@ -1,0 +1,48 @@
+{
+  "manifest_id": "manifest-2026-07-18-meta-docs",
+  "date": "2026-07-18",
+  "topic": "Formalizing today's improvised methodology: staging protocol, skill-creation spec, tree-building process",
+  "provenance": "Closing action of the 2026-07-18 relationship-conflict-regulation session. J asked what changes were needed to make today's work actionable, continuable, and replicable across other chats in the project. This manifest is itself the first real use of the staging protocol it introduces.",
+  "files_in_order": [
+    {
+      "file": "ai-brain-content-2026-07-18-staging-protocol.json",
+      "depends_on": [],
+      "creates_nodes": [
+        "staging-protocol"
+      ],
+      "target_path": "meta/staging-protocol.md",
+      "status": "processed"
+    },
+    {
+      "file": "ai-brain-content-2026-07-18-skill-creation-spec.json",
+      "depends_on": [],
+      "creates_nodes": [
+        "skill-creation-spec"
+      ],
+      "target_path": "skills/SKILL-CREATION.md",
+      "status": "processed"
+    },
+    {
+      "file": "ai-brain-content-2026-07-18-tree-building-process.json",
+      "depends_on": [],
+      "creates_nodes": [
+        "tree-building-process"
+      ],
+      "target_path": "meta/TREE-BUILDING.md",
+      "note": "References the other two files by name in its own text -- no hard processing-order dependency, but conceptually complete only once all three exist.",
+      "status": "processed"
+    }
+  ],
+  "superseded_files": [],
+  "claude_code_instructions": [
+    "This manifest uses the new staging-protocol format being introduced by this same session -- treat this as the first real test of it.",
+    "The three files have no strict processing-order dependency (depends_on is empty for all three) -- commit in any order, but all three should land in the same commit or immediately sequential commits so the repo is never in a state where TREE-BUILDING.md references files that don't exist yet.",
+    "Each content file's target_path is specified above -- use it directly rather than guessing repo structure.",
+    "After committing, update this manifest's status fields to 'processed' and commit the updated manifest back into the repo (e.g. under a session-history or meta/staged-sessions/ location if one exists, or alongside CLAUDE.md if not) -- per the protocol's own round-trip requirement.",
+    "Also update CLAUDE.md and/or meta/index.json to reference the three new files so future sessions discover them without needing to be told."
+  ],
+  "processed_on": "2026-07-18",
+  "processed_commits": [
+    "c2a7677"
+  ]
+}
