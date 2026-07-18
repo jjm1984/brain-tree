@@ -2,3 +2,14 @@ node_modules/
 .DS_Store
 *.log
 .env
+
+# raw backlog source screenshots — local-only, not pushed (large binaries; content is
+# extracted into backlog/*.md instead)
+backlog/*.PNG
+backlog/*.png
+backlog/*.JPG
+backlog/*.jpg
+backlog/*.JPEG
+backlog/*.jpeg
+backlog/*.MOV
+backlog/*.mov
