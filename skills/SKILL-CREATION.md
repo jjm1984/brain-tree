@@ -48,6 +48,13 @@ Field names and constraints must match precisely, even though nothing
 in this repo auto-triggers today.
 
 ```yaml
+id: skill-kebab-case-id
+  # Tree-internal convention (matches leaf-*, branch-*, philo-* elsewhere
+  # in the repo), added 2026-07-18 alongside the Skills-are-a-Map-layer-
+  # sub-type decision (see meta/principles.md). Distinct purpose from
+  # `name` below: `id` is for tree cross-references and uniqueness;
+  # `name` is the bare slug the real Agent Skills mechanism actually
+  # reads. The two commonly differ only by the "skill-" prefix.
 name: kebab-case-id
 title: Human-readable title
 description: ONE line, written for an agent deciding whether to load this skill. What triggers it, what it's for. This is the equivalent of a real Agent Skill's trigger description — write it the same way you'd write one for a coding tool: specific enough to match, not so broad it fires on everything adjacent.
@@ -77,6 +84,17 @@ composes-with:
   # Only for GENUINE delegation — the step doesn't fully specify how
   # to do the thing, and a narrower skill would. Do not add this
   # speculatively; see "Depth delegation vs. condensed mode" below.
+parent_map: map-node-id-or-null
+parent_map_status: orphan-pending
+  # Added 2026-07-18. Points to the Map/strategy node this skill
+  # tactically decomposes (analogous to a leaf's parent-branch field).
+  # A skill MAY be placed without a resolved parent_map if its natural
+  # parent Map node doesn't exist yet — set parent_map: null and
+  # parent_map_status: orphan-pending, naming the anticipated future
+  # parent in a note, rather than blocking the skill on an unbuilt Map
+  # node indefinitely (the "deferred truth" failure mode). Omit both
+  # fields entirely once parent_map is resolved and stable, or keep
+  # parent_map_status: resolved for clarity.
 grounded-in: [tree-node-ids this skill draws from]
 full-reference: reference.md
 status: forming | tested-once | stable

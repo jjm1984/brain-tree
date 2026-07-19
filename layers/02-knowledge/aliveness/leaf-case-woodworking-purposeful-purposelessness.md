@@ -32,4 +32,4 @@ Two questions: (1) During the activity, does time disappear (aliveness condition
 
 See mycelium-default-mode-network and the updated leaf-reserves-restoration: nature/beach walking already confirms J has genuine access to purposeless reserve forms, which suggests woodworking may simply be a different category of good — not the same gap as this case originally implied, possibly no gap at all.
 
-Cross-connects to: worth-machine / doing-worth (branch-self-worth-identity), the trunk fusion thesis (flowers and fruits), and the still-open self-vs-other-motivation asymmetry question on leaf-skill-translator-role.
+Cross-connects to: worth-machine / doing-worth (branch-self-worth-identity), the trunk fusion thesis (flowers and fruits), and the still-open self-vs-other-motivation asymmetry question on leaf-ability-translator-role.

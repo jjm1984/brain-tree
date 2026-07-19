@@ -44,6 +44,16 @@ Final "why," resolved by J directly: necessary because he has watched what happe
 
 See `philo-wealth-freedom` for the fuller Roots-layer wealth/freedom material this connects to.
 
-## Skills library (provisional location)
+## Practice: the life-domain audit, run in third-party voice
 
-`layers/04-map/skills/` holds a new, first-of-its-kind artifact: short `SKILL.md` files for humans, backed by full `reference.md` files, started 2026-07-18. Placed here as a conservative default only — whether this becomes its own top-level layer or stays a Map sub-type is an explicit open question, not yet resolved. See `layers/04-map/skills/README.md`.
+`map-life-domain-audit` — a periodic cross-branch life review, added 2026-07-19. Placed here (Map, strategy) rather than Skill (tactic), because a cross-domain periodic review is itself a strategy, not a single executable action — the tactical execution of one pass is `layers/04-map/skills/third-party-life-audit-pass/`.
+
+Sourced from `backlog/life-audit.md`'s generic 8-area Instagram framework — that framework's specific area list was discarded as content (unattributed, low-tier per this project's own source-verification standard). What survived is the one genuinely useful mechanism buried in it: running the review in **third-party/external-observer voice** rather than first-person, as a deliberate friction point against a confirmed pattern in this project's own feedback loop — reading someone else's motivation is easier than reading your own (see `feedback/feedback-loop.md`, the self-examination-avoidance gap).
+
+**Cross-references:** `branch-relationships-family`, `branch-wealth-freedom`, `branch-work-vocation`, `branch-physical-wellbeing`, `branch-aliveness`, `branch-self-worth-identity` — the domains a pass reviews, mapped to branches that already exist rather than inventing a parallel taxonomy.
+
+**Flagged use:** a possible entry point for the still-open Item 23 session ("I feel miserable," 2022) — the third-party framing gives that open thread a starting structure instead of an open-ended prompt. Not resolved here; flagged for a future session.
+
+## Skills library
+
+`layers/04-map/skills/` holds `SKILL.md` + `reference.md` pairs for humans, started 2026-07-18. Resolved 2026-07-18 as a Map-layer sub-type, not a 7th layer — see `meta/principles.md` § "Skills Are a Map-Layer Sub-Type, Not a 7th Layer" for the full chain (Leaf → Fruit+Code → Map → Skill) and placement rationale. See `layers/04-map/skills/README.md` for the current library index.

@@ -1,8 +1,8 @@
 ---
-id: leaf-skill-translator-role
+id: leaf-ability-translator-role
 layer: knowledge
 type: leaf
-title: "Skill: The Translator Role — Multi-Stakeholder Motivation Alignment"
+title: "Ability: The Translator Role — Multi-Stakeholder Motivation Alignment"
 state:
   leaf: yellow
 parent-branch: branch-work-vocation
@@ -12,7 +12,7 @@ added-on: 2026-07-05
 instrument: multi
 ---
 
-Generalizes leaf-skill-audience-motivation-mapping from a single listener to N stakeholders in the same room/conversation.
+Generalizes leaf-ability-audience-motivation-mapping from a single listener to N stakeholders in the same room/conversation.
 
 **Task:** in a room with multiple stakeholders who each want something different, work out what each one is actually motivated by, and pitch the same project/idea to all of them concurrently — not sequentially, not as a compromise, but by finding how one initiative genuinely serves each party's distinct goal.
 
@@ -38,6 +38,6 @@ J's example: Jordan Peterson's readership skewing religious, Stoic-adjacent, and
 
 ## Speculative addition: bisociation (2026-07-11, held open per J's explicit caution against overclaiming)
 
-Arthur Koestler's bisociation theory (*The Act of Creation*) argues creative novelty in humor, art, and discovery arises specifically from connecting two previously unconnected frames of reference, not from recombination within a single existing space. J's translator-role skill (finding how one initiative genuinely serves stakeholders whose goals had no prior connection) may be a live instance of bisociative work rather than pure combinational translation — but this is NOT asserted as resolved. Flagged as a real possibility worth holding, in tension with J's own self-assessment as "translator, not creator." `state: yellow, speculative, explicitly not asserted as settled` `epistemic tag: philosophy`
+Arthur Koestler's bisociation theory (*The Act of Creation*) argues creative novelty in humor, art, and discovery arises specifically from connecting two previously unconnected frames of reference, not from recombination within a single existing space. J's translator-role ability (finding how one initiative genuinely serves stakeholders whose goals had no prior connection) may be a live instance of bisociative work rather than pure combinational translation — but this is NOT asserted as resolved. Flagged as a real possibility worth holding, in tension with J's own self-assessment as "translator, not creator." `state: yellow, speculative, explicitly not asserted as settled` `epistemic tag: philosophy`
 
 Replication readiness: draft. Confidentiality: open.

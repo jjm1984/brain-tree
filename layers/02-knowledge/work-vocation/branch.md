@@ -9,9 +9,9 @@ last-updated: 2026-07-05
 added-on: 2026-06-06
 connections:
   supports: [philo-meaning, philo-core-impulse, philo-philosophy-and-action]
-  leaves: [leaf-role-diesel-mechanic, leaf-role-wideland-gps, leaf-role-turnkey-bi, leaf-role-bigsky, leaf-role-trimble, leaf-role-swarmfarm, leaf-role-agco, leaf-military-service-gap, leaf-skill-people-first-prioritization, leaf-skill-audience-motivation-mapping, leaf-skill-translator-role]
+  leaves: [leaf-role-diesel-mechanic, leaf-role-wideland-gps, leaf-role-turnkey-bi, leaf-role-bigsky, leaf-role-trimble, leaf-role-swarmfarm, leaf-role-agco, leaf-military-service-gap, leaf-ability-people-first-prioritization, leaf-ability-audience-motivation-mapping, leaf-ability-translator-role]
 missing-leaves:
-  - Deep skill-node breakdown for each role beyond the index-level entry (skill-node schema is designed, only cross-role skill-nodes exist so far)
+  - Deep ability-node breakdown for each role beyond the index-level entry (ability-node schema is designed, only cross-role ability-nodes exist so far)
   - J's own corrected account of each role — current role entries are sourced from an external ChatGPT-drafted bio document and the AGCO employment letter, not J's own words
 dear-reader: This branch runs three jobs at once, kept structurally distinct — knowledge-tree content (what J knows, tagged and challenged like everything else), a replication corpus (structured well enough that the judgment and voice behind J's work could eventually brief an AI skill), and an Obsidian-compatible note layer. The role index below is a sketch, not a finished account — treat state:peripheral literally.
 instrument: multi
@@ -31,7 +31,7 @@ The machinery work (civil or agricultural) as income bridge: chosen not just for
 
 ## Role index (2026-07-05 first pass)
 
-One leaf per job/role/venture across the full career, index-level only — skill-node depth (decision procedures, tacit judgment, voice samples) is a separate future layer, populated so far only for cross-role skills, not any single role. Order is roughly chronological:
+One leaf per job/role/venture across the full career, index-level only — ability-node depth (decision procedures, tacit judgment, voice samples) is a separate future layer, populated so far only for cross-role skills, not any single role. Order is roughly chronological:
 
 - **leaf-role-diesel-mechanic** — Diesel Mechanic, apprenticeship & trade (pre-Wideland)
 - **leaf-role-wideland-gps** — GPS & Precision Farming Specialist, Wideland Ag & Construction (Case IH dealership)
@@ -46,13 +46,13 @@ A candidate role-sport-officiating-gap (umpiring/officiating) was proposed in th
 
 ## Cross-role foundations
 
-Distinct from any single role-node: the throughline skills, approach, and voice that show up regardless of employer or title — the layer a replication corpus needs first, since every role-specific skill-node would inherit from it.
+Distinct from any single role-node: the throughline skills, approach, and voice that show up regardless of employer or title — the layer a replication corpus needs first, since every role-specific ability-node would inherit from it.
 
-- **leaf-skill-people-first-prioritization** — people-before-process task prioritization, named by J as a career-spanning North Star
-- **leaf-skill-audience-motivation-mapping** — reading a single listener's underlying motivation in a live conversation
-- **leaf-skill-translator-role** — generalizes audience-motivation-mapping from one listener to N simultaneous stakeholders; separates the *capability* (reading what motivates a role) from the *will* (a 'circumspect frame of mind' that doesn't get stuck in one's own motivations)
+- **leaf-ability-people-first-prioritization** — people-before-process task prioritization, named by J as a career-spanning North Star
+- **leaf-ability-audience-motivation-mapping** — reading a single listener's underlying motivation in a live conversation
+- **leaf-ability-translator-role** — generalizes audience-motivation-mapping from one listener to N simultaneous stakeholders; separates the *capability* (reading what motivates a role) from the *will* (a 'circumspect frame of mind' that doesn't get stuck in one's own motivations)
 
-These skill-nodes surfaced a candidate root philosophy, **philo-people-before-process** (forming — see layers/01-roots), plus a genuine open question about whether 'people first' is a general ethical stance or a narrower pattern that activates specifically around structured need/dependency.
+These ability-nodes surfaced a candidate root philosophy, **philo-people-before-process** (forming — see layers/01-roots), plus a genuine open question about whether 'people first' is a general ethical stance or a narrower pattern that activates specifically around structured need/dependency.
 
 ## The open question
 

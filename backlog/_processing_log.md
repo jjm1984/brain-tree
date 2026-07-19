@@ -22,15 +22,15 @@ Schema (generic — extends to non-screenshot sources later without rework):
 | 2024-08-25-a | screenshot | IMG_031677.PNG | processed | wealth-freedom | 2026-07-17 |
 | 2024-09-17-a | screenshot | IMG_031767.PNG | processed | relationships-family | 2026-07-17 |
 | 2024-09-17-b | screenshot | IMG_031769.PNG, IMG_031770.PNG, IMG_031771.PNG | processed | work-vocation | 2026-07-17 |
-| 2024-09-28-a | screenshot | IMG_031851.PNG | processed | home-design (proposed) | 2026-07-17 |
-| 2024-09-28-b | screenshot | IMG_031852.PNG | processed | home-design (proposed) | 2026-07-17 |
-| 2024-09-28-c | screenshot | IMG_031853.PNG | processed | home-design (proposed) | 2026-07-17 |
-| 2024-09-28-d | screenshot | IMG_031854.PNG | processed | home-design (proposed) | 2026-07-17 |
-| 2024-09-28-e | screenshot | IMG_031855.PNG | processed | home-design (proposed) | 2026-07-17 |
-| 2024-09-28-f | screenshot | IMG_031856.PNG | processed | home-design (proposed) | 2026-07-17 |
-| 2024-09-28-g | screenshot | IMG_031857.PNG | processed | home-design (proposed) | 2026-07-17 |
-| 2024-09-28-h | screenshot | IMG_031858.PNG | processed | home-design (proposed) | 2026-07-17 |
-| 2024-09-30-a | screenshot | IMG_031952.PNG, IMG_031953.PNG, IMG_031954.PNG, IMG_031955.PNG, IMG_031956.PNG | processed | home-organization (proposed) | 2026-07-17 |
+| 2024-09-28-a | screenshot | IMG_031851.PNG | archived-non-tree | home-design (proposed, archived to Drive 2026-07-19) | 2026-07-17 |
+| 2024-09-28-b | screenshot | IMG_031852.PNG | archived-non-tree | home-design (proposed, archived to Drive 2026-07-19) | 2026-07-17 |
+| 2024-09-28-c | screenshot | IMG_031853.PNG | archived-non-tree | home-design (proposed, archived to Drive 2026-07-19) | 2026-07-17 |
+| 2024-09-28-d | screenshot | IMG_031854.PNG | archived-non-tree | home-design (proposed, archived to Drive 2026-07-19) | 2026-07-17 |
+| 2024-09-28-e | screenshot | IMG_031855.PNG | archived-non-tree | home-design (proposed, archived to Drive 2026-07-19) | 2026-07-17 |
+| 2024-09-28-f | screenshot | IMG_031856.PNG | archived-non-tree | home-design (proposed, archived to Drive 2026-07-19) | 2026-07-17 |
+| 2024-09-28-g | screenshot | IMG_031857.PNG | archived-non-tree | home-design (proposed, archived to Drive 2026-07-19) | 2026-07-17 |
+| 2024-09-28-h | screenshot | IMG_031858.PNG | archived-non-tree | home-design (proposed, archived to Drive 2026-07-19) | 2026-07-17 |
+| 2024-09-30-a | screenshot | IMG_031952.PNG, IMG_031953.PNG, IMG_031954.PNG, IMG_031955.PNG, IMG_031956.PNG | placed | home-organization (proposed, placed as skill-declutter-adhd-family-functioning 2026-07-19) | 2026-07-17 |
 | 2024-10-01-a | screenshot | IMG_031957.PNG | processed | wealth-freedom | 2026-07-17 |
 | 2024-10-01-b | screenshot | IMG_031962.PNG | processed | wealth-freedom | 2026-07-17 |
 | 2024-10-02-a | screenshot | IMG_031976.PNG | processed | wealth-freedom | 2026-07-17 |
@@ -40,14 +40,14 @@ Schema (generic — extends to non-screenshot sources later without rework):
 | 2024-10-09-a | screenshot | IMG_032117.PNG | processed | physical-wellbeing | 2026-07-18 |
 | 2024-10-15-a | screenshot | IMG_032213.JPG | processed | truth-seeking | 2026-07-18 |
 | 2024-10-18-a | screenshot | IMG_032249.PNG, IMG_032250.PNG | processed | work-vocation | 2026-07-18 |
-| 2024-10-18-b | screenshot | IMG_032253.PNG | processed | home-logistics (proposed) | 2026-07-18 |
+| 2024-10-18-b | screenshot | IMG_032253.PNG | archived-non-tree | home-logistics (proposed, archived to Drive 2026-07-19) | 2026-07-18 |
 | 2024-10-18-c | screenshot | IMG_032254.PNG | processed | relationships-family | 2026-07-18 |
 | 2024-10-22-a | screenshot | IMG_032274.PNG, IMG_032275.PNG, IMG_032276.PNG, IMG_032277.PNG | processed | wealth-freedom | 2026-07-18 |
 | 2024-10-30-a | screenshot | IMG_032351.PNG | processed | wealth-freedom | 2026-07-18 |
 | 2024-11-08-a | screenshot | IMG_032428.PNG | processed | work-vocation | 2026-07-18 |
 | 2024-11-18-a | screenshot | IMG_032487.PNG, IMG_032488.PNG | processed | work-vocation | 2026-07-18 |
 | 2024-11-20-a | screenshot | IMG_032498.PNG | processed | 1pct-compounding | 2026-07-18 |
-| 2024-11-28-a | screenshot | IMG_032561.PNG | processed | home-design (proposed) | 2026-07-18 |
+| 2024-11-28-a | screenshot | IMG_032561.PNG | archived-non-tree | home-design (proposed, archived to Drive 2026-07-19) | 2026-07-18 |
 | 2025-01-01-a | screenshot | IMG_032727.PNG | processed | art-and-meaning | 2026-07-18 |
 | 2025-01-03-a | screenshot | IMG_032728.PNG | processed | wealth-freedom | 2026-07-18 |
 | 2025-01-05-a | screenshot | IMG_032736.PNG | processed | wealth-freedom | 2026-07-18 |
@@ -111,10 +111,10 @@ Schema (generic — extends to non-screenshot sources later without rework):
 | 2025-05-21-c | screenshot | IMG_4615.JPG | processed | relationships-family | 2026-07-18 |
 | 2025-05-21-d | screenshot | IMG_4616.JPG | processed | relationships-family | 2026-07-18 |
 | 2025-05-22-a | screenshot | IMG_4618.JPG | processed | courage | 2026-07-18 |
-| 2025-05-24-a | screenshot | IMG_4632.PNG, IMG_4633.PNG, IMG_4634.PNG, IMG_4635.PNG, IMG_4636.PNG, IMG_4637.PNG | processed | home-buying (proposed) | 2026-07-18 |
+| 2025-05-24-a | screenshot | IMG_4632.PNG, IMG_4633.PNG, IMG_4634.PNG, IMG_4635.PNG, IMG_4636.PNG, IMG_4637.PNG | archived-non-tree | home-buying (proposed, archived to Drive 2026-07-19) | 2026-07-18 |
 | 2025-05-30-a | screenshot | IMG_4668.PNG | processed | wealth-freedom | 2026-07-18 |
 | 2025-06-03-a | screenshot | IMG_4718.JPG | processed | wealth-freedom | 2026-07-18 |
-| 2025-06-03-b | screenshot | IMG_4719.JPG | processed | life-audit (proposed) | 2026-07-18 |
+| 2025-06-03-b | screenshot | IMG_4719.JPG | placed | life-audit (proposed, mechanism placed as map-life-domain-audit + skill-third-party-life-audit-pass 2026-07-19, original 8-area list discarded as unattributed) | 2026-07-18 |
 | 2025-06-03-c | screenshot | IMG_4720.PNG | processed | wealth-freedom | 2026-07-18 |
 | 2025-06-07-a | screenshot | IMG_4731.PNG | processed | relationships-family | 2026-07-18 |
 | 2025-06-11-a | screenshot | IMG_4741.PNG | processed | work-vocation | 2026-07-18 |
@@ -177,7 +177,7 @@ Schema (generic — extends to non-screenshot sources later without rework):
 | 2025-11-25-a | screenshot | IMG_5565.JPG, IMG_5566.JPG, IMG_5567.JPG, IMG_5568.JPG, IMG_5569.JPG, IMG_5570.JPG, IMG_5571.JPG | processed | behaviour-as-signal | 2026-07-18 |
 | 2025-11-30-a | screenshot | IMG_5590.JPG | processed | wealth-freedom | 2026-07-18 |
 | 2025-12-07-a | screenshot | IMG_5606.JPG | processed | stoicism | 2026-07-18 |
-| 2025-12-08-a | screenshot | IMG_5607.PNG | processed | home-design (proposed) | 2026-07-18 |
+| 2025-12-08-a | screenshot | IMG_5607.PNG | archived-non-tree | home-design (proposed, archived to Drive 2026-07-19) | 2026-07-18 |
 | 2025-12-08-b | screenshot | IMG_5608.PNG | processed | wealth-freedom | 2026-07-18 |
 | 2025-12-09-a | screenshot | IMG_5610.JPG | processed | work-vocation | 2026-07-18 |
 | 2025-12-11-a | screenshot | IMG_5625.JPG | processed | work-vocation | 2026-07-18 |
@@ -185,7 +185,7 @@ Schema (generic — extends to non-screenshot sources later without rework):
 | 2025-12-14-a | screenshot | IMG_5655.PNG, IMG_5656.PNG, IMG_5657.PNG, IMG_5658.PNG | processed | truth-seeking | 2026-07-18 |
 | 2025-12-14-ax | screenshot | IMG_5659.JPG | processed | work-vocation | 2026-07-18 |
 | 2025-12-15-a | screenshot | IMG_5663.PNG | processed | work-vocation | 2026-07-18 |
-| 2025-12-20-a | screenshot | IMG_5683.PNG | processed | local-events (proposed) | 2026-07-18 |
+| 2025-12-20-a | screenshot | IMG_5683.PNG | discarded | local-events (proposed, discarded 2026-07-19) | 2026-07-18 |
 | 2025-12-24-a | screenshot | IMG_5688.PNG | processed | truth-seeking | 2026-07-18 |
 | 2025-12-24-b | screenshot | IMG_5689.PNG | processed | daily-architecture | 2026-07-18 |
 | 2025-12-24-c | screenshot | IMG_5690.PNG | processed | self-worth-identity | 2026-07-18 |
@@ -224,7 +224,7 @@ Schema (generic — extends to non-screenshot sources later without rework):
 | 2026-01-30-a | screenshot | IMG_5808.PNG, IMG_5809.PNG | processed | intentional-living (proposed) | 2026-07-18 |
 | 2026-01-30-b | screenshot | IMG_5810.PNG | processed | daily-architecture | 2026-07-18 |
 | 2026-01-31-a | screenshot | IMG_5811.PNG | processed | wealth-freedom | 2026-07-18 |
-| 2026-02-01-a | screenshot | IMG_5819.PNG | processed | homestead-land-selection (proposed) | 2026-07-18 |
+| 2026-02-01-a | screenshot | IMG_5819.PNG | archived-non-tree | homestead-land-selection (proposed, archived to Drive 2026-07-19) | 2026-07-18 |
 | 2026-02-06-a | screenshot | IMG_5898.PNG | processed | wealth-freedom | 2026-07-18 |
 | 2026-02-07-a | screenshot | IMG_5903.PNG | processed | wealth-freedom | 2026-07-18 |
 | 2026-02-07-b | screenshot | IMG_5904.PNG | processed | wealth-freedom | 2026-07-18 |
@@ -239,7 +239,7 @@ Schema (generic — extends to non-screenshot sources later without rework):
 | 2026-02-18-d | screenshot | IMG_5973.PNG | processed | physical-wellbeing | 2026-07-18 |
 | 2026-02-19-a | screenshot | IMG_6012.PNG | processed | relationships-family | 2026-07-18 |
 | 2026-02-23-a | screenshot | IMG_6051.PNG | processed | stoicism | 2026-07-18 |
-| 2026-02-25-a | screenshot | IMG_6060.PNG | processed | enterprise-tech (proposed) | 2026-07-18 |
+| 2026-02-25-a | screenshot | IMG_6060.PNG | archived-non-tree | enterprise-tech (proposed, archived to Drive 2026-07-19) | 2026-07-18 |
 | 2026-02-27-a | screenshot | IMG_6074.PNG | processed | how-to-live | 2026-07-18 |
 | 2026-03-01-a | screenshot | IMG_6075.PNG | processed | work-vocation | 2026-07-18 |
 | 2026-03-09-a | screenshot | IMG_6109.JPG | processed | relationships-family | 2026-07-18 |
@@ -254,10 +254,10 @@ Schema (generic — extends to non-screenshot sources later without rework):
 | 2026-03-25-a | screenshot | IMG_6183.PNG, IMG_6184.PNG, IMG_6185.PNG | processed | wealth-freedom | 2026-07-18 |
 | 2026-03-28-a | screenshot | IMG_6230.PNG | processed | wealth-freedom | 2026-07-18 |
 | 2026-03-30-a | screenshot | IMG_6331.PNG | processed | work-vocation | 2026-07-18 |
-| 2026-04-01-a | screenshot | IMG_6332.PNG | processed | health-policy (proposed) | 2026-07-18 |
+| 2026-04-01-a | screenshot | IMG_6332.PNG | discarded | health-policy (proposed, discarded 2026-07-19) | 2026-07-18 |
 | 2026-04-01-b | screenshot | IMG_6333.PNG, IMG_6334.PNG | processed | work-vocation | 2026-07-18 |
 | 2026-04-03-a | screenshot | IMG_6343.PNG | processed | daily-architecture | 2026-07-18 |
-| 2026-04-03-b | screenshot | IMG_6344.PNG | processed | homesteading (proposed) | 2026-07-18 |
+| 2026-04-03-b | screenshot | IMG_6344.PNG | archived-non-tree | homesteading (proposed, archived to Drive 2026-07-19) | 2026-07-18 |
 | 2026-04-04-a | screenshot | IMG_6346.PNG | processed | wealth-freedom | 2026-07-18 |
 | 2026-04-05-a | screenshot | IMG_6347.PNG | processed | work-vocation | 2026-07-18 |
 | 2026-04-10-a | screenshot | IMG_6407.PNG | processed | wealth-freedom | 2026-07-18 |
@@ -275,7 +275,7 @@ Schema (generic — extends to non-screenshot sources later without rework):
 | 2026-05-01-b | screenshot | IMG_E6580.JPG | processed | relationships-family | 2026-07-18 |
 | 2026-05-01-c | screenshot | IMG_6581.PNG | processed | behaviour-as-signal | 2026-07-18 |
 | 2026-05-04-a | screenshot | IMG_6584.PNG | processed | wealth-freedom | 2026-07-18 |
-| 2026-05-11-a | screenshot | IMG_6600.PNG | processed | travel (proposed) | 2026-07-18 |
+| 2026-05-11-a | screenshot | IMG_6600.PNG | archived-non-tree | travel (proposed, archived to Drive 2026-07-19) | 2026-07-18 |
 | 2026-05-17-a | screenshot | IMG_6617.PNG | processed | work-vocation | 2026-07-18 |
 | 2026-05-17-b | screenshot | IMG_6618.PNG | processed | behaviour-as-signal | 2026-07-18 |
 | 2026-05-17-c | screenshot | IMG_6619.PNG, IMG_6620.PNG, IMG_6621.PNG | processed | learning-intellectual | 2026-07-18 |
@@ -293,7 +293,7 @@ Schema (generic — extends to non-screenshot sources later without rework):
 | 2026-06-02-a | screenshot | IMG_6669.PNG | processed | ai-tools (proposed) | 2026-07-18 |
 | 2026-06-02-b | screenshot | IMG_6670.PNG | processed | work-vocation | 2026-07-18 |
 | 2026-06-02-c | screenshot | IMG_6671.PNG | processed | learning-intellectual | 2026-07-18 |
-| 2026-06-02-d | screenshot | IMG_6673.PNG | processed | ai-tools (proposed) | 2026-07-18 |
+| 2026-06-02-d | screenshot | IMG_6673.PNG | placed | ai-tools (proposed, token-management/session-hygiene cluster placed as skill-claude-surface-and-context-management 2026-07-19, superseding an unverified skill-ai-session-hygiene draft; other ai-tools.md items remain unplaced) | 2026-07-18 |
 | 2026-06-02-e | screenshot | IMG_6674.PNG | processed | work-vocation | 2026-07-18 |
 | 2026-06-02-f | screenshot | IMG_6675.PNG | processed | work-vocation | 2026-07-18 |
 | 2026-06-02-g | screenshot | IMG_6679.PNG | processed | ai-tools (proposed) | 2026-07-18 |
@@ -316,7 +316,7 @@ Schema (generic — extends to non-screenshot sources later without rework):
 | 2026-06-28-c | screenshot | IMG_E6892.JPG | processed | art-and-meaning | 2026-07-18 |
 | 2026-06-28-d | screenshot | IMG_6893.PNG | processed | learning-intellectual | 2026-07-18 |
 | 2026-06-28-e | screenshot | IMG_E6893.JPG | processed | art-and-meaning | 2026-07-18 |
-| 2026-07-13-a | screenshot | IMG_7005.PNG | processed | dev-tools-reference (proposed) | 2026-07-18 |
+| 2026-07-13-a | screenshot | IMG_7005.PNG | archived-non-tree | dev-tools-reference (proposed, archived to Drive 2026-07-19) | 2026-07-18 |
 | 2026-07-14-a | screenshot | IMG_7013.PNG | processed | work-vocation | 2026-07-18 |
 | 2026-07-15-a | screenshot | IMG_7017.PNG | processed | relationships-family | 2026-07-18 |
 | 2026-07-15-b | screenshot | IMG_7018.PNG | processed | relationships-family | 2026-07-18 |

@@ -21,4 +21,4 @@ Reflection prompted by a themesong tied to first love, and a conversation with a
 
 Self-attributes this to being poorly adjusted to his own feelings, denied the chance to express them growing up, and names this as the defining feature of his upbringing and the root of his dismissive-avoidant tendencies.
 
-See leaf-role-agco and leaf-military-service-gap (branch-work-vocation) for the vocational-inheritance thread this connects to, and leaf-self-vs-other-motivation-asymmetry (leaf-skill-translator-role) for the related self-vs-other pattern.
+See leaf-role-agco and leaf-military-service-gap (branch-work-vocation) for the vocational-inheritance thread this connects to, and leaf-self-vs-other-motivation-asymmetry (leaf-ability-translator-role) for the related self-vs-other pattern.

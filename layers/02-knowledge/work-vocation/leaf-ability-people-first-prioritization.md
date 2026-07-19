@@ -1,8 +1,8 @@
 ---
-id: leaf-skill-people-first-prioritization
+id: leaf-ability-people-first-prioritization
 layer: knowledge
 type: leaf
-title: "Skill: Task Prioritization — People First"
+title: "Ability: Task Prioritization — People First"
 state:
   leaf: yellow
 parent-branch: branch-work-vocation
@@ -24,4 +24,4 @@ Cross-role, not tied to a single job — named explicitly across civilian work, 
 
 Replication readiness: draft. Confidentiality: open.
 
-See also the candidate root philo-people-before-process, which this skill-node fed directly — including the counter J named himself: this ordering is strong and consistent at work, but doesn't generalise cleanly to J's own account of unstructured personal relationships.
+See also the candidate root philo-people-before-process, which this ability-node fed directly — including the counter J named himself: this ordering is strong and consistent at work, but doesn't generalise cleanly to J's own account of unstructured personal relationships.

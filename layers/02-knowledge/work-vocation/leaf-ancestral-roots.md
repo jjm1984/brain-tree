@@ -11,7 +11,7 @@ last-updated: 2026-07-09
 added-on: 2026-07-09
 instrument: lived-experience
 connections:
-  supports: [role-wideland, leaf-skill-translator-role, role-swarmfarm, role-agco]
+  supports: [role-wideland, leaf-ability-translator-role, role-swarmfarm, role-agco]
   crossroads: [crossroads-conscious-vs-inherited-pattern]
 open-threads:
   - Exact dates and fuller detail on both figures not yet captured — first-pass placement only.

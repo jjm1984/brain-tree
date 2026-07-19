@@ -1,4 +1,5 @@
 ---
+id: skill-relationship-conflict-regulation
 name: relationship-conflict-regulation
 title: Understanding and Responding to Relationship Conflict
 description: A five-step in-the-moment sequence (recognise the shape, regulate, borrow peace, inner witness, reconnect) for responding to relationship conflict, disproportionate reactions, or withdrawal. Use when a human is navigating a partner or family conflict, a meltdown, or someone shutting down mid-conversation, and wants language for de-escalating in the moment rather than after the fact.

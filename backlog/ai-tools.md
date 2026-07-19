@@ -21,20 +21,7 @@ Staging only — not yet reviewed into the live tree. **No existing taxonomy mat
 
 ---
 
-### 21 Claude Habits to Avoid Token Limits
-- source_id / source_files: 2026-06-02-d / IMG_6673.PNG
-- source_type: screenshot
-- date_processed: 2026-07-18
-- content_type: promotional
-- category: ai-tools | category_status: proposed
-- quote/content:
-  ```
-  21 Claude Habits in 60 Seconds That Will Stop You Hitting Token Limits: Every token is a word you'll pay for twice. Plan in Chat — build in Cowork. Convert PDFs to .md files before uploading. A 30-word prompt beats a 500-word brief. Let AskUserQuestion pull context - stop pushing text walls. Don't redo everything - fix only the broken section. Batch three prompts into one message. Edit your prompt - never send "actually, change...". New topic = new chat. Always. Long chats are token furnaces - restart every 20 messages. Don't dump 50 files - load only what Claude needs. Use Sonnet for simple work - save Opus for deep work. Trim your about-me file under 2,000 words. End with a session-notes — open the next with it. Upload once with Projects — never re-tokenize the same file. Turn off web search and connectors by default. Give Claude a tight scope - stop letting it explore everything. Speak with Wispr Flow — one shot beats ten messages. Schedule recurring tasks — stop running them by hand. Spread your sessions — limits roll off every 5 hours. Restart from earlier — don't keep typing "no, I meant...".
-  ```
-- attribution: Ruben Hassid, "How to AI" (shared via Farid's AI Empire) | verification_status: confirmed
-- verification_notes: Attribution is directly visible in-image ("from Ruben Hassid, on 'How to AI'"), used as given per instructions. Ruben Hassid is a publicly known AI-content creator/newsletter author ("How to AI"), so the attribution is plausible and not obviously misattributed — no further re-verification performed. Note on the listicle's substantive claims (not required by the task, but for context): several are consistent with real, documented Claude/Anthropic behavior — e.g. Claude.ai consumer usage limits are publicly documented to reset on a rolling ~5-hour window, and "AskUserQuestion" is a real Claude Code tool name. A few items use loose or non-standard terminology (e.g. "Cowork" does not match any current official Anthropic product or interface name I'm aware of, and may be a garbled reference to a Claude Code/Projects-type build environment) — flagged here for awareness, not corrected, since this is a pass-through triage of promotional content per instructions, not a fact-check deliverable.
-- tags: claude, ai-productivity, prompting, token-management, llm-workflow
-- personal_note:
+_"21 Claude Habits to Avoid Token Limits" (source_id 2026-06-02-d) was placed as `skill-claude-surface-and-context-management` (`layers/04-map/skills/claude-surface-and-context-management/`) on 2026-07-19, fact-checked against official docs — see `backlog/_processing_log.md` for provenance. The remaining items below are unplaced; this file is not fully processed._
 
 ---
 

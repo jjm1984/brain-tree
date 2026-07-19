@@ -7,7 +7,7 @@ state:
   philosophy: forming
 last-updated: 2026-07-05
 added-on: 2026-07-05
-connected-to: [branch-work-vocation, leaf-skill-people-first-prioritization, leaf-skill-audience-motivation-mapping, leaf-skill-translator-role, branch-self-worth-identity, philo-courage]
+connected-to: [branch-work-vocation, leaf-ability-people-first-prioritization, leaf-ability-audience-motivation-mapping, leaf-ability-translator-role, branch-self-worth-identity, philo-courage]
 connections:
   supports: [branch-work-vocation]
   exposed-roots:

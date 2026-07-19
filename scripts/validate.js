@@ -59,9 +59,11 @@ const VALID_INSTRUMENTS = ['philosophy', 'science', 'lived-experience', 'myth-fo
 // format constraints below are enforced precisely, even though nothing in this
 // repo is placed where it would actually auto-trigger (see SKILL-CREATION.md
 // "Placement" -- deliberate, not an oversight).
-const SKILL_REQUIRED_FIELDS = ['name', 'title', 'description', 'for', 'written-for', 'grounded-in', 'full-reference', 'status'];
+const SKILL_REQUIRED_FIELDS = ['id', 'name', 'title', 'description', 'for', 'written-for', 'grounded-in', 'full-reference', 'status'];
 const SKILL_NAME_PATTERN = /^[a-z0-9-]{1,64}$/;
+const SKILL_ID_PATTERN = /^skill-[a-z0-9-]+$/;
 const SKILL_RESERVED_WORDS = ['anthropic', 'claude'];
+const VALID_PARENT_MAP_STATUSES = ['orphan-pending', 'resolved'];
 
 function validate() {
   const repoRoot = path.join(__dirname, '..');
@@ -89,6 +91,12 @@ function validate() {
       SKILL_REQUIRED_FIELDS.forEach(field => {
         if (frontmatter[field] === undefined) issues.push({ file: rel, issue: `Missing required field: ${field}` });
       });
+      if (frontmatter.id && !SKILL_ID_PATTERN.test(frontmatter.id)) {
+        issues.push({ file: rel, issue: `Invalid id: "${frontmatter.id}" (must start with "skill-", per meta/principles.md's Skills-are-a-Map-layer-sub-type decision)` });
+      }
+      if (frontmatter.parent_map_status && !VALID_PARENT_MAP_STATUSES.includes(frontmatter.parent_map_status)) {
+        issues.push({ file: rel, issue: `Invalid parent_map_status: "${frontmatter.parent_map_status}" (expected orphan-pending or resolved)` });
+      }
       if (frontmatter.name) {
         // Real Agent Skills `name` constraints (docs.claude.com/agents-and-tools/
         // agent-skills/overview): lowercase letters, numbers, hyphens only; max 64

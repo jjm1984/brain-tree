@@ -1,8 +1,8 @@
 ---
-id: leaf-skill-audience-motivation-mapping
+id: leaf-ability-audience-motivation-mapping
 layer: knowledge
 type: leaf
-title: "Skill: Audience Motivation Mapping"
+title: "Ability: Audience Motivation Mapping"
 state:
   leaf: yellow
 parent-branch: branch-work-vocation
@@ -24,4 +24,4 @@ Named specifically in sales/customer-facing contexts — Trimble, SwarmFarm, dea
 
 Replication readiness: draft. Confidentiality: open.
 
-Generalized in leaf-skill-translator-role from one listener to N simultaneous stakeholders.
+Generalized in leaf-ability-translator-role from one listener to N simultaneous stakeholders.

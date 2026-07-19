@@ -2,9 +2,9 @@
 
 Short, actionable `SKILL.md` files backed by a full `reference.md`, mirroring the format already used for AI/coding skills elsewhere. First artifact: `relationship-conflict-regulation/`, drafted 2026-07-18.
 
-## Open structural question — explicitly not resolved
+## Placement — resolved
 
-**Does this library become its own new top-level layer alongside Map, or stay a Map-layer sub-type** (skill files as a specific format of Map content, per the Map-Layer Exception Principle in `meta/principles.md`)? This is a real, unresolved structural question, first raised 2026-07-18 — not an oversight. It currently lives under `layers/04-map/skills/` as a conservative default, not because that placement has been decided as correct. Do not treat the current location as a resolution of the question. Flag for J before assuming either answer.
+**Resolved 2026-07-18 (J):** Skills are a Map-layer sub-type, not a 7th layer. Full chain — Leaf (knowledge) → Fruit + Code injection (embodied values/character, autonomic or conscious) → Map (strategy) → Skill (tactical action decomposed from a Map strategy node). See `meta/principles.md` § "Skills Are a Map-Layer Sub-Type, Not a 7th Layer" for the full decision, the `skill-*` id prefix, the `parent_map`/`parent_map_status` schema fields, and the `orphan-pending` provisional-placement rule for skills whose natural parent Map node doesn't exist yet. `layers/04-map/skills/` is this decision's physical placement, not a conservative default awaiting resolution.
 
 ## Pattern for future skills in this library
 
@@ -14,3 +14,6 @@ Each skill directory pairs `SKILL.md` (short, read in the moment, assumes a `wri
 
 - `relationship-conflict-regulation/` — forming, 2026-07-18
 - `things-to-teach-kids/` — forming, 2026-07-18. Built explicitly as a schema test of the first skill's format — see its `reference.md` schema-fit note for what held and what didn't (short version: the single-ordered-sequence structure doesn't fit every skill; this one uses parallel "pillars" instead).
+- `declutter-adhd-family-functioning/` — forming, 2026-07-18. `parent_map_status: orphan-pending` — no Map node exists yet for family/neurodivergence household scaffolding.
+- `third-party-life-audit-pass/` — forming, 2026-07-19. Tactical execution of `map-life-domain-audit` (`layers/04-map/index.md`) — first skill in the library placed with a resolved `parent_map` from creation.
+- `claude-surface-and-context-management/` — forming, fact-checked 2026-07-19. Supersedes an earlier unverified draft (`skill-ai-session-hygiene`) with a fact-checked version against official Anthropic docs. `parent_map_status: orphan-pending` — no Map node exists yet for AI-tool usage generally. First use of a `supersedes:` field, flagged (not yet proposed as a spec amendment) in its `reference.md` schema-fit note.
