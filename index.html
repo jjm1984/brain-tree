@@ -1,483 +1,900 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brain Tree — Living Library</title>
-<meta name="description" content="A living library of one mind — structured as a tree, visualised as a graph.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#04070E">
+<title>The Brain Tree</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --surface-1:      #fcfcfb;
-    --surface-2:      #f9f9f7;
-    --text-primary:   #0b0b0b;
-    --text-secondary: #52514e;
-    --text-muted:     #898781;
-    --gridline:       #e1e0d9;
-    --border:         rgba(11,11,11,0.10);
-    --node-stroke:    #fcfcfb;
-    --link-stroke:    #c3c2b7;
-
-    --layer-mycelium:       #2a78d6;
-    --layer-roots:          #4a3aa7;
-    --layer-knowledge:      #1baf7a;
-    --layer-code:           #eb6834;
-    --layer-map:            #e87ba4;
-    --layer-flowers-fruits: #e34948;
-    --layer-meta:           #898781;
-    --layer-unknown:        #c3c2b7;
+  :root{
+    --field:#04070E; --ink:#D8DEEA; --amber:#F0A840; --amber-core:#FFD98A;
+    --gold:#E8C15A; --blue:#6FB8FF; --silver:#C9D4E8; --violet:#8B6FD9;
+    --panel:rgba(9,13,24,0.94);
   }
-  :root[data-theme="dark"] {
-    --surface-1:      #1a1a19;
-    --surface-2:      #0d0d0d;
-    --text-primary:   #ffffff;
-    --text-secondary: #c3c2b7;
-    --text-muted:     #898781;
-    --gridline:       #2c2c2a;
-    --border:         rgba(255,255,255,0.10);
-    --node-stroke:    #1a1a19;
-    --link-stroke:    #383835;
-
-    --layer-mycelium:       #3987e5;
-    --layer-roots:          #9085e9;
-    --layer-knowledge:      #199e70;
-    --layer-code:           #d95926;
-    --layer-map:            #d55181;
-    --layer-flowers-fruits: #e66767;
-    --layer-meta:           #898781;
-    --layer-unknown:        #52514e;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --surface-1:      #1a1a19;
-      --surface-2:      #0d0d0d;
-      --text-primary:   #ffffff;
-      --text-secondary: #c3c2b7;
-      --text-muted:     #898781;
-      --gridline:       #2c2c2a;
-      --border:         rgba(255,255,255,0.10);
-      --node-stroke:    #1a1a19;
-      --link-stroke:    #383835;
-
-      --layer-mycelium:       #3987e5;
-      --layer-roots:          #9085e9;
-      --layer-knowledge:      #199e70;
-      --layer-code:           #d95926;
-      --layer-map:            #d55181;
-      --layer-flowers-fruits: #e66767;
-      --layer-meta:           #898781;
-      --layer-unknown:        #52514e;
-    }
-  }
-
-  * { box-sizing: border-box; }
-  html, body {
-    margin: 0; padding: 0; height: 100%;
-    background: var(--surface-2);
-    color: var(--text-primary);
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    overflow: hidden;
-  }
-  #app { display: flex; flex-direction: column; height: 100vh; }
-
-  header {
-    display: flex; align-items: center; gap: 16px;
-    padding: 10px 16px;
-    border-bottom: 1px solid var(--border);
-    background: var(--surface-1);
-    flex-wrap: wrap;
-  }
-  header h1 { font-size: 15px; font-weight: 600; margin: 0; white-space: nowrap; }
-  header h1 span { color: var(--text-muted); font-weight: 400; }
-  #search {
-    flex: 1; min-width: 160px; max-width: 320px;
-    padding: 6px 10px; border-radius: 6px;
-    border: 1px solid var(--border);
-    background: var(--surface-2);
-    color: var(--text-primary);
-    font-size: 13px;
-  }
-  #legend { display: flex; gap: 10px; flex-wrap: wrap; font-size: 11px; color: var(--text-secondary); }
-  #legend .item { display: flex; align-items: center; gap: 4px; cursor: pointer; user-select: none; }
-  #legend .item.dim { opacity: 0.35; }
-  #legend .dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
-  #meta-info { font-size: 11px; color: var(--text-muted); white-space: nowrap; }
-
-  main { flex: 1; display: flex; min-height: 0; }
-  #graph-wrap { flex: 1; position: relative; min-width: 0; }
-  svg#graph { width: 100%; height: 100%; display: block; cursor: grab; }
-  svg#graph:active { cursor: grabbing; }
-
-  .link { stroke: var(--link-stroke); stroke-opacity: 0.55; }
-  .node circle { stroke: var(--node-stroke); stroke-width: 1.5px; cursor: pointer; }
-  .node text {
-    font-size: 9px; fill: var(--text-secondary); pointer-events: none;
-    paint-order: stroke; stroke: var(--surface-2); stroke-width: 3px;
-  }
-  .node.faded { opacity: 0.12; }
-  .link.faded { opacity: 0.05; }
-
-  #tooltip {
-    position: absolute; pointer-events: none;
-    background: var(--surface-1); border: 1px solid var(--border);
-    border-radius: 6px; padding: 6px 10px; font-size: 12px;
-    max-width: 260px; box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-    display: none; z-index: 10;
-  }
-  #tooltip .t-title { font-weight: 600; margin-bottom: 2px; }
-  #tooltip .t-meta { color: var(--text-muted); font-size: 11px; }
-
-  #panel {
-    width: 380px; flex-shrink: 0;
-    border-left: 1px solid var(--border);
-    background: var(--surface-1);
-    overflow-y: auto;
-    padding: 0;
-    display: none;
-  }
-  #panel.open { display: block; }
-  #panel-header {
-    position: sticky; top: 0;
-    background: var(--surface-1);
-    border-bottom: 1px solid var(--border);
-    padding: 14px 16px 10px;
-  }
-  #panel-close {
-    float: right; cursor: pointer; border: none; background: none;
-    color: var(--text-muted); font-size: 18px; line-height: 1; padding: 0 4px;
-  }
-  #panel-header h2 { font-size: 16px; margin: 0 24px 6px 0; }
-  #panel-badges { display: flex; gap: 6px; flex-wrap: wrap; font-size: 11px; }
-  #panel-badges span {
-    padding: 2px 8px; border-radius: 999px; background: var(--surface-2);
-    color: var(--text-secondary); border: 1px solid var(--border);
-  }
-  #panel-body { padding: 14px 16px 40px; font-size: 13.5px; line-height: 1.6; color: var(--text-primary); }
-  #panel-body h1, #panel-body h2, #panel-body h3 { font-size: 14px; margin: 18px 0 6px; color: var(--text-primary); }
-  #panel-body p { margin: 0 0 12px; }
-  #panel-body ul { margin: 0 0 12px; padding-left: 20px; }
-  #panel-body blockquote {
-    margin: 0 0 12px; padding-left: 12px; border-left: 2px solid var(--border); color: var(--text-secondary);
-  }
-  #panel-body a { color: var(--layer-mycelium); }
-  #panel-body code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-size: 12px; }
-  #panel-body hr { border: none; border-top: 1px solid var(--gridline); margin: 16px 0; }
-  #panel-footer { padding: 0 16px 16px; }
-  #panel-footer a { color: var(--text-muted); font-size: 11px; }
-  #panel-loading, #panel-error { padding: 16px; color: var(--text-muted); font-size: 12.5px; }
-
-  #empty-state {
-    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-    color: var(--text-muted); font-size: 13px; text-align: center; padding: 20px;
-  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;overflow:hidden;background:var(--field);color:var(--ink);
+    font-family:'JetBrains Mono',ui-monospace,monospace;-webkit-font-smoothing:antialiased}
+  #stage{position:fixed;inset:0;touch-action:none;display:block}
+  #vignette{position:fixed;inset:0;pointer-events:none;z-index:2;
+    background:radial-gradient(ellipse at 50% 42%, transparent 52%, rgba(0,0,3,.6) 100%)}
+  header{position:fixed;top:0;left:0;right:0;padding:18px 22px 0;pointer-events:none;z-index:5}
+  h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-style:italic;
+    font-size:clamp(22px,4.5vw,32px);color:#EDE6D4;opacity:.93;letter-spacing:.02em}
+  .trunkline{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;
+    font-size:clamp(12px,2.5vw,16px);color:var(--amber-core);opacity:.72;margin-top:2px}
+  #source{margin-top:6px;font-size:9px;letter-spacing:.14em;opacity:.4;text-transform:lowercase}
+  #source.live::before{content:'◉ ';color:#9AE85F}
+  #source.stale::before{content:'⚠ ';color:var(--gold)}
+  #filters{position:fixed;top:76px;left:0;right:0;z-index:5;display:flex;gap:6px;
+    flex-wrap:wrap;padding:6px 22px 10px;pointer-events:none}
+  .chip{flex:0 0 auto;font:inherit;font-size:10px;letter-spacing:.09em;color:var(--ink);
+    touch-action:manipulation;pointer-events:auto;
+    background:rgba(201,212,232,.06);border:1px solid rgba(201,212,232,.15);
+    border-radius:20px;padding:5px 12px;cursor:pointer;text-transform:lowercase;
+    transition:all .15s;user-select:none;-webkit-tap-highlight-color:transparent}
+  .chip.on{background:rgba(232,193,90,.14);border-color:var(--gold);color:var(--amber-core)}
+  .chip.gaps.on{background:rgba(111,184,255,.15);border-color:var(--blue);color:#AFD5FF}
+  #hint{position:fixed;right:20px;top:20px;font-size:9px;letter-spacing:.1em;opacity:.38;
+    z-index:5;text-transform:lowercase;text-align:right;line-height:1.8;pointer-events:none}
+  #reset{position:fixed;right:16px;bottom:calc(100px + env(safe-area-inset-bottom));z-index:6;
+    font:inherit;font-size:10px;letter-spacing:.1em;color:var(--ink);cursor:pointer;
+    background:rgba(201,212,232,.08);border:1px solid rgba(201,212,232,.2);
+    border-radius:18px;padding:8px 14px;text-transform:lowercase;display:none;
+    -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+  #legend{position:fixed;left:0;right:0;bottom:0;z-index:4;display:flex;gap:12px;
+    flex-wrap:wrap;align-items:center;padding:12px 22px calc(14px + env(safe-area-inset-bottom));
+    font-size:9px;letter-spacing:.08em;text-transform:lowercase;pointer-events:none;
+    background:linear-gradient(transparent, rgba(4,7,14,.9))}
+  .key{display:flex;align-items:center;gap:5px;opacity:.68}
+  .dot{width:7px;height:7px;border-radius:50%;box-shadow:0 0 10px currentColor}
+  #sheet{position:fixed;left:0;right:0;bottom:0;z-index:7;background:var(--panel);
+    -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+    border-top:1px solid rgba(201,212,232,.14);border-radius:14px 14px 0 0;
+    padding:16px 22px calc(22px + env(safe-area-inset-bottom));
+    transform:translateY(105%);transition:transform .28s ease;max-height:48vh;overflow-y:auto}
+  #sheet.open{transform:translateY(0)}
+  #sheet .layer{font-size:9px;letter-spacing:.16em;text-transform:uppercase;opacity:.55}
+  #sheet h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;
+    font-size:22px;color:#F2ECDC;margin:4px 0 8px;line-height:1.2}
+  #sheet .meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+  .pill{font-size:9px;letter-spacing:.1em;padding:3px 9px;border-radius:12px;
+    border:1px solid rgba(201,212,232,.2);text-transform:lowercase}
+  #sheet .note{font-size:12px;line-height:1.65;opacity:.85}
+  #sheet .path{font-size:9px;letter-spacing:.08em;opacity:.4;margin-top:8px;word-break:break-all}
+  #sheet .links{margin-top:12px;display:flex;gap:6px;flex-wrap:wrap}
+  .linkchip{font:inherit;font-size:10px;color:var(--silver);cursor:pointer;text-align:left;
+    background:rgba(201,212,232,.05);border:1px solid rgba(201,212,232,.18);
+    border-radius:12px;padding:4px 10px;-webkit-tap-highlight-color:transparent}
+  .linkchip.supports{color:#EFD9A0;border-color:rgba(232,193,90,.4)}
+  .linkchip.challenges{color:#FFB080;border-color:rgba(240,168,64,.4)}
+  .linkchip.tendril{color:#AFD5FF;border-color:rgba(111,184,255,.4)}
+  #close{position:absolute;top:10px;right:14px;background:none;border:none;
+    color:var(--ink);opacity:.5;font-size:18px;cursor:pointer;font-family:inherit;padding:4px 8px}
+  #load{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;
+    z-index:9;background:var(--field);color:var(--amber-core);font-style:italic;
+    font-family:'Cormorant Garamond',Georgia,serif;font-size:14px;opacity:1;
+    transition:opacity .8s ease;pointer-events:none;letter-spacing:.03em}
+  #load.gone{opacity:0}
+  .blabel{position:fixed;top:0;left:0;font:500 10px/1.15 'JetBrains Mono',ui-monospace,monospace;
+    letter-spacing:.03em;padding:3px 8px;border-radius:8px;pointer-events:none;
+    text-transform:lowercase;white-space:nowrap;z-index:3;will-change:transform;
+    transition:opacity .3s;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);
+    color:#FFE6A8;background:rgba(9,13,24,.72);border:1px solid rgba(255,217,138,.22)}
+  .blabel.branch{color:#FFE6A8;border-color:rgba(255,217,138,.35);font-weight:500}
+  .blabel.gap{color:#AFD5FF;border-color:rgba(111,184,255,.35);font-style:italic}
+  .blabel.tendril{color:#AFD5FF;border-color:rgba(111,184,255,.3);font-style:italic;opacity:.85}
+  .blabel.trunk{color:#FFD98A;border-color:rgba(240,184,80,.5);
+    font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:12px;
+    text-transform:none;letter-spacing:.02em}
+  #err{position:fixed;left:22px;right:22px;top:50%;transform:translateY(-50%);z-index:10;
+    padding:16px 20px;background:rgba(20,10,10,.94);border:1px solid rgba(240,168,64,.4);
+    border-radius:10px;color:#FFB080;font-size:12px;line-height:1.5;display:none}
 </style>
 </head>
 <body>
-<div id="app">
-  <header>
-    <h1>Brain Tree <span>— a living library of one mind</span></h1>
-    <input id="search" type="text" placeholder="Search nodes…" autocomplete="off">
-    <div id="legend"></div>
-    <div id="meta-info"></div>
-  </header>
-  <main>
-    <div id="graph-wrap">
-      <svg id="graph"></svg>
-      <div id="tooltip"></div>
-      <div id="empty-state" style="display:none">Loading graph…</div>
-    </div>
-    <div id="panel">
-      <div id="panel-header">
-        <button id="panel-close" aria-label="Close">×</button>
-        <h2 id="panel-title"></h2>
-        <div id="panel-badges"></div>
-      </div>
-      <div id="panel-body"></div>
-      <div id="panel-footer"><a id="panel-source" href="#" target="_blank" rel="noopener">View raw source on GitHub →</a></div>
-    </div>
-  </main>
+<canvas id="stage"></canvas>
+<div id="vignette"></div>
+<header>
+  <h1>The Brain Tree</h1>
+  <div class="trunkline">do what is fulfilling — cause no harm</div>
+  <div id="source"></div>
+</header>
+<div id="filters"></div>
+<div id="hint">drag · orbit<br>pinch / scroll · zoom<br>tap · explore</div>
+<button id="reset">↺ whole tree</button>
+<div id="sheet">
+  <button id="close" aria-label="Close">×</button>
+  <div class="layer" id="sLayer"></div>
+  <h2 id="sTitle"></h2>
+  <div class="meta" id="sMeta"></div>
+  <div class="note" id="sNote"></div>
+  <div class="path" id="sPath"></div>
+  <div class="links" id="sLinks"></div>
 </div>
+<div id="legend">
+  <span class="key"><span class="dot" style="color:#E8C15A;background:#E8C15A"></span>settled</span>
+  <span class="key"><span class="dot" style="color:#FFF4D6;background:#FFF4D6"></span>forming</span>
+  <span class="key"><span class="dot" style="color:#6FB8FF;background:transparent;border:1px solid #6FB8FF;box-shadow:none"></span>named gap</span>
+  <span class="key"><span class="dot" style="color:#AFD5FF;background:#AFD5FF"></span>further reading</span>
+  <span class="key"><span class="dot" style="color:#BFE0FF;background:#BFE0FF"></span>philosophy roots</span>
+  <span class="key"><span class="dot" style="color:#8B6FD9;background:#8B6FD9;opacity:.5"></span>mycelium</span>
+</div>
+<div id="load">the tree is growing…</div>
+<div id="err"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
-<script>
-(function () {
-  "use strict";
-
-  const REPO = "jjm1984/brain-tree";
-  const BRANCH = "main";
-  const RAW_BASE = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/`;
-  const BLOB_BASE = `https://github.com/${REPO}/blob/${BRANCH}/`;
-
-  const LAYER_COLOR_VAR = {
-    mycelium: "--layer-mycelium",
-    roots: "--layer-roots",
-    knowledge: "--layer-knowledge",
-    code: "--layer-code",
-    map: "--layer-map",
-    "flowers-fruits": "--layer-flowers-fruits",
-    meta: "--layer-meta"
-  };
-  const LAYER_ORDER = ["mycelium", "roots", "knowledge", "code", "map", "flowers-fruits", "meta"];
-  const LAYER_LABEL = {
-    mycelium: "Mycelium", roots: "Roots", knowledge: "Knowledge",
-    code: "Code", map: "Map", "flowers-fruits": "Flowers & Fruits", meta: "Meta"
-  };
-  const STATE_EMOJI = {
-    green: "🟢", yellow: "🟡", dry: "🍂", peripheral: "⬜",
-    forming: "🌱", growing: "🌿", grounded: "🪨", "in-tension": "🌀"
-  };
-  const TYPE_RADIUS = { layer: 10, branch: 8, philosophy: 8, principle: 7, inference: 5, "feedback-entry": 5, leaf: 5 };
-
-  function cssVar(name) {
-    return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
   }
-  function layerColor(layer) {
-    const v = LAYER_COLOR_VAR[layer];
-    return v ? cssVar(v) : cssVar("--layer-unknown");
-  }
-  function stateEmoji(state) {
-    if (!state || typeof state !== "object") return "";
-    const val = Object.values(state)[0];
-    return STATE_EMOJI[val] || "";
-  }
+}
+</script>
 
-  const svg = d3.select("#graph");
-  const tooltip = document.getElementById("tooltip");
-  const graphWrap = document.getElementById("graph-wrap");
-  const emptyState = document.getElementById("empty-state");
-  const panel = document.getElementById("panel");
+<script type="module">
+let THREE, OrbitControls, EffectComposer, RenderPass, UnrealBloomPass, OutputPass;
+function showError(msg) {
+  const el = document.getElementById('err');
+  el.innerHTML = msg; el.style.display = 'block';
+  document.getElementById('load').classList.add('gone');
+}
+try {
+  THREE = await import('three');
+  ({ OrbitControls } = await import('three/addons/controls/OrbitControls.js'));
+  ({ EffectComposer } = await import('three/addons/postprocessing/EffectComposer.js'));
+  ({ RenderPass } = await import('three/addons/postprocessing/RenderPass.js'));
+  ({ UnrealBloomPass } = await import('three/addons/postprocessing/UnrealBloomPass.js'));
+  ({ OutputPass } = await import('three/addons/postprocessing/OutputPass.js'));
+} catch (err) {
+  showError(`<b>Three.js failed to load.</b><br><small>${err.message}</small>`);
+  throw err;
+}
 
-  let simulation, linkSel, nodeSel, allNodes = [], allLinks = [];
+try {
 
-  function dimensions() {
-    return [graphWrap.clientWidth, graphWrap.clientHeight];
-  }
+// ===================== DATA =====================
+const SAMPLE_FALLBACK = {
+  nodes: [
+    { id:'r-aristotle', title:'Aristotle — hexis / ethismos', layer:'roots', type:'philosophy', state:{philosophy:'grounded'}, instrument:'philosophy' },
+    { id:'r-peirce', title:'Peirce — fallibilism', layer:'roots', type:'philosophy', state:{philosophy:'grounded'}, instrument:'philosophy' },
+    { id:'r-popper', title:'Popper — falsification', layer:'roots', type:'philosophy', state:{philosophy:'grounded'}, instrument:'philosophy' },
+    { id:'r-nietzsche', title:'Nietzsche — standing counter', layer:'roots', type:'philosophy', state:{philosophy:'forming'}, instrument:'philosophy' },
+    { id:'m-brain', title:'Brain', layer:'mycelium', type:'leaf', state:{leaf:'yellow'}, instrument:'science' },
+    { id:'m-ns', title:'Nervous system', layer:'mycelium', type:'leaf', state:{leaf:'green'}, instrument:'science' },
+    { id:'m-hormones', title:'Hormones', layer:'mycelium', type:'leaf', state:{leaf:'yellow'}, instrument:'science' },
+    { id:'b-aliveness', title:'Aliveness', layer:'knowledge', type:'branch', state:{branch:'green'}, instrument:'multi' },
+    { id:'b-worth', title:'Self-worth', layer:'knowledge', type:'branch', state:{branch:'green'}, instrument:'multi' },
+    { id:'b-epistem', title:'Epistemology', layer:'knowledge', type:'branch', state:{branch:'green'}, instrument:'philosophy' },
+    { id:'k-conditions', title:'Six conditions', layer:'knowledge', type:'leaf', state:{leaf:'green'}, instrument:'lived-experience' },
+    { id:'k-purposeless', title:'Purposeful purposelessness', layer:'knowledge', type:'leaf', state:{leaf:'green'}, instrument:'philosophy' },
+    { id:'k-worthmachine', title:'Worth-machine', layer:'knowledge', type:'leaf', state:{leaf:'yellow'}, instrument:'lived-experience' },
+    { id:'k-deferred', title:'Deferred truth', layer:'knowledge', type:'leaf', state:{leaf:'yellow'}, instrument:'philosophy' },
+    { id:'k-gap-external', title:'External creativity research', layer:'knowledge', type:'leaf', state:{leaf:'peripheral'}, instrument:null },
+    { id:'c-resentment', title:'Resentment is the audit trigger', layer:'code', type:'principle', state:{leaf:'green'}, instrument:'philosophy' },
+    { id:'p-fourcond', title:'Four-condition sacrifice audit', layer:'map', type:'principle', state:{leaf:'green'}, instrument:'philosophy' },
+    { id:'meta-feedback', title:'Feedback loop', layer:'meta', type:'principle', state:null, instrument:null },
+  ],
+  edges: [
+    { source:'k-conditions', target:'b-aliveness', type:'supports' },
+    { source:'k-purposeless', target:'b-aliveness', type:'supports' },
+    { source:'k-worthmachine', target:'b-worth', type:'supports' },
+    { source:'k-deferred', target:'b-epistem', type:'supports' },
+    { source:'b-epistem', target:'r-peirce', type:'supports' },
+    { source:'b-epistem', target:'r-popper', type:'supports' },
+    { source:'b-aliveness', target:'r-aristotle', type:'supports' },
+    { source:'r-nietzsche', target:'r-peirce', type:'challenges' },
+    { source:'c-resentment', target:'k-worthmachine', type:'supports' },
+    { source:'p-fourcond', target:'c-resentment', type:'supports' },
+    { source:'meta-feedback', target:'b-epistem', type:'supports' },
+    { source:'m-brain', target:'k-conditions', type:'supports' },
+  ],
+  meta: { source:'embedded' }
+};
 
-  const gRoot = svg.append("g");
-  const gLinks = gRoot.append("g").attr("class", "links");
-  const gNodes = gRoot.append("g").attr("class", "nodes");
-
-  const zoomBehavior = d3.zoom().scaleExtent([0.15, 4]).on("zoom", (ev) => {
-    gRoot.attr("transform", ev.transform);
-  });
-  svg.call(zoomBehavior);
-
-  function fitToView() {
-    if (!allNodes.length) return;
-    const [width, height] = dimensions();
-    const pad = 60;
-    let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
-    allNodes.forEach(d => {
-      if (typeof d.x !== "number") return;
-      minX = Math.min(minX, d.x); maxX = Math.max(maxX, d.x);
-      minY = Math.min(minY, d.y); maxY = Math.max(maxY, d.y);
-    });
-    if (!isFinite(minX)) return;
-    const bboxW = Math.max(maxX - minX, 1), bboxH = Math.max(maxY - minY, 1);
-    const scale = Math.min(4, Math.max(0.15, Math.min((width - pad * 2) / bboxW, (height - pad * 2) / bboxH)));
-    const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
-    const transform = d3.zoomIdentity.translate(width / 2, height / 2).scale(scale).translate(-cx, -cy);
-    svg.transition().duration(500).call(zoomBehavior.transform, transform);
-  }
-
-  function render(graph) {
-    emptyState.style.display = "none";
-    const [width, height] = dimensions();
-
-    allNodes = graph.nodes.map(d => Object.assign({}, d));
-    const idSet = new Set(allNodes.map(n => n.id));
-    allLinks = graph.edges.filter(e => idSet.has(e.source) && idSet.has(e.target)).map(d => Object.assign({}, d));
-
-    document.getElementById("meta-info").textContent =
-      `${graph.meta.nodeCount} nodes · ${graph.meta.edgeCount} edges`;
-
-    buildLegend();
-
-    simulation = d3.forceSimulation(allNodes)
-      .force("link", d3.forceLink(allLinks).id(d => d.id).distance(70).strength(0.35))
-      .force("charge", d3.forceManyBody().strength(-140))
-      .force("x", d3.forceX(width / 2).strength(0.045))
-      .force("y", d3.forceY(height / 2).strength(0.045))
-      .force("collision", d3.forceCollide().radius(d => (TYPE_RADIUS[d.type] || 5) + 14));
-
-    linkSel = gLinks.selectAll("line").data(allLinks).join("line")
-      .attr("class", "link")
-      .attr("stroke-width", 1);
-
-    nodeSel = gNodes.selectAll("g.node").data(allNodes, d => d.id).join(enter => {
-      const g = enter.append("g").attr("class", "node");
-      g.append("circle")
-        .attr("r", d => TYPE_RADIUS[d.type] || 5)
-        .attr("fill", d => layerColor(d.layer));
-      g.append("text")
-        .attr("dy", d => (TYPE_RADIUS[d.type] || 5) + 10)
-        .attr("text-anchor", "middle")
-        .text(d => d.title);
-      return g;
-    });
-
-    nodeSel
-      .on("mouseenter", (ev, d) => showTooltip(ev, d))
-      .on("mousemove", (ev) => positionTooltip(ev))
-      .on("mouseleave", hideTooltip)
-      .on("click", (ev, d) => openPanel(d))
-      .call(d3.drag()
-        .on("start", (ev, d) => { if (!ev.active) simulation.alphaTarget(0.2).restart(); d.fx = d.x; d.fy = d.y; })
-        .on("drag", (ev, d) => { d.fx = ev.x; d.fy = ev.y; })
-        .on("end", (ev, d) => { if (!ev.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }));
-
-    simulation.on("tick", () => {
-      linkSel
-        .attr("x1", d => d.source.x).attr("y1", d => d.source.y)
-        .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
-      nodeSel.attr("transform", d => `translate(${d.x},${d.y})`);
-    });
-    simulation.on("end", fitToView);
-    // Simulation can take a couple seconds to reach "end" (alpha below threshold);
-    // also fit once shortly after start so the graph isn't stranded off-screen meanwhile.
-    setTimeout(fitToView, 800);
-  }
-
-  function buildLegend() {
-    const legend = document.getElementById("legend");
-    legend.innerHTML = "";
-    const active = new Set(LAYER_ORDER);
-    LAYER_ORDER.forEach(layer => {
-      const item = document.createElement("div");
-      item.className = "item";
-      item.dataset.layer = layer;
-      item.innerHTML = `<span class="dot" style="background:${layerColor(layer)}"></span>${LAYER_LABEL[layer]}`;
-      item.addEventListener("click", () => {
-        if (active.has(layer)) active.delete(layer); else active.add(layer);
-        item.classList.toggle("dim", !active.has(layer));
-        applyLayerFilter(active);
-      });
-      legend.appendChild(item);
-    });
-  }
-
-  function applyLayerFilter(active) {
-    nodeSel.classed("faded", d => !active.has(d.layer));
-    linkSel.classed("faded", d => !active.has(d.source.layer) || !active.has(d.target.layer));
-  }
-
-  function showTooltip(ev, d) {
-    tooltip.innerHTML = `<div class="t-title">${stateEmoji(d.state)} ${escapeHtml(d.title)}</div>
-      <div class="t-meta">${LAYER_LABEL[d.layer] || d.layer} · ${d.type}${d.instrument ? " · " + d.instrument : ""}</div>`;
-    tooltip.style.display = "block";
-    positionTooltip(ev);
-  }
-  function positionTooltip(ev) {
-    const rect = graphWrap.getBoundingClientRect();
-    tooltip.style.left = (ev.clientX - rect.left + 14) + "px";
-    tooltip.style.top = (ev.clientY - rect.top + 14) + "px";
-  }
-  function hideTooltip() { tooltip.style.display = "none"; }
-
-  function escapeHtml(s) {
-    return String(s || "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-  }
-
-  // --- Minimal markdown renderer for the subset this repo actually uses ---
-  function renderMarkdown(md) {
-    const lines = md.split("\n");
-    let html = "", inList = false, inQuote = false;
-    function closeList() { if (inList) { html += "</ul>"; inList = false; } }
-    function closeQuote() { if (inQuote) { html += "</blockquote>"; inQuote = false; } }
-    function inline(t) {
-      t = escapeHtml(t);
-      t = t.replace(/\[\[([^\]]+)\]\]/g, '<code>[[$1]]</code>');
-      t = t.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
-      t = t.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
-      t = t.replace(/`([^`]+)`/g, "<code>$1</code>");
-      t = t.replace(/(^|[^*])\*([^*]+)\*/g, "$1<em>$2</em>");
-      return t;
-    }
-    for (const raw of lines) {
-      const line = raw.replace(/\r$/, "");
-      if (/^\s*$/.test(line)) { closeList(); closeQuote(); continue; }
-      if (/^---+$/.test(line.trim())) { closeList(); closeQuote(); html += "<hr>"; continue; }
-      let m;
-      if ((m = line.match(/^(#{1,6})\s+(.*)$/))) {
-        closeList(); closeQuote();
-        const level = Math.min(m[1].length + 1, 4);
-        html += `<h${level}>${inline(m[2])}</h${level}>`;
-        continue;
+async function fetchGraph() {
+  const sources = [
+    { url:'./graph.json', kind:'local' },
+    { url:'https://raw.githubusercontent.com/jjm1984/brain-tree/main/public/graph.json', kind:'github' }
+  ];
+  for (const { url, kind } of sources) {
+    try {
+      const r = await fetch(url, { cache: 'no-store' });
+      if (r.ok) {
+        const j = await r.json();
+        if (j && Array.isArray(j.nodes) && j.nodes.length && Array.isArray(j.edges)) {
+          return { raw: j, source: kind, built: j.meta?.lastBuilt || null };
+        }
       }
-      if ((m = line.match(/^>\s?(.*)$/))) {
-        if (!inQuote) { html += "<blockquote>"; inQuote = true; }
-        html += `<p>${inline(m[1])}</p>`;
-        continue;
-      }
-      closeQuote();
-      if ((m = line.match(/^[-*]\s+(.*)$/))) {
-        if (!inList) { html += "<ul>"; inList = true; }
-        html += `<li>${inline(m[1])}</li>`;
-        continue;
-      }
-      closeList();
-      html += `<p>${inline(line)}</p>`;
+    } catch (_) {}
+  }
+  return { raw: SAMPLE_FALLBACK, source: 'sample', built: null };
+}
+function normalizeLive(g) {
+  const stateMap = { green:'green', yellow:'yellow', peripheral:'peripheral',
+    forming:'yellow', grounded:'green', growing:'yellow', dry:'dry' };
+  const nodes = g.nodes.map(n => {
+    let state = 'green';
+    if (n.state && typeof n.state === 'object') {
+      const inner = n.state.leaf || n.state.philosophy || n.state.branch;
+      state = stateMap[inner] || 'green';
     }
-    closeList(); closeQuote();
-    return html;
-  }
+    return { id: n.id, title: n.title || n.id, layer: n.layer, type: n.type,
+      state, instrument: n.instrument || null, filePath: n.filePath || null };
+  });
+  const edges = g.edges.map(e => ({ source: e.source, target: e.target, kind: e.type || 'supports' }));
+  return { nodes, edges };
+}
 
-  function stripFrontmatter(text) {
-    const m = text.match(/^---\r?\n[\s\S]*?\r?\n---\r?\n?/);
-    return m ? text.slice(m[0].length) : text;
-  }
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const { raw, source, built } = await fetchGraph();
+const data = normalizeLive(raw);
+if (!data.nodes.length) { showError('<b>No nodes to render.</b>'); throw new Error('empty'); }
 
-  function openPanel(d) {
-    panel.classList.add("open");
-    document.getElementById("panel-title").textContent = `${stateEmoji(d.state)} ${d.title}`;
-    document.getElementById("panel-badges").innerHTML =
-      `<span>${LAYER_LABEL[d.layer] || d.layer}</span><span>${d.type}</span>` +
-      (d.instrument ? `<span>${d.instrument}</span>` : "");
-    const body = document.getElementById("panel-body");
-    body.innerHTML = '<div id="panel-loading">Loading source…</div>';
-    const src = document.getElementById("panel-source");
-    src.href = BLOB_BASE + d.filePath;
+const sourceEl = document.getElementById('source');
+if (source === 'local') { sourceEl.className='live'; sourceEl.textContent='live · local graph.json'; }
+else if (source === 'github') { sourceEl.className='live'; sourceEl.textContent=`live · github · ${built?built.replace('T',' ').slice(0,19)+'z':'main'}`; }
+else { sourceEl.className='stale'; sourceEl.textContent='offline · embedded sample'; }
 
-    if (!d.filePath) {
-      body.innerHTML = '<div id="panel-error">No source file recorded for this node.</div>';
-      return;
+// aliveness = load-bearing-ness
+const degree = {};
+data.edges.forEach(e => { degree[e.source]=(degree[e.source]||0)+1; degree[e.target]=(degree[e.target]||0)+1; });
+const STATE_W = { green:1.5, yellow:2.2, tension:2.2, peripheral:0.8, dry:0.35 };
+const TYPE_W  = { branch:3.5, principle:1.6, inference:1.4, philosophy:1.4, layer:1.5, leaf:1.0 };
+function aliveness(n) {
+  const d = degree[n.id]||0, sw = STATE_W[n.state]||1.0, tw = TYPE_W[n.type]||1.0;
+  return (n.type==='branch' ? (1+d*0.5) : (1+d*0.35)) * sw * tw;
+}
+// leaf → its branch (via supports edges)
+const leafToBranch = {};
+data.edges.filter(e=>e.kind==='supports').forEach(e => {
+  const tgt = data.nodes.find(n=>n.id===e.target);
+  if (tgt && tgt.type==='branch') leafToBranch[e.source] = tgt.id;
+});
+
+// ===================== RENDERER =====================
+const canvas = document.getElementById('stage');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias:false, powerPreference:'high-performance', stencil:false });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.1;
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x04070E);
+scene.fog = new THREE.FogExp2(0x04070E, 0.016);
+
+const camera = new THREE.PerspectiveCamera(45, innerWidth/innerHeight, 0.1, 200);
+camera.position.set(5, 3.2, 15.5);
+
+const rt = new THREE.WebGLRenderTarget(innerWidth, innerHeight, { type: THREE.HalfFloatType, samples: 4 });
+const composer = new EffectComposer(renderer, rt);
+composer.addPass(new RenderPass(scene, camera));
+const bloomPass = new UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 1.15, 0.8, 0.12);
+composer.addPass(bloomPass);
+composer.addPass(new OutputPass());
+
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true; controls.dampingFactor = 0.08;
+controls.minDistance = 4; controls.maxDistance = 45;
+controls.enablePan = false; controls.zoomSpeed = 1.1;
+controls.autoRotate = !REDUCED; controls.autoRotateSpeed = 0.22;
+controls.target.set(0, 1.3, 0);
+controls.touches = { ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_PAN };
+controls.addEventListener('start', () => { controls.autoRotate = false; });
+
+const world = new THREE.Group();
+scene.add(world);
+
+// ===================== SKELETON GENERATION =====================
+const rng = (s=>()=> (s = s*16807 % 2147483647)/2147483647)(20260716);
+const V3 = (x,y,z)=>new THREE.Vector3(x,y,z);
+
+// trunk centerline: gentle organic S-curve
+function trunkPoint(y) {
+  return V3(0.22*Math.sin(y*0.85), y, 0.14*Math.sin(y*0.6+1.2));
+}
+
+// tapered lofted tube along points, vertex-colored c0→c1
+function loft(pts, r0, r1, c0, c1, radial=7) {
+  const n = pts.length, pos=[], col=[], idx=[];
+  for (let i=0;i<n;i++){
+    const t=i/(n-1);
+    const tan=V3(0,0,0).subVectors(pts[Math.min(n-1,i+1)], pts[Math.max(0,i-1)]).normalize();
+    const up=Math.abs(tan.y)>0.9?V3(1,0,0):V3(0,1,0);
+    const nrm=V3(0,0,0).crossVectors(tan,up).normalize();
+    const bin=V3(0,0,0).crossVectors(tan,nrm).normalize();
+    const r=r0+(r1-r0)*t;
+    const c=c0.clone().lerp(c1,t);
+    for(let j=0;j<radial;j++){
+      const a=j/radial*Math.PI*2;
+      const p=pts[i].clone().addScaledVector(nrm,Math.cos(a)*r).addScaledVector(bin,Math.sin(a)*r);
+      pos.push(p.x,p.y,p.z); col.push(c.r,c.g,c.b);
     }
-    fetch(RAW_BASE + d.filePath)
-      .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
-      .then(text => { body.innerHTML = renderMarkdown(stripFrontmatter(text)); })
-      .catch(() => {
-        body.innerHTML = '<div id="panel-error">Could not load source from GitHub. ' +
-          'If this repo isn\'t pushed/public yet, raw file fetches will fail until it is. ' +
-          '<br><br>Path: <code>' + escapeHtml(d.filePath) + "</code></div>";
-      });
   }
+  for(let i=0;i<n-1;i++)for(let j=0;j<radial;j++){
+    const a=i*radial+j, b=i*radial+(j+1)%radial, c2=(i+1)*radial+j, d=(i+1)*radial+(j+1)%radial;
+    idx.push(a,c2,b, b,c2,d);
+  }
+  const g=new THREE.BufferGeometry();
+  g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));
+  g.setAttribute('color',new THREE.Float32BufferAttribute(col,3));
+  g.setIndex(idx);
+  return g;
+}
+const skeletonMats = [];
+function addTube(pts, r0, r1, c0, c1, opacity=1) {
+  const mat = new THREE.MeshBasicMaterial({ vertexColors:true, transparent:true, opacity });
+  skeletonMats.push({ mat, base: opacity });
+  world.add(new THREE.Mesh(loft(pts, r0, r1, c0, c1), mat));
+}
 
-  document.getElementById("panel-close").addEventListener("click", () => panel.classList.remove("open"));
+// organic curved path
+function organicPath(origin, dir, len, steps, curl, yBias) {
+  const pts=[origin.clone()]; const d=dir.clone().normalize();
+  const L=len/steps;
+  for(let i=0;i<steps;i++){
+    d.x+=(rng()-0.5)*curl; d.z+=(rng()-0.5)*curl; d.y+=yBias; d.normalize();
+    pts.push(pts[pts.length-1].clone().addScaledVector(d,L));
+  }
+  return pts;
+}
 
-  document.getElementById("search").addEventListener("input", (ev) => {
-    const q = ev.target.value.trim().toLowerCase();
-    if (!nodeSel) return;
-    if (!q) { nodeSel.classed("faded", false); linkSel.classed("faded", false); return; }
-    const matchIds = new Set(allNodes.filter(n => (n.title || "").toLowerCase().includes(q) || (n.id || "").toLowerCase().includes(q)).map(n => n.id));
-    nodeSel.classed("faded", d => !matchIds.has(d.id));
-    linkSel.classed("faded", d => !matchIds.has(d.source.id) && !matchIds.has(d.target.id));
+// twig line accumulator (one big LineSegments for perf)
+const twigPos=[], twigCol=[];
+function addPolyline(pts, c0, c1) {
+  for(let i=0;i<pts.length-1;i++){
+    const t0=i/(pts.length-1), t1=(i+1)/(pts.length-1);
+    const ca=c0.clone().lerp(c1,t0), cb=c0.clone().lerp(c1,t1);
+    twigPos.push(pts[i].x,pts[i].y,pts[i].z, pts[i+1].x,pts[i+1].y,pts[i+1].z);
+    twigCol.push(ca.r,ca.g,ca.b, cb.r,cb.g,cb.b);
+  }
+}
+
+// palette (matched to reference)
+const C = {
+  trunkLo:  new THREE.Color(0x8A6A3A), trunkHi: new THREE.Color(0xF5E2B0),
+  limbBase: new THREE.Color(0xEFDCAE), limbTip: new THREE.Color(0xC8933F),
+  twigBase: new THREE.Color(0xD8C89A), twigTip: new THREE.Color(0xB07830),
+  rootBase: new THREE.Color(0xD8E6F5), rootTip: new THREE.Color(0x6FA0C8),
+  rootFine: new THREE.Color(0x9FC0DC), rootFade: new THREE.Color(0x1A2838),
+  mycA:     new THREE.Color(0x5A4A98), mycB:    new THREE.Color(0x0A0D1A)
+};
+
+// recursive canopy limb: tubes for depth<2, lines beyond; collect twig anchors
+function growLimb(origin, dir, len, r, depth, maxDepth, anchors) {
+  const pts = organicPath(origin, dir, len, 5, 0.42+depth*0.1, 0.10+depth*0.05);
+  if (depth < 2) {
+    addTube(pts, r, r*0.55, C.limbBase.clone().lerp(C.limbTip,depth*0.3), C.limbTip, 0.95);
+  } else {
+    addPolyline(pts, C.twigBase, C.twigTip);
+  }
+  const end = pts[pts.length-1];
+  if (depth >= maxDepth) { anchors.push(end); return; }
+  const nCh = depth===0 ? 3 : (2 + (rng()>0.5?1:0));
+  for (let i=0;i<nCh;i++){
+    const k = 1 + Math.floor(rng()*(pts.length-2));
+    const base = pts[k];
+    const d = V3(0,0,0).subVectors(pts[Math.min(pts.length-1,k+1)], pts[k-1]).normalize();
+    d.x += (rng()-0.5)*1.1; d.z += (rng()-0.5)*1.1; d.y += 0.35+rng()*0.4;
+    d.normalize();
+    growLimb(base, d, len*(0.55+rng()*0.15), r*0.5, depth+1, maxDepth, anchors);
+  }
+  // continue tip
+  const dTip = V3(0,0,0).subVectors(end, pts[pts.length-2]).normalize();
+  dTip.x+=(rng()-0.5)*0.6; dTip.y+=0.3; dTip.z+=(rng()-0.5)*0.6; dTip.normalize();
+  growLimb(end, dTip, len*0.6, r*0.5, depth+1, maxDepth, anchors);
+}
+
+// recursive root: downward-out, flattening; collect root anchors
+function growRoot(origin, dir, len, r, depth, maxDepth, anchors) {
+  const pts = organicPath(origin, dir, len, 5, 0.4, -0.16+depth*0.06);
+  // flatten as roots deepen
+  for (const p of pts) if (p.y < -2.6) p.y = -2.6 - (p.y + 2.6) * 0.35;
+  if (depth < 1) addTube(pts, r, r*0.5, C.rootBase, C.rootTip, 0.9);
+  else addPolyline(pts, C.rootFine, C.rootFade);
+  const end = pts[pts.length-1];
+  if (depth >= maxDepth) { anchors.push(end); return; }
+  const nCh = 2 + (rng()>0.5?1:0);
+  for (let i=0;i<nCh;i++){
+    const k = 1 + Math.floor(rng()*(pts.length-2));
+    const d = V3(0,0,0).subVectors(pts[Math.min(pts.length-1,k+1)], pts[k-1]).normalize();
+    d.x+=(rng()-0.5)*1.2; d.z+=(rng()-0.5)*1.2; d.y-=0.1+rng()*0.25; d.normalize();
+    growRoot(pts[k], d, len*(0.6+rng()*0.15), r*0.5, depth+1, maxDepth, anchors);
+  }
+}
+
+// --- trunk ---
+const trunkPts = [];
+for (let i=0;i<=14;i++) trunkPts.push(trunkPoint(-0.8 + i/14*4.2));  // y −0.8 → 3.4
+addTube(trunkPts, 0.30, 0.13, C.trunkLo, C.trunkHi, 1.0);
+// base flare
+addTube([trunkPoint(-1.5), trunkPoint(-1.1), trunkPoint(-0.7)], 0.48, 0.30, C.trunkLo.clone().multiplyScalar(0.8), C.trunkLo, 0.95);
+
+// --- branches: real branch nodes, ordered by load-bearing-ness (most alive lowest) ---
+const branchNodes = data.nodes.filter(n=>n.type==='branch');
+branchNodes.sort((a,b)=>aliveness(b)-aliveness(a));
+const branchAnchor = {}, branchTwigs = {};
+branchNodes.forEach((b, i) => {
+  const t = branchNodes.length===1 ? 0.5 : i/(branchNodes.length-1);
+  const y = 1.0 + t*2.3;                       // most load-bearing at y=1.0
+  const az = i * 2.39996;                      // golden angle
+  const tp = trunkPoint(y);
+  const dir = V3(Math.cos(az), 0.55+rng()*0.25, Math.sin(az)).normalize();
+  const origin = tp.clone().addScaledVector(V3(Math.cos(az),0,Math.sin(az)), 0.16);
+  const al = aliveness(b);
+  const anchors = [];
+  growLimb(origin, dir, 1.5 + Math.min(1.1, al*0.05), 0.055 + Math.min(0.075, al*0.004), 0, 3, anchors);
+  branchAnchor[b.id] = origin.clone().addScaledVector(dir, 0.45);
+  branchTwigs[b.id] = anchors;
+});
+
+// --- roots ---
+const rootAnchors = [];
+const rootBase = trunkPoint(-0.9);
+const NROOTS = 7;
+for (let i=0;i<NROOTS;i++){
+  const az = i/NROOTS*Math.PI*2 + rng()*0.5;
+  const dir = V3(Math.cos(az), -0.75, Math.sin(az)).normalize();
+  growRoot(rootBase.clone().addScaledVector(V3(Math.cos(az),0,Math.sin(az)),0.2), dir, 1.6, 0.12, 0, 2, rootAnchors);
+}
+
+// --- mycelium: barely visible fine web beneath the roots ---
+const mycPts = [];
+const mycAnchorPts = [];
+for (let i=0;i<46;i++){
+  const a=rng()*Math.PI*2, r2=0.6+rng()*4.4;
+  mycAnchorPts.push(V3(Math.cos(a)*r2, -3.0-rng()*0.9, Math.sin(a)*r2));
+}
+for (let i=0;i<mycAnchorPts.length;i++){
+  let c=0;
+  for (let j=i+1;j<mycAnchorPts.length && c<2;j++){
+    if (mycAnchorPts[i].distanceTo(mycAnchorPts[j])<2.2){
+      const p=mycAnchorPts[i], q=mycAnchorPts[j];
+      mycPts.push(p.x,p.y,p.z,q.x,q.y,q.z); c++;
+    }
+  }
+}
+{
+  const g=new THREE.BufferGeometry();
+  g.setAttribute('position',new THREE.Float32BufferAttribute(mycPts,3));
+  const m=new THREE.LineBasicMaterial({ color:0x6A5AB0, transparent:true, opacity:0.09 });
+  skeletonMats.push({ mat:m, base:0.09 });
+  world.add(new THREE.LineSegments(g,m));
+}
+
+// twig lines (single draw call)
+{
+  const g=new THREE.BufferGeometry();
+  g.setAttribute('position',new THREE.Float32BufferAttribute(twigPos,3));
+  g.setAttribute('color',new THREE.Float32BufferAttribute(twigCol,3));
+  const m=new THREE.LineBasicMaterial({ vertexColors:true, transparent:true, opacity:0.8 });
+  skeletonMats.push({ mat:m, base:0.8 });
+  world.add(new THREE.LineSegments(g,m));
+}
+
+// dark ground mound
+{
+  const g=new THREE.ConeGeometry(5.2, 1.6, 40, 1, true);
+  const m=new THREE.MeshBasicMaterial({ color:0x0A0F18, transparent:true, opacity:0.85, side:THREE.DoubleSide });
+  const mound=new THREE.Mesh(g,m);
+  mound.position.y=-2.4; mound.rotation.x=Math.PI;
+  world.add(mound);
+}
+
+// ===================== DATA NODES ON THE SKELETON =====================
+const geoLeafN  = new THREE.SphereGeometry(1, 12, 9);
+const geoBranchN= new THREE.SphereGeometry(1, 16, 12);
+const geoPhilo  = new THREE.TetrahedronGeometry(1, 0);
+const geoMyc    = new THREE.OctahedronGeometry(1, 0);
+const geoGap    = new THREE.TorusGeometry(1, 0.09, 5, 22);
+
+function nodeColor(n) {
+  if (n.layer==='trunk-claim') return 0xFFE2A0;
+  if (n.state==='peripheral')  return 0x6FB8FF;
+  if (n.state==='dry')         return 0x9A6A38;
+  if (n.type==='tendril')      return 0xAFD5FF;
+  if (n.layer==='roots')       return 0xBFE0FF;
+  if (n.layer==='mycelium')    return 0x8B6FD9;
+  if (n.layer==='meta')        return 0xE6EEFA;
+  if (n.layer==='code')        return 0xF2F6FF;
+  if (n.layer==='map')         return 0xFFC580;
+  if (n.state==='yellow')      return 0xFFF4D6;   // forming: white-hot
+  return 0xE8C15A;                                 // settled: warm gold
+}
+function nodeGeo(n) {
+  if (n.state==='peripheral' || n.type==='tendril') return geoGap;
+  if (n.type==='branch') return geoBranchN;
+  if (n.layer==='roots') return geoPhilo;
+  if (n.layer==='mycelium') return geoMyc;
+  return geoLeafN;
+}
+function nodeSize(n, al) {
+  if (n.layer==='trunk-claim') return 0.20;
+  if (n.type==='branch') return 0.16 + Math.min(0.14, al*0.008);
+  if (n.state==='peripheral' || n.type==='tendril') return 0.15;
+  if (n.layer==='mycelium') return 0.10;
+  return 0.085 + Math.min(0.07, al*0.012);
+}
+
+const pickables=[], byId={};
+function placeNode(n, pos) {
+  const al = aliveness(n);
+  const col = new THREE.Color(nodeColor(n));
+  if (n.state==='dry') col.multiplyScalar(0.5);
+  const mat = new THREE.MeshBasicMaterial({ color: col.clone(), transparent:true,
+    opacity: n.layer==='mycelium' ? 0.5 : (n.state==='dry'?0.6:1.0) });
+  const mesh = new THREE.Mesh(nodeGeo(n), mat);
+  mesh.position.copy(pos);
+  mesh.scale.setScalar(nodeSize(n, al));
+  if (n.state==='peripheral'||n.type==='tendril') mesh.rotation.set(rng()*3.1,rng()*3.1,rng()*3.1);
+  mesh.userData = { ...n, baseColor: col.clone(), baseOpacity: mat.opacity,
+    baseSize: nodeSize(n, al), aliveness: al, drift: rng()*6.28 };
+  world.add(mesh); pickables.push(mesh); byId[n.id]=mesh;
+}
+
+// trunk claims — parallel, opposite sides, same height
+[
+  { id:'trunk-primary', title:'do what is fulfilling — cause no harm', x: 0.62,
+    note:'The trunk statement. Fulfillment as compass; harm as boundary. Parallel to the belief claim, not above it.' },
+  { id:'trunk-facet', title:'hold belief firmly — release it when it no longer serves you', x: -0.62,
+    note:'The second trunk facet. Fallibilist realism made operational. Parallel to the fulfillment claim.' }
+].forEach(t => {
+  placeNode({ id:t.id, title:t.title, layer:'trunk-claim', type:'principle',
+    state:'green', instrument:'philosophy', note:t.note }, V3(t.x, 1.15, 0));
+});
+// arms to trunk
+{
+  const g=new THREE.BufferGeometry();
+  const tp=trunkPoint(1.15);
+  g.setAttribute('position',new THREE.Float32BufferAttribute([
+    0.62,1.15,0, tp.x,tp.y,tp.z, -0.62,1.15,0, tp.x,tp.y,tp.z ],3));
+  const m=new THREE.LineBasicMaterial({ color:0xE0A560, transparent:true, opacity:0.5 });
+  skeletonMats.push({ mat:m, base:0.5 });
+  world.add(new THREE.LineSegments(g,m));
+}
+
+// branches at their limb bases
+branchNodes.forEach(b => placeNode(b, branchAnchor[b.id]));
+
+// knowledge leaves on their branch's twigs
+const twigCursor = {};
+const allTwigs = Object.values(branchTwigs).flat();
+let globalCursor = 0;
+data.nodes.filter(n=>n.layer==='knowledge' && n.type!=='branch').forEach(leaf => {
+  const bid = leafToBranch[leaf.id];
+  let pos;
+  if (bid && branchTwigs[bid] && branchTwigs[bid].length) {
+    twigCursor[bid] = (twigCursor[bid]||0);
+    pos = branchTwigs[bid][twigCursor[bid] % branchTwigs[bid].length];
+    twigCursor[bid]++;
+  } else {
+    pos = allTwigs[(globalCursor*7) % allTwigs.length]; globalCursor++;
+  }
+  placeNode(leaf, pos);
+});
+
+// philosophies on root tips
+(data.nodes.filter(n=>n.layer==='roots')).forEach((n,i) => {
+  placeNode(n, rootAnchors[(i*3)%rootAnchors.length]);
+});
+
+// mycelium nodes in the faint web
+(data.nodes.filter(n=>n.layer==='mycelium')).forEach((n,i) => {
+  placeNode(n, mycAnchorPts[(i*5)%mycAnchorPts.length]);
+});
+
+// code — emergent principles glow within the trunk column
+(data.nodes.filter(n=>n.layer==='code')).forEach((n,i,arr) => {
+  const y = 0.2 + (i/(Math.max(1,arr.length-1)))*2.6;
+  const az = i*2.1;
+  const tp = trunkPoint(y);
+  placeNode(n, tp.clone().add(V3(Math.cos(az)*0.34, 0, Math.sin(az)*0.34)));
+});
+
+// map — outer canopy
+(data.nodes.filter(n=>n.layer==='map')).forEach((n,i) => {
+  const far = allTwigs.slice().sort((a,b)=>(b.x*b.x+b.z*b.z)-(a.x*a.x+a.z*a.z));
+  placeNode(n, far[(i*3)%Math.max(1,far.length)] || V3(2,3,0));
+});
+
+// meta — small ring near the base
+(data.nodes.filter(n=>n.layer==='meta')).forEach((n,i,arr) => {
+  const az = i/arr.length*Math.PI*2;
+  placeNode(n, V3(Math.cos(az)*0.9, -0.45, Math.sin(az)*0.9));
+});
+
+// any other layers (flowers-fruits etc.) — canopy
+(data.nodes.filter(n=>!['knowledge','roots','mycelium','code','map','meta'].includes(n.layer))).forEach((n,i) => {
+  if (byId[n.id]) return;
+  placeNode(n, allTwigs[(i*11)%Math.max(1,allTwigs.length)] || V3(0,2.5,0));
+});
+
+// ===================== EDGES (REAL) + TENDRILS =====================
+const edgeObjs = [];
+function edgeHash(a,b){ const s=a+'|'+b; let h=2166136261;
+  for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);} return (h>>>0)/4294967295; }
+function addEdge(aid, bid, kind) {
+  const A=byId[aid], B=byId[bid]; if(!A||!B) return;
+  const cross = A.userData.layer !== B.userData.layer && kind==='supports';
+  const h = edgeHash(aid,bid);
+  let color, op;
+  if (kind==='challenges'){ color=0xF0A840; op=0.85; }
+  else if (cross && (A.userData.layer==='roots'||B.userData.layer==='roots')){ color=0x8FC5E8; op=0.5; }
+  else if (cross){ color=0xE8C15A; op=0.4; }
+  else { color=0xD8C89A; op=0.22; }
+  const nv = 12;
+  const pos=new Float32Array(nv*3);
+  const cpx=Math.cos(h*6.283)*0.4, cpz=Math.sin(h*6.283)*0.4;
+  const cpy=(A.position.y+B.position.y)*0.5;
+  for(let i=0;i<nv;i++){
+    const t=i/(nv-1), u=1-t;
+    pos[i*3]  =u*u*A.position.x+2*u*t*(cross?cpx:(A.position.x+B.position.x)/2)+t*t*B.position.x;
+    pos[i*3+1]=u*u*A.position.y+2*u*t*cpy+t*t*B.position.y;
+    pos[i*3+2]=u*u*A.position.z+2*u*t*(cross?cpz:(A.position.z+B.position.z)/2)+t*t*B.position.z;
+  }
+  const g=new THREE.BufferGeometry();
+  g.setAttribute('position',new THREE.BufferAttribute(pos,3));
+  const m=new THREE.LineBasicMaterial({ color, transparent:true, opacity:op });
+  const line=new THREE.Line(g,m);
+  world.add(line);
+  edgeObjs.push({ line, mat:m, a:aid, b:bid, baseOp:op });
+}
+data.edges.forEach(e => addEdge(e.source, e.target, e.kind));
+
+// tendrils — from every peripheral node, reaching into dark space; endpoint = further reading
+const tendrilMats=[];
+const adj = {};
+function link(a,b,kind){ (adj[a]=adj[a]||[]).push({id:b,kind}); (adj[b]=adj[b]||[]).push({id:a,kind}); }
+data.edges.forEach(e=>link(e.source,e.target,e.kind));
+
+data.nodes.filter(n=>n.state==='peripheral').forEach((n,i) => {
+  const src=byId[n.id]; if(!src) return;
+  const P=src.position;
+  const out=V3(P.x,0,P.z); if(out.lengthSq()<0.01) out.set(Math.cos(i),0,Math.sin(i));
+  out.normalize();
+  const len=1.8+rng()*1.4;
+  const E=P.clone().addScaledVector(out,len);
+  E.y += P.y>=0 ? (0.5+rng()*1.0) : -(0.4+rng()*0.7);
+  const mid=P.clone().lerp(E,0.5).add(V3((rng()-0.5)*0.6,(rng()-0.5)*0.4,(rng()-0.5)*0.6));
+  const nv=16, pos=[], col=[];
+  const c0=new THREE.Color(0x8FB8E8), c1=new THREE.Color(0x0A0E1A);
+  for(let k2=0;k2<nv-1;k2++){
+    const t0=k2/(nv-1), t1=(k2+1)/(nv-1);
+    const q0=quad(P,mid,E,t0), q1=quad(P,mid,E,t1);
+    pos.push(q0.x,q0.y,q0.z,q1.x,q1.y,q1.z);
+    const ca=c0.clone().lerp(c1,t0), cb=c0.clone().lerp(c1,t1);
+    col.push(ca.r,ca.g,ca.b,cb.r,cb.g,cb.b);
+  }
+  const g=new THREE.BufferGeometry();
+  g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));
+  g.setAttribute('color',new THREE.Float32BufferAttribute(col,3));
+  const m=new THREE.LineBasicMaterial({ vertexColors:true, transparent:true, opacity:0.6 });
+  tendrilMats.push({ mat:m, phase:i, base:0.6 });
+  world.add(new THREE.LineSegments(g,m));
+  const endId='tendril-'+n.id;
+  placeNode({ id:endId, title:'↝ beyond '+n.title, layer:'beyond the tree', type:'tendril',
+    state:'peripheral', instrument:'further-reading',
+    note:'What lies past this named gap. The tendril is the tree reaching, not what it has grasped.',
+    tendrilFrom:n.id }, E);
+  link(n.id, endId, 'tendril');
+});
+function quad(A,M,B,t){ const u=1-t;
+  return V3(u*u*A.x+2*u*t*M.x+t*t*B.x, u*u*A.y+2*u*t*M.y+t*t*B.y, u*u*A.z+2*u*t*M.z+t*t*B.z); }
+
+// motes
+{
+  const g=new THREE.BufferGeometry(); const mp=[];
+  for(let i=0;i<200;i++) mp.push((rng()-0.5)*18, rng()*14-4.5, (rng()-0.5)*18);
+  g.setAttribute('position',new THREE.Float32BufferAttribute(mp,3));
+  const m=new THREE.PointsMaterial({ color:0xC0CCE6, size:0.045, transparent:true, opacity:0.5, sizeAttenuation:true });
+  scene.add(new THREE.Points(g,m));
+}
+
+// ===================== FILTERS =====================
+const LAYERS = ['knowledge','roots','mycelium','code','map','meta'];
+let active = new Set(LAYERS), gapsOnly=false;
+const filterBox = document.getElementById('filters');
+LAYERS.forEach(L => {
+  const btn=document.createElement('button');
+  btn.className='chip on'; btn.textContent=L;
+  btn.onclick=()=>{
+    if (active.has(L)&&active.size===1) active=new Set(LAYERS);
+    else if (active.size===LAYERS.length) active=new Set([L]);
+    else if (active.has(L)) active.delete(L);
+    else active.add(L);
+    [...filterBox.children].forEach((c,i)=>{ if(i<LAYERS.length) c.classList.toggle('on',active.has(LAYERS[i])); });
+    applyFilters();
+  };
+  filterBox.appendChild(btn);
+});
+const gapsBtn=document.createElement('button');
+gapsBtn.className='chip gaps'; gapsBtn.textContent='◌ gaps & forming';
+gapsBtn.onclick=()=>{ gapsOnly=!gapsOnly; gapsBtn.classList.toggle('on',gapsOnly); applyFilters(); };
+filterBox.appendChild(gapsBtn);
+
+function nodeVisible(m) {
+  const n=m.userData;
+  if (n.layer==='trunk-claim') return true;
+  if (n.layer==='beyond the tree') {
+    const src=byId[n.tendrilFrom];
+    return !src || src.visible;
+  }
+  if (!active.has(n.layer)) return false;
+  if (gapsOnly) return n.state==='peripheral'||n.state==='yellow'||n.state==='tension';
+  return true;
+}
+function applyFilters() {
+  pickables.forEach(m=>{ m.visible=nodeVisible(m); });
+  edgeObjs.forEach(({line,a,b})=>{
+    const A=byId[a],B=byId[b];
+    line.visible=(!A||A.visible)&&(!B||B.visible);
+  });
+}
+
+// ===================== LABELS =====================
+const labels = new Map();
+const _tv = new THREE.Vector3();
+function addLabel(id, text, cls) {
+  const el=document.createElement('div');
+  el.className='blabel '+(cls||'');
+  el.textContent=text.length>42?text.slice(0,40)+'…':text;
+  document.body.appendChild(el);
+  labels.set(id, el);
+}
+branchNodes.forEach(b=>addLabel(b.id, b.title.split(' — ')[0].split(' (')[0], 'branch'));
+data.nodes.filter(n=>n.state==='peripheral').forEach(n=>addLabel(n.id, n.title.split(' — ')[0], 'gap'));
+for (const id in byId) {
+  if (byId[id].userData.layer==='beyond the tree')
+    addLabel(id, '↝ '+byId[id].userData.title.replace('↝ beyond ',''), 'tendril');
+}
+addLabel('trunk-primary','do what is fulfilling — cause no harm','trunk');
+addLabel('trunk-facet','hold belief firmly — release when it no longer serves','trunk');
+
+// ===================== INTERACTION =====================
+const raycaster=new THREE.Raycaster();
+const pointer=new THREE.Vector2();
+let focused=null, cameraTween=null;
+const sheet=document.getElementById('sheet');
+const resetBtn=document.getElementById('reset');
+
+function selectMesh(mesh) {
+  focused=mesh;
+  const n=mesh.userData;
+  document.getElementById('sLayer').textContent=(n.type&&n.type!=='leaf'?n.type+' · ':'')+n.layer;
+  document.getElementById('sTitle').textContent=n.title||n.id;
+  const stateName={green:'🟢 settled',yellow:'🟡 forming',dry:'🍂 dormant',
+    peripheral:'⬜ named gap',tension:'🌀 in tension'}[n.state]||n.state;
+  const parts=[`<span class="pill">${stateName}</span>`];
+  if (n.instrument) parts.push(`<span class="pill" style="color:#AFD5FF;border-color:rgba(111,184,255,.5)">${n.instrument}</span>`);
+  parts.push(`<span class="pill" style="opacity:.6">load ${ (n.aliveness||0).toFixed(1) }</span>`);
+  document.getElementById('sMeta').innerHTML=parts.join('');
+  document.getElementById('sNote').textContent=n.note||'';
+  document.getElementById('sPath').textContent=n.filePath||'';
+  const links=document.getElementById('sLinks'); links.innerHTML='';
+  (adj[n.id]||[]).forEach(({id,kind})=>{
+    const o=byId[id]; if(!o) return;
+    const c=document.createElement('button');
+    c.className='linkchip '+kind;
+    const glyph=kind==='challenges'?'✕ ':kind==='tendril'?'↝ ':'↔ ';
+    c.textContent=glyph+(o.userData.title||id);
+    c.onclick=e=>{ e.stopPropagation(); selectMesh(o); };
+    links.appendChild(c);
+  });
+  sheet.classList.add('open'); resetBtn.style.display='block';
+  controls.autoRotate=false;
+  const off=new THREE.Vector3().subVectors(camera.position,controls.target).setLength(5.5);
+  cameraTween={ startPos:camera.position.clone(), endPos:mesh.position.clone().add(off),
+    startTarget:controls.target.clone(), endTarget:mesh.position.clone(),
+    t0:performance.now(), dur:900 };
+}
+function clearFocus() {
+  focused=null; sheet.classList.remove('open'); resetBtn.style.display='none';
+  const off=new THREE.Vector3().subVectors(camera.position,controls.target).setLength(15.5);
+  cameraTween={ startPos:camera.position.clone(), endPos:V3(0,1.3,0).add(off),
+    startTarget:controls.target.clone(), endTarget:V3(0,1.3,0),
+    t0:performance.now(), dur:900 };
+}
+let downX=0,downY=0,activePointers=0;
+canvas.addEventListener('pointerdown',e=>{
+  activePointers++;
+  if(activePointers===1){downX=e.clientX;downY=e.clientY;}
+  if(cameraTween)cameraTween=null;
+});
+canvas.addEventListener('pointerup',e=>{
+  activePointers=Math.max(0,activePointers-1);
+  if(e.pointerType&&activePointers>0)return;
+  if(Math.abs(e.clientX-downX)+Math.abs(e.clientY-downY)>10)return;
+  pointer.set((e.clientX/innerWidth)*2-1,-(e.clientY/innerHeight)*2+1);
+  raycaster.setFromCamera(pointer,camera);
+  const hits=raycaster.intersectObjects(pickables.filter(m=>m.visible),false);
+  if(hits.length)selectMesh(hits[0].object);
+  else if(focused)clearFocus();
+});
+canvas.addEventListener('pointercancel',()=>{activePointers=Math.max(0,activePointers-1);});
+document.getElementById('close').onclick=clearFocus;
+resetBtn.onclick=clearFocus;
+
+function resize(){
+  renderer.setSize(innerWidth,innerHeight);
+  composer.setSize(innerWidth,innerHeight);
+  bloomPass.resolution.set(innerWidth,innerHeight);
+  camera.aspect=innerWidth/innerHeight;
+  camera.updateProjectionMatrix();
+}
+addEventListener('resize',resize); resize();
+
+// ===================== LOOP =====================
+const clock=new THREE.Clock();
+setTimeout(()=>document.getElementById('load').classList.add('gone'),200);
+setTimeout(()=>document.getElementById('load').remove(),1400);
+
+function animate(){
+  requestAnimationFrame(animate);
+  const t=clock.getElapsedTime();
+  if(cameraTween){
+    const p=Math.min(1,(performance.now()-cameraTween.t0)/cameraTween.dur);
+    const e=p<0.5?2*p*p:1-Math.pow(-2*p+2,2)/2;
+    camera.position.lerpVectors(cameraTween.startPos,cameraTween.endPos,e);
+    controls.target.lerpVectors(cameraTween.startTarget,cameraTween.endTarget,e);
+    camera.lookAt(controls.target);
+    if(p>=1)cameraTween=null;
+  } else controls.update();
+
+  pickables.forEach((m,i)=>{
+    if(!m.visible)return;
+    const n=m.userData;
+    let s=1;
+    if(n.state==='yellow'){
+      s=1+0.18*Math.sin(t*1.5+n.drift);
+      m.material.color.copy(n.baseColor).multiplyScalar(0.9+0.35*Math.sin(t*1.7+n.drift));
+    }
+    if(n.layer==='beyond the tree'&&!REDUCED){
+      m.rotation.y=t*0.3+n.drift;
+      m.position.y+=Math.sin(t*0.4+n.drift)*0.0009;
+    }
+    const targetOp=focused
+      ?(m===focused?1.0:(adj[focused.userData.id]||[]).some(l=>l.id===n.id)?0.92:0.12)
+      :n.baseOpacity;
+    m.material.opacity+=(targetOp-m.material.opacity)*0.15;
+    if(m===focused&&!REDUCED)s*=1.2+0.06*Math.sin(t*2.4);
+    m.scale.setScalar(n.baseSize*s);
   });
 
-  window.addEventListener("resize", () => {
-    if (!simulation) return;
-    const [width, height] = dimensions();
-    simulation.force("center", d3.forceCenter(width / 2, height / 2));
-    simulation.alpha(0.3).restart();
+  skeletonMats.forEach(d=>{
+    const target=focused?d.base*0.28:d.base;
+    d.mat.opacity+=(target-d.mat.opacity)*0.1;
+  });
+  edgeObjs.forEach(({mat,a,b,baseOp})=>{
+    const target=focused
+      ?((adj[focused.userData.id]||[]).some(l=>l.id===a||l.id===b)?baseOp:baseOp*0.12)
+      :baseOp;
+    mat.opacity+=(target-mat.opacity)*0.1;
+  });
+  tendrilMats.forEach(o=>{
+    const base=focused?o.base*0.3:o.base;
+    o.mat.opacity=base+0.15*Math.sin(t*0.7+o.phase);
   });
 
-  emptyState.style.display = "flex";
-  fetch("public/graph.json")
-    .then(r => r.json())
-    .then(render)
-    .catch(err => {
-      emptyState.textContent = "Could not load public/graph.json — run `npm run build` first.";
-      console.error(err);
-    });
-})();
+  labels.forEach((el,id)=>{
+    const mesh=byId[id];
+    if(!mesh||!mesh.visible){el.style.opacity=0;return;}
+    _tv.copy(mesh.position); _tv.project(camera);
+    if(_tv.z>1){el.style.opacity=0;return;}
+    const x=(_tv.x+1)*0.5*innerWidth, y=(1-_tv.y)*0.5*innerHeight;
+    el.style.transform=`translate(${x}px, ${y}px) translate(-50%, calc(-100% - 16px))`;
+    el.style.opacity=focused&&focused!==mesh?0.12:(mesh.userData.layer==='beyond the tree'?0.7:0.88);
+  });
+
+  composer.render();
+}
+animate();
+
+} catch (err) {
+  showError(`<b>Something broke while growing the tree.</b><br><small>${err.message}</small>`);
+  throw err;
+}
 </script>
 </body>
 </html>
