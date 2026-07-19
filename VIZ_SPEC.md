@@ -96,3 +96,18 @@ Dark field + luminous accent is a known AI-design default — but here it is pin
 1. Portrait or instrument first? (A/B are portraits; C is an instrument. Both can coexist: C in daily use, A as the Dear Reader landing.)
 2. Where does it live — `public/index.html` beside `graph.json` in the repo?
 3. Should Map-mode (§3) ship in v1 or wait for Code-layer extraction?
+
+---
+
+## v0.2 note (2026-07-19/20) — do not rewrite the spec above yet
+
+The renderer shipped this session (`index.html`, repo root — resolves open question #2 above: it lives at the repo root, not `public/`, matching the prior Navigator's location, not the path this spec originally floated) replaces the force-directed "Living Cloud" approach with a **hand-authored recursive fractal skeleton**, built to match a reference bioluminescent-tree image J supplied directly in chat. This is a structural change from what §3–§9 above describe (which assume physics-simulated node placement) — those sections are now stale in several places, most notably §5 (glow/bloom was tuned for a point-cloud, not a skeleton) and §7 (motion assumed simulation settling, not a deterministic-seeded static structure). Not rewritten here — flagged for a dedicated v0.2 pass once this version has been lived with and confirmed as the direction to keep.
+
+**What's data-driven vs. generative aesthetic — the distinction that matters if this file gets edited later:**
+
+- **Data-driven** (changing `graph.json` changes the render): branch count, branch order (sorted by aliveness — degree × state × type weight — most load-bearing lowest/closest to the trunk), branch thickness (by aliveness), which leaf sits on which branch's twig (via `supports` edges), node color/state, peripheral (named-gap) leaves getting a tendril to a "further reading" node, cross-layer `supports` edges curving through the trunk axis.
+- **Generative aesthetic** (fixed regardless of data, deterministic-seeded): limb curvature, twig density, root spread angles, the trunk's S-curve. These come from `organicPath` / `growLimb` / `growRoot` in `index.html`, not from the graph.
+
+**Reference implementation:** commit `9007d39` on `main`.
+
+**Known open issue, not resolved by this commit:** the repo is currently private, which means the renderer's live-fetch fallback chain (`./graph.json` → GitHub raw URL → embedded 18-node sample) silently serves the embedded sample to any visitor without repo access — the GitHub raw URL 404s on a private repo for unauthenticated requests. J has chosen to leave the repo private for now and defer this; a proxy (Vercel or otherwise) that can serve `graph.json` with server-side auth is the eventual fix, tracked as a separate horizon item, not part of this visualization work.
