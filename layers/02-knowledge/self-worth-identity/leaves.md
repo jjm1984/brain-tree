@@ -82,6 +82,8 @@ I am worthy because I love well / show up for others. How I parent, friend, part
 
 The asymmetry between being loved (Validation) and loving well (Caring) is critical: they are not the same source of worth. Caring worth is currently running but largely uncredited because it is being collapsed into Coherence (the 'I am someone who gives' role).
 
+**Domain extension (2026-07-19):** this same worth-mechanism also runs in the vocational/leadership domain, as umbrella leadership — see `leaf-umbrella-leadership` (branch-work-vocation). Still watch the same existing risk already noted above: caring-worth here risks being collapsed into coherence-worth at one remove (delivering results THROUGH protecting the team, still fundamentally an output ledger, just laundered through other people). J self-identified as operating genuinely at the intersection of both, not purely one or the other — worth holding as the honest state rather than resolving toward one ledger.
+
 ---
 
 ## Leaf: Belonging Worth
@@ -107,6 +109,8 @@ Confirmed by J as held consciously, not targeted for retirement ("I don't shy aw
 Domain-specific, not a constant background hum: active in vocation/army-record material (confirmed twice independently — the original Africa case, and the reserve-soldier/dragon material), explicitly NOT active in the financial-reserve domain (years of unwitnessed effort there accepted without needing a legend-moment — see leaf-peace-as-ingredient).
 
 Cross-link to entry-034 (self-generated coherence-worth reframe: "twenty-five years of faithful work, not a few months of notoriety") — the reframe was real but did not fully close the brotherhood-recognition-tier gap specifically (see Recognition Taxonomy below).
+
+**Absorbed as a cross-cutting check (2026-07-19):** this leaf's domain-specificity note is now the basis for `map-life-domain-audit`'s "legend/legacy-worth weighting" check, run across every domain pass — always asked, answer legitimately "not active" in most domains. The audit-framework's "daughters as mirror" mechanism is folded into this same check. See `layers/04-map/map-life-domain-audit.md`.
 
 ---
 

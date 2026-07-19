@@ -97,6 +97,14 @@ A Skill is not a parallel concept to Map content, competing for layer status —
 
 **Physical placement:** since Skills are a Map-layer sub-type, skill nodes live under `layers/04-map/skills/[skill-id]/`, alongside the existing skills built before this decision — not as a sibling top-level directory. `skills/SKILL-CREATION.md` (repo root) remains the authoring spec/meta-doc itself, a separate concern from where built skill instances live; this split is a known, not-yet-resolved wrinkle, see `CLAUDE.md`'s "Known inconsistency" note.
 
+## Map Layer, Refined: The Map Buys You Freedom
+
+J reframed the Map layer's purpose 2026-07-19, beyond the generic "daily practice; depends on Code existing first" description: Map is specifically the layer that builds capability and resources so life isn't constrained by survival-mode — **the map buys you freedom.** What you then orient a free life toward (passions, strategy) is a separate, later question from whether Map has actually built the capability to choose it. This doesn't replace the Map-Layer Exception Principle above — it explains *why* that exception exists: tested, lived tools that build capability don't need to wait on Code, because the capability-building function is prior to and separate from the philosophical grounding question.
+
+**Existing tree connection:** this directly connects to already-confirmed `philo-wealth-freedom` content — the two-tier financial reserve structure (emergency fund absorbs singular shocks; crisis buffer buys optionality, see `layers/04-map/index.md` § "Practice: the financial reserve") is a concrete, already-placed instance of exactly this Map-layer function. Surfaced as a connection, not new content.
+
+**Worth-machine caution, not assumed safe by default:** resource-building-as-the-real-goal has a shape that could itself become another worth-machine treadmill if execution/optimization becomes the new thing self-worth is proven through — the same pattern already named at `audit-framework` and `branch-self-worth-identity`. Worth watching, not assumed exempt just because the Map layer's stated purpose (freedom) sounds like the opposite of the worth-machine's usual currency (output).
+
 ## Form vs. Instrument
 
 Form (poem, novel, biography, autobiography, scripture, myth) and epistemic instrument (philosophy / science / lived-experience / myth-form / religion / art) are different axes. A single work can carry more than one instrument at once. The epistemic_tag follows what content or function is actually being transmitted by the work for THIS reader — not which shelf the book sits on. Content and function can diverge: a factually true, documentary work (real people, real place) can still function as myth-form if its actual job for the reader is borrowing cultural meaning and connecting to land, rather than transmitting verifiable fact.

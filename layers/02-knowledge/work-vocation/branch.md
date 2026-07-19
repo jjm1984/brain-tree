@@ -9,7 +9,7 @@ last-updated: 2026-07-05
 added-on: 2026-06-06
 connections:
   supports: [philo-meaning, philo-core-impulse, philo-philosophy-and-action]
-  leaves: [leaf-role-diesel-mechanic, leaf-role-wideland-gps, leaf-role-turnkey-bi, leaf-role-bigsky, leaf-role-trimble, leaf-role-swarmfarm, leaf-role-agco, leaf-military-service-gap, leaf-ability-people-first-prioritization, leaf-ability-audience-motivation-mapping, leaf-ability-translator-role]
+  leaves: [leaf-role-diesel-mechanic, leaf-role-wideland-gps, leaf-role-turnkey-bi, leaf-role-bigsky, leaf-role-trimble, leaf-role-swarmfarm, leaf-role-agco, leaf-military-service-gap, leaf-ability-people-first-prioritization, leaf-ability-audience-motivation-mapping, leaf-ability-translator-role, leaf-umbrella-leadership]
 missing-leaves:
   - Deep ability-node breakdown for each role beyond the index-level entry (ability-node schema is designed, only cross-role ability-nodes exist so far)
   - J's own corrected account of each role — current role entries are sourced from an external ChatGPT-drafted bio document and the AGCO employment letter, not J's own words

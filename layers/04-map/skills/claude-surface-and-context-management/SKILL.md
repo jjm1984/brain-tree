@@ -7,6 +7,7 @@ for: a testable criterion — use whenever choosing a Claude surface for new wor
 written-for: human
 keywords: [claude, ai tools, chat, cowork, claude code, projects, context management, token hygiene, session hygiene, CLAUDE.md]
 status: forming — provisional, fact-checked against official docs 2026-07-19
+skill_status: gap — freshly fact-checked 2026-07-19, no documented track record yet of these rules actually being lived consistently; revisit once tested
 source-backlog: backlog/ai-tools.md ("21 Claude Habits" cluster, token-management/session-hygiene items)
 supersedes: skill-ai-session-hygiene (draft inside ai-brain-session-2026-07-18-skills-layer-resolution-and-placement.json — this file replaces that draft; do not build both)
 parent_map: null

@@ -8,7 +8,7 @@ state:
 last-updated: 2026-07-11
 added-on: 2026-06-06
 connections:
-  supports: [leaf-withdrawal-repair-pattern, leaf-peace-as-ingredient, philo-wealth-freedom]
+  supports: [leaf-withdrawal-repair-pattern, leaf-peace-as-ingredient, philo-wealth-freedom, map-life-domain-audit, map-life-direction-cycle, audit-framework]
 ---
 
 # The Map Layer
@@ -46,13 +46,11 @@ See `philo-wealth-freedom` for the fuller Roots-layer wealth/freedom material th
 
 ## Practice: the life-domain audit, run in third-party voice
 
-`map-life-domain-audit` — a periodic cross-branch life review, added 2026-07-19. Placed here (Map, strategy) rather than Skill (tactic), because a cross-domain periodic review is itself a strategy, not a single executable action — the tactical execution of one pass is `layers/04-map/skills/third-party-life-audit-pass/`.
+`map-life-domain-audit` — a periodic cross-branch life review, run in third-party/external-observer voice, added 2026-07-19, restructured the same day to absorb `audit-framework`'s worth-machine test into every domain pass. Stage 1 of `map-life-direction-cycle`. The tactical execution of one pass is `layers/04-map/skills/third-party-life-audit-pass/`. Full content, domain children, and cross-cutting checks: `layers/04-map/map-life-domain-audit.md`.
 
-Sourced from `backlog/life-audit.md`'s generic 8-area Instagram framework — that framework's specific area list was discarded as content (unattributed, low-tier per this project's own source-verification standard). What survived is the one genuinely useful mechanism buried in it: running the review in **third-party/external-observer voice** rather than first-person, as a deliberate friction point against a confirmed pattern in this project's own feedback loop — reading someone else's motivation is easier than reading your own (see `feedback/feedback-loop.md`, the self-examination-avoidance gap).
+## Practice: the life direction cycle
 
-**Cross-references:** `branch-relationships-family`, `branch-wealth-freedom`, `branch-work-vocation`, `branch-physical-wellbeing`, `branch-aliveness`, `branch-self-worth-identity` — the domains a pass reviews, mapped to branches that already exist rather than inventing a parallel taxonomy.
-
-**Flagged use:** a possible entry point for the still-open Item 23 session ("I feel miserable," 2022) — the third-party framing gives that open thread a starting structure instead of an open-ended prompt. Not resolved here; flagged for a future session.
+`map-life-direction-cycle` — Audit → Design → Strategy → Execution → Weekly Review, a circular Map-layer cycle unifying `map-life-domain-audit` with the mechanism kept from `backlog/life-planning.md`'s discarded 6-step framework. Full content: `layers/04-map/map-life-direction-cycle.md`.
 
 ## Skills library
 

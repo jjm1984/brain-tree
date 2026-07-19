@@ -5,11 +5,11 @@ type: leaf
 title: "Just Cause / Motivation Architecture"
 state:
   leaf: yellow
-last-updated: 2026-07-11
+last-updated: 2026-07-19
 added-on: 2026-07-10
 instrument: philosophy
 connections:
-  supports: [philo-how-to-live, philo-meaning]
+  supports: [philo-how-to-live, philo-meaning, leaf-ability-translator-role, map-life-domain-audit]
 open-threads:
   - "The 'why' itself remains undefined — named as a need, not yet answered."
   - "Whether this item refines or supersedes the current Trunk line ('do what is fulfilling — cause no harm') is an open question."
@@ -37,3 +37,5 @@ Extended session tracing #1 (2022 misery, see leaf-reserves-restoration) into #2
 4. **Resolution reached:** "joy is in the climb, but purpose drives me" — hold-fast is necessary (the floor) but not sufficient; purpose/cause selects WHICH climb, joy lives IN the climbing itself — sequential, not rivalrous. The two-ledger model (aliveness vs. worth, see feedback-loop entry-030) is used as the test for whether "need to grow" is genuine expansion-drive or worth-machine hunger relabeled: does wanting survive certain unwitnessed knowledge, does time disappear in the climbing itself or only in having-climbed.
 
 See the open-threads above for the unresolved grief, crossroads, and path questions this session also surfaced.
+
+**Cross-reference (2026-07-19):** the "reading one's own motivation is harder than reading others'" principle named in the open-threads crossroads is tied to two other places it independently surfaced — `leaf-ability-translator-role`'s open question about circumspect attention, and `map-life-domain-audit`'s third-party-voice mechanism, built specifically to counter this pattern. See `leaf-ability-translator-role` for the fuller tie-together note; not resolved here, just cross-referenced.

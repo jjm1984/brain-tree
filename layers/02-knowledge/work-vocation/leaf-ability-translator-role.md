@@ -7,9 +7,11 @@ state:
   leaf: yellow
 parent-branch: branch-work-vocation
 harvested-from: session-2026-07-05
-last-updated: 2026-07-05
+last-updated: 2026-07-19
 added-on: 2026-07-05
 instrument: multi
+connections:
+  supports: [leaf-inner-witness, leaf-just-cause-motivation-architecture, map-life-domain-audit]
 ---
 
 Generalizes leaf-ability-audience-motivation-mapping from a single listener to N stakeholders in the same room/conversation.
@@ -27,6 +29,8 @@ Generalizes leaf-ability-audience-motivation-mapping from a single listener to N
 **Cross-connection to leaf-inner-witness:** genuinely strong, non-speculative. 'Circumspect frame of mind that doesn't get stuck in your own motivations' is functionally the same move as the Inner Witness's mindfulness dimension — observing without identification — applied socially rather than internally. Where the Inner Witness watches the self's autopilot without being fused to it, the translator disposition watches the self's own agenda without being fused to it, freeing attention to actually perceive others' motivations. This may be the same underlying capacity (the witness) showing up in two directions — inward at the mycelium/habit layer, outward at the social/stakeholder layer.
 
 **Open question (sharper version of the one already open on philo-people-before-process):** J described the circumspect frame as specifically NOT getting stuck in his own motivations — attention moves outward, toward others. Worth asking directly: does that same circumspect attention ever turn reflexively onto J's own motivations, examined with the same rigor applied to everyone else at the table? Or does the technique work partly *because* it routes attention away from self-examination in the moment? Not answered here — named as the sharper version of the question already open.
+
+**Three-way thread, tied together (2026-07-19):** this open question is the SAME open thread as the crossroads already named on `leaf-just-cause-motivation-architecture` ("reading one's own motivation is harder than reading others'"). AND `map-life-domain-audit`'s third-party-voice mechanism (built 2026-07-18) is a direct, concrete answer-attempt at both simultaneously — running a life-domain check in external-observer voice is specifically designed to counter the same attention-routing-away problem this leaf names. This note does not resolve the open question — it ties the three places it lives together so they cross-reference each other rather than sitting as three separate unconnected threads.
 
 ## Extension: Organic Audience Concentration — distinct from the deliberate translator-move (2026-07-11)
 

@@ -5,14 +5,16 @@ type: leaf
 title: The Audit Framework — Distinguishing Conscious Sacrifice from Worth-Machine Drift
 state:
   leaf: yellow
-last-updated: 2026-06-06
+last-updated: 2026-07-19
 added-on: 2026-06-06
 instrument: philosophy
 connections:
-  supports: [branch-self-worth-identity, sub-conscious-sacrifice, philo-stoicism]
+  supports: [branch-self-worth-identity, sub-conscious-sacrifice, philo-stoicism, map-life-domain-audit]
 ---
 
 # The Audit Framework
+
+**Absorbed into `map-life-domain-audit`, 2026-07-19 — not deleted, not superseded.** This node remains the node of record for the diagnostic mechanism itself (the content below is unchanged and still authoritative). As of the 2026-07-19 restructure, this mechanism now runs as the mandatory "worth-machine test" cross-cutting check inside every domain pass of `map-life-domain-audit`, rather than standing alone as a single-purpose diagnostic. Existing references to `audit-framework` elsewhere in the tree (`branch-daily-architecture`, `mycelium-os-relationship`, `leaf-legend-legacy-worth`, `feedback/feedback-loop.md`) remain valid — the id and content are unchanged, only its relationship to `map-life-domain-audit` is new.
 
 The system designed to distinguish conscious sacrifice from worth-machine drift. Multi-modal — no single mechanism is enough because a sufficiently motivated worth-machine routes around any individual audit.
 

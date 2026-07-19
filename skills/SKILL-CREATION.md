@@ -85,6 +85,12 @@ composes-with:
   # to do the thing, and a narrower skill would. Do not add this
   # speculatively; see "Depth delegation vs. condensed mode" below.
 parent_map: map-node-id-or-null
+parent_map_stage: Stage-name-within-the-parent-map-or-omit
+  # Added 2026-07-19. For parent Map nodes built as an explicit multi-
+  # stage cycle (e.g. map-life-direction-cycle's Audit/Design/Strategy/
+  # Execution/Weekly-Review), names which stage this skill decomposes
+  # from — sub-stage granularity the schema didn't previously support.
+  # Omit entirely for a parent_map with no internal stage structure.
 parent_map_status: orphan-pending
   # Added 2026-07-18. Points to the Map/strategy node this skill
   # tactically decomposes (analogous to a leaf's parent-branch field).
@@ -98,6 +104,18 @@ parent_map_status: orphan-pending
 grounded-in: [tree-node-ids this skill draws from]
 full-reference: reference.md
 status: forming | tested-once | stable
+skill_status: integrated | outsourced-delegated | gap
+  # Added 2026-07-19, alongside the map-life-domain-audit restructure's
+  # "learning-growth resource check" (see meta/SCHEMA.md and
+  # layers/04-map/map-life-domain-audit.md). Distinct from `status`
+  # above: `status` tracks how tested/settled the skill NODE is in the
+  # tree; `skill_status` tracks how integrated the underlying CAPABILITY
+  # is in actual lived practice. `integrated` = compiled into hexis,
+  # running below conscious effort. `outsourced-delegated` = imported
+  # via hiring/tool/another person's judgment — must be checked against
+  # worth-machine condition (c) in both directions (avoidance-hijack AND
+  # pride-hijack, not just one). `gap` = a genuine capability not yet
+  # built. Optional — omit if not yet assessed.
 ```
 
 ## Matching the real Agent Skills format

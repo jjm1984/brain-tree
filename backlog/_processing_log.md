@@ -93,7 +93,7 @@ Schema (generic — extends to non-screenshot sources later without rework):
 | 2025-04-25-a | screenshot | IMG_4356.JPG | processed | wealth-freedom | 2026-07-18 |
 | 2025-04-30-a | screenshot | IMG_4469.JPG | processed | work-vocation | 2026-07-18 |
 | 2025-04-30-b | screenshot | IMG_4473.PNG | processed | stoicism | 2026-07-18 |
-| 2025-04-30-c | screenshot | IMG_4474.PNG | processed | life-planning (proposed) | 2026-07-18 |
+| 2025-04-30-c | screenshot | IMG_4474.PNG | placed | life-planning (proposed, mechanism unified with map-life-domain-audit as map-life-direction-cycle 2026-07-19, raw 6-step artifact discarded as unattributed) | 2026-07-18 |
 | 2025-05-02-a | screenshot | IMG_4479.JPG | processed | work-vocation | 2026-07-18 |
 | 2025-05-04-a | screenshot | IMG_4487.PNG | processed | wealth-freedom | 2026-07-18 |
 | 2025-05-04-b | screenshot | IMG_4488.PNG | processed | wealth-freedom | 2026-07-18 |

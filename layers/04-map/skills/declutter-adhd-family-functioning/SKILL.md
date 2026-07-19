@@ -7,6 +7,7 @@ for: cost-gated care — specifically the executive-function cost of deciding wh
 written-for: human
 keywords: [decluttering, adhd, executive function, family organization, tidying, decision fatigue, home organization]
 status: forming — provisional, first content placed under the resolved Skills-as-Map-layer-sub-type decision, drafted 2026-07-18
+skill_status: gap — reframed from a raw checklist into a decision procedure but not yet applied/tested against a real household pass
 source-backlog: backlog/home-organization.md (source_id 2024-09-30-a)
 parent_map: null
 parent_map_status: orphan-pending

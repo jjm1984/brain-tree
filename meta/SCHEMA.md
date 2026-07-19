@@ -89,6 +89,14 @@ open-questions:
   - question text
 ```
 
+### map (04-map)
+
+No dedicated `type:` value exists for Map-layer content nodes — `layer: map` combined with `type: leaf` is the current convention (established 2026-07-19 with `map-life-domain-audit` and `map-life-direction-cycle`), reusing the generic leaf envelope rather than inventing a new `type: map` enum value.
+
+**Schema gap, not yet resolved:** this repo has no formal parent/child node relationship for Map-layer content (analogous to a branch's `leaves:` list). `map-life-domain-audit`'s eight domain children (financial, career, relationships ×3, life-stage, wellbeing, aliveness) are currently written as prose subsections within the single parent file rather than as separate node files, specifically because this schema gap exists — see that file's own note. Revisit if/when Map-layer content grows enough that inline subsections stop being adequate; do not force a fit prematurely.
+
+**Skill nodes (`skill-*`) and their `SKILL.md`/`reference.md` two-file pattern are a distinct, deliberately separate schema** from the universal envelope above — see `skills/SKILL-CREATION.md`, not this file, for the full field list (`name`, `description`, `for`, `written-for`, `parent_map`, `parent_map_stage`, `parent_map_status`, `skill_status`, etc.). `skill_status: integrated | outsourced-delegated | gap` (added 2026-07-19) tracks how integrated the underlying capability is in lived practice, distinct from `status` which tracks the node's own maturity in the tree. See `layers/04-map/map-life-domain-audit.md`'s "learning-growth resource check" for why this field exists.
+
 ### inference (inferences/)
 
 ```yaml
