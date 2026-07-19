@@ -305,6 +305,19 @@
       "filePath": "layers/01-roots/philo-meaning.md"
     },
     {
+      "id": "philo-ooda-decision-cycle",
+      "layer": "roots",
+      "type": "philosophy",
+      "title": "OODA Loop — Boyd's Decision Cycle",
+      "state": {
+        "philosophy": "forming"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-19",
+      "addedOn": "2026-07-19",
+      "filePath": "layers/01-roots/philo-ooda-decision-cycle.md"
+    },
+    {
       "id": "philo-orthodoxy-orthopraxy",
       "layer": "roots",
       "type": "philosophy",
@@ -911,7 +924,7 @@
         "leaf": "yellow"
       },
       "instrument": "philosophy",
-      "lastUpdated": "2026-06-06",
+      "lastUpdated": "2026-07-19",
       "addedOn": "2026-06-06",
       "filePath": "layers/02-knowledge/self-worth-identity/audit-framework.md"
     },
@@ -989,7 +1002,7 @@
         "leaf": "yellow"
       },
       "instrument": "multi",
-      "lastUpdated": "2026-07-05",
+      "lastUpdated": "2026-07-19",
       "addedOn": "2026-07-05",
       "filePath": "layers/02-knowledge/work-vocation/leaf-ability-translator-role.md"
     },
@@ -1124,6 +1137,19 @@
       "filePath": "layers/02-knowledge/work-vocation/leaf-role-wideland-gps.md"
     },
     {
+      "id": "leaf-umbrella-leadership",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Umbrella Leadership",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-19",
+      "addedOn": "2026-07-19",
+      "filePath": "layers/02-knowledge/work-vocation/leaf-umbrella-leadership.md"
+    },
+    {
       "id": "layer-code",
       "layer": "code",
       "type": "layer",
@@ -1145,7 +1171,7 @@
         "leaf": "yellow"
       },
       "instrument": "philosophy",
-      "lastUpdated": "2026-07-11",
+      "lastUpdated": "2026-07-19",
       "addedOn": "2026-07-10",
       "filePath": "layers/03-code/leaf-just-cause-motivation-architecture.md"
     },
@@ -1174,6 +1200,32 @@
       "lastUpdated": "2026-07-11",
       "addedOn": "2026-06-06",
       "filePath": "layers/04-map/index.md"
+    },
+    {
+      "id": "map-life-direction-cycle",
+      "layer": "map",
+      "type": "leaf",
+      "title": "Life Direction Cycle: Audit → Design → Strategy → Execution → Weekly Review",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-19",
+      "addedOn": "2026-07-19",
+      "filePath": "layers/04-map/map-life-direction-cycle.md"
+    },
+    {
+      "id": "map-life-domain-audit",
+      "layer": "map",
+      "type": "leaf",
+      "title": "The Life-Domain Audit",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-19",
+      "addedOn": "2026-07-19",
+      "filePath": "layers/04-map/map-life-domain-audit.md"
     },
     {
       "id": "skill-claude-surface-and-context-management",
@@ -1218,6 +1270,28 @@
       "lastUpdated": "2026-07-19",
       "addedOn": "2026-07-19",
       "filePath": "layers/04-map/skills/declutter-adhd-family-functioning/reference.md"
+    },
+    {
+      "id": "skill-ooda-loop",
+      "layer": "unknown",
+      "type": "unknown",
+      "title": "The OODA Loop — Breaking Execution-Stage Bogging-Down",
+      "state": null,
+      "instrument": null,
+      "lastUpdated": null,
+      "addedOn": null,
+      "filePath": "layers/04-map/skills/ooda-loop/SKILL.md"
+    },
+    {
+      "id": "skill-reference-ooda-loop",
+      "layer": "map",
+      "type": "skill-reference",
+      "title": "Reference — The OODA Loop",
+      "state": null,
+      "instrument": "multi",
+      "lastUpdated": "2026-07-19",
+      "addedOn": "2026-07-19",
+      "filePath": "layers/04-map/skills/ooda-loop/reference.md"
     },
     {
       "id": "skill-relationship-conflict-regulation",
@@ -1612,6 +1686,11 @@
       "source": "philo-meaning",
       "target": "philo-stoicism",
       "type": "challenges"
+    },
+    {
+      "source": "philo-ooda-decision-cycle",
+      "target": "philo-1pct-compounding",
+      "type": "supports"
     },
     {
       "source": "philo-orthodoxy-orthopraxy",
@@ -2074,6 +2153,11 @@
       "type": "supports"
     },
     {
+      "source": "audit-framework",
+      "target": "map-life-domain-audit",
+      "type": "supports"
+    },
+    {
       "source": "branch-self-worth-identity",
       "target": "philo-how-to-live",
       "type": "supports"
@@ -2109,6 +2193,21 @@
       "type": "supports"
     },
     {
+      "source": "leaf-ability-translator-role",
+      "target": "leaf-inner-witness",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-ability-translator-role",
+      "target": "leaf-just-cause-motivation-architecture",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-ability-translator-role",
+      "target": "map-life-domain-audit",
+      "type": "supports"
+    },
+    {
       "source": "leaf-ancestral-roots-work-vocation",
       "target": "leaf-ability-translator-role",
       "type": "supports"
@@ -2124,6 +2223,21 @@
       "type": "supports"
     },
     {
+      "source": "leaf-umbrella-leadership",
+      "target": "leaf-ability-translator-role",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-umbrella-leadership",
+      "target": "skill-ooda-loop",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-umbrella-leadership",
+      "target": "branch-work-vocation",
+      "type": "supports"
+    },
+    {
       "source": "leaf-just-cause-motivation-architecture",
       "target": "philo-how-to-live",
       "type": "supports"
@@ -2131,6 +2245,16 @@
     {
       "source": "leaf-just-cause-motivation-architecture",
       "target": "philo-meaning",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-just-cause-motivation-architecture",
+      "target": "leaf-ability-translator-role",
+      "type": "supports"
+    },
+    {
+      "source": "leaf-just-cause-motivation-architecture",
+      "target": "map-life-domain-audit",
       "type": "supports"
     },
     {
@@ -2162,11 +2286,106 @@
       "source": "layer-map",
       "target": "philo-wealth-freedom",
       "type": "supports"
+    },
+    {
+      "source": "layer-map",
+      "target": "map-life-domain-audit",
+      "type": "supports"
+    },
+    {
+      "source": "layer-map",
+      "target": "map-life-direction-cycle",
+      "type": "supports"
+    },
+    {
+      "source": "layer-map",
+      "target": "audit-framework",
+      "type": "supports"
+    },
+    {
+      "source": "map-life-direction-cycle",
+      "target": "map-life-domain-audit",
+      "type": "supports"
+    },
+    {
+      "source": "map-life-direction-cycle",
+      "target": "philo-how-to-live",
+      "type": "supports"
+    },
+    {
+      "source": "map-life-direction-cycle",
+      "target": "philo-1pct-compounding",
+      "type": "supports"
+    },
+    {
+      "source": "map-life-direction-cycle",
+      "target": "trunk-belief-release-when-no-longer-serves",
+      "type": "supports"
+    },
+    {
+      "source": "map-life-direction-cycle",
+      "target": "audit-framework",
+      "type": "supports"
+    },
+    {
+      "source": "map-life-domain-audit",
+      "target": "audit-framework",
+      "type": "supports"
+    },
+    {
+      "source": "map-life-domain-audit",
+      "target": "map-life-direction-cycle",
+      "type": "supports"
+    },
+    {
+      "source": "map-life-domain-audit",
+      "target": "philo-wealth-freedom",
+      "type": "supports"
+    },
+    {
+      "source": "map-life-domain-audit",
+      "target": "branch-work-vocation",
+      "type": "supports"
+    },
+    {
+      "source": "map-life-domain-audit",
+      "target": "branch-relationships-family",
+      "type": "supports"
+    },
+    {
+      "source": "map-life-domain-audit",
+      "target": "branch-physical-wellbeing",
+      "type": "supports"
+    },
+    {
+      "source": "map-life-domain-audit",
+      "target": "branch-aliveness",
+      "type": "supports"
+    },
+    {
+      "source": "map-life-domain-audit",
+      "target": "branch-self-worth-identity",
+      "type": "supports"
+    },
+    {
+      "source": "map-life-domain-audit",
+      "target": "philo-stoicism",
+      "type": "supports"
+    },
+    {
+      "source": "map-life-domain-audit",
+      "target": "leaf-just-cause-motivation-architecture",
+      "type": "supports"
+    },
+    {
+      "source": "map-life-domain-audit",
+      "target": "leaf-ability-translator-role",
+      "type": "supports"
     }
   ],
   "meta": {
-    "nodeCount": 107,
-    "edgeCount": 162,
-    "lastBuilt": "2026-07-19T00:54:48.378Z"
+    "nodeCount": 113,
+    "edgeCount": 191,
+    "lastBuilt": "2026-07-19T01:24:45.076Z"
   }
 }
