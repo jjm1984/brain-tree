@@ -955,6 +955,45 @@
       "filePath": "layers/02-knowledge/work-vocation/branch.md"
     },
     {
+      "id": "leaf-ability-audience-motivation-mapping",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Ability: Audience Motivation Mapping",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-07-05",
+      "addedOn": "2026-07-05",
+      "filePath": "layers/02-knowledge/work-vocation/leaf-ability-audience-motivation-mapping.md"
+    },
+    {
+      "id": "leaf-ability-people-first-prioritization",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Ability: Task Prioritization — People First",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-05",
+      "addedOn": "2026-07-05",
+      "filePath": "layers/02-knowledge/work-vocation/leaf-ability-people-first-prioritization.md"
+    },
+    {
+      "id": "leaf-ability-translator-role",
+      "layer": "knowledge",
+      "type": "leaf",
+      "title": "Ability: The Translator Role — Multi-Stakeholder Motivation Alignment",
+      "state": {
+        "leaf": "yellow"
+      },
+      "instrument": "multi",
+      "lastUpdated": "2026-07-05",
+      "addedOn": "2026-07-05",
+      "filePath": "layers/02-knowledge/work-vocation/leaf-ability-translator-role.md"
+    },
+    {
       "id": "leaf-ancestral-roots-work-vocation",
       "layer": "knowledge",
       "type": "leaf",
@@ -1085,45 +1124,6 @@
       "filePath": "layers/02-knowledge/work-vocation/leaf-role-wideland-gps.md"
     },
     {
-      "id": "leaf-skill-audience-motivation-mapping",
-      "layer": "knowledge",
-      "type": "leaf",
-      "title": "Skill: Audience Motivation Mapping",
-      "state": {
-        "leaf": "yellow"
-      },
-      "instrument": "lived-experience",
-      "lastUpdated": "2026-07-05",
-      "addedOn": "2026-07-05",
-      "filePath": "layers/02-knowledge/work-vocation/leaf-skill-audience-motivation-mapping.md"
-    },
-    {
-      "id": "leaf-skill-people-first-prioritization",
-      "layer": "knowledge",
-      "type": "leaf",
-      "title": "Skill: Task Prioritization — People First",
-      "state": {
-        "leaf": "yellow"
-      },
-      "instrument": "multi",
-      "lastUpdated": "2026-07-05",
-      "addedOn": "2026-07-05",
-      "filePath": "layers/02-knowledge/work-vocation/leaf-skill-people-first-prioritization.md"
-    },
-    {
-      "id": "leaf-skill-translator-role",
-      "layer": "knowledge",
-      "type": "leaf",
-      "title": "Skill: The Translator Role — Multi-Stakeholder Motivation Alignment",
-      "state": {
-        "leaf": "yellow"
-      },
-      "instrument": "multi",
-      "lastUpdated": "2026-07-05",
-      "addedOn": "2026-07-05",
-      "filePath": "layers/02-knowledge/work-vocation/leaf-skill-translator-role.md"
-    },
-    {
       "id": "layer-code",
       "layer": "code",
       "type": "layer",
@@ -1176,6 +1176,61 @@
       "filePath": "layers/04-map/index.md"
     },
     {
+      "id": "skill-claude-surface-and-context-management",
+      "layer": "unknown",
+      "type": "unknown",
+      "title": "Picking the Right Claude Surface and Managing Context Within It",
+      "state": null,
+      "instrument": null,
+      "lastUpdated": null,
+      "addedOn": null,
+      "filePath": "layers/04-map/skills/claude-surface-and-context-management/SKILL.md"
+    },
+    {
+      "id": "skill-reference-claude-surface-and-context-management",
+      "layer": "map",
+      "type": "skill-reference",
+      "title": "Reference — Picking the Right Claude Surface and Managing Context Within It",
+      "state": null,
+      "instrument": "science",
+      "lastUpdated": "2026-07-19",
+      "addedOn": "2026-07-19",
+      "filePath": "layers/04-map/skills/claude-surface-and-context-management/reference.md"
+    },
+    {
+      "id": "skill-declutter-adhd-family-functioning",
+      "layer": "unknown",
+      "type": "unknown",
+      "title": "Reducing Clutter-Related Decision Fatigue in an ADHD Household",
+      "state": null,
+      "instrument": null,
+      "lastUpdated": null,
+      "addedOn": null,
+      "filePath": "layers/04-map/skills/declutter-adhd-family-functioning/SKILL.md"
+    },
+    {
+      "id": "skill-reference-declutter-adhd-family-functioning",
+      "layer": "map",
+      "type": "skill-reference",
+      "title": "Reference — Reducing Clutter-Related Decision Fatigue in an ADHD Household",
+      "state": null,
+      "instrument": "lived-experience",
+      "lastUpdated": "2026-07-19",
+      "addedOn": "2026-07-19",
+      "filePath": "layers/04-map/skills/declutter-adhd-family-functioning/reference.md"
+    },
+    {
+      "id": "skill-relationship-conflict-regulation",
+      "layer": "unknown",
+      "type": "unknown",
+      "title": "Understanding and Responding to Relationship Conflict",
+      "state": null,
+      "instrument": null,
+      "lastUpdated": null,
+      "addedOn": null,
+      "filePath": "layers/04-map/skills/relationship-conflict-regulation/SKILL.md"
+    },
+    {
       "id": "skill-reference-relationship-conflict-regulation",
       "layer": "map",
       "type": "skill-reference",
@@ -1187,6 +1242,17 @@
       "filePath": "layers/04-map/skills/relationship-conflict-regulation/reference.md"
     },
     {
+      "id": "skill-things-to-teach-kids",
+      "layer": "unknown",
+      "type": "unknown",
+      "title": "Raising Kids Who Can Spot What's Healthy and Have Room to Become Who They Are",
+      "state": null,
+      "instrument": null,
+      "lastUpdated": null,
+      "addedOn": null,
+      "filePath": "layers/04-map/skills/things-to-teach-kids/SKILL.md"
+    },
+    {
       "id": "skill-reference-things-to-teach-kids",
       "layer": "map",
       "type": "skill-reference",
@@ -1196,6 +1262,28 @@
       "lastUpdated": "2026-07-18",
       "addedOn": "2026-07-18",
       "filePath": "layers/04-map/skills/things-to-teach-kids/reference.md"
+    },
+    {
+      "id": "skill-third-party-life-audit-pass",
+      "layer": "unknown",
+      "type": "unknown",
+      "title": "Running a Life-Domain Audit in Third-Party Voice",
+      "state": null,
+      "instrument": null,
+      "lastUpdated": null,
+      "addedOn": null,
+      "filePath": "layers/04-map/skills/third-party-life-audit-pass/SKILL.md"
+    },
+    {
+      "id": "skill-reference-third-party-life-audit-pass",
+      "layer": "map",
+      "type": "skill-reference",
+      "title": "Reference — Running a Life-Domain Audit in Third-Party Voice",
+      "state": null,
+      "instrument": "multi",
+      "lastUpdated": "2026-07-19",
+      "addedOn": "2026-07-19",
+      "filePath": "layers/04-map/skills/third-party-life-audit-pass/reference.md"
     },
     {
       "id": "flowers-and-fruits",
@@ -2022,12 +2110,12 @@
     },
     {
       "source": "leaf-ancestral-roots-work-vocation",
-      "target": "leaf-skill-translator-role",
+      "target": "leaf-ability-translator-role",
       "type": "supports"
     },
     {
       "source": "leaf-cant-remember-steps",
-      "target": "leaf-skill-translator-role",
+      "target": "leaf-ability-translator-role",
       "type": "supports"
     },
     {
@@ -2077,8 +2165,8 @@
     }
   ],
   "meta": {
-    "nodeCount": 99,
+    "nodeCount": 107,
     "edgeCount": 162,
-    "lastBuilt": "2026-07-18T09:10:42.204Z"
+    "lastBuilt": "2026-07-19T00:54:48.378Z"
   }
 }
