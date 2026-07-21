@@ -8,7 +8,7 @@ last-updated: 2026-07-19
 added-on: 2026-07-19
 instrument: science
 draws-on:
-  - backlog/ai-tools.md (source_id 2026-06-02-d)
+  - forge/ai-tools.md (source_id 2026-06-02-d)
 ---
 
 # Reference: Claude Surface and Context Management

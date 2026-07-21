@@ -7,7 +7,7 @@ for: a testable criterion — use whenever first-person self-review is suspected
 written-for: human
 keywords: [life audit, self-review, third-person, external observer, self-examination, periodic check-in, life domains]
 status: forming — first content placed under map-life-domain-audit, drafted 2026-07-19
-source-backlog: backlog/life-audit.md (8-areas framework — mechanism kept, area list discarded)
+source-backlog: forge/life-audit.md (8-areas framework — mechanism kept, area list discarded)
 parent_map: map-life-domain-audit
 parent_map_status: resolved
 grounded-in:

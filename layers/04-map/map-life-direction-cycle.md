@@ -8,14 +8,14 @@ state:
 last-updated: 2026-07-19
 added-on: 2026-07-19
 instrument: multi
-source-backlog: backlog/life-planning.md (source_id 2025-04-30-c) — raw 6-step artifact discarded, only the mechanism kept
+source-backlog: forge/life-planning.md (source_id 2025-04-30-c) — raw 6-step artifact discarded, only the mechanism kept
 connections:
   supports: [map-life-domain-audit, philo-how-to-live, philo-1pct-compounding, trunk-belief-release-when-no-longer-serves, audit-framework]
 ---
 
 # Life Direction Cycle
 
-A circular, generative cycle, not a linear one-time plan. Sourced from `backlog/life-planning.md`'s generic 6-step framework — the raw artifact (unattributed "The Organized Money" Instagram content, same treatment as `map-life-domain-audit`'s source graphic) was discarded; what's kept is the mechanism, rebuilt against this tree's own existing content rather than the source's generic category list.
+A circular, generative cycle, not a linear one-time plan. Sourced from `forge/life-planning.md`'s generic 6-step framework — the raw artifact (unattributed "The Organized Money" Instagram content, same treatment as `map-life-domain-audit`'s source graphic) was discarded; what's kept is the mechanism, rebuilt against this tree's own existing content rather than the source's generic category list.
 
 This resolves an earlier open placement question: the framework does NOT belong in `branch-daily-architecture` — that branch is single-day operational structure (circadian, hour-level anchors), a different granularity from life-direction/multi-month goal-setting. It also isn't a disconnected sibling to `map-life-domain-audit` — the two unify into one circular Map-layer cycle.
 

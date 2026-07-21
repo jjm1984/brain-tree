@@ -12,7 +12,7 @@ status: forming — extracted from a single long working session, not yet tested
 
 This is a skill for Claude, not for J — the process to follow when
 acting as thinking partner and filing agent for the tree, whether
-mining backlog, placing a new idea, or building on existing content.
+mining the forge, placing a new idea, or building on existing content.
 Read alongside the project instructions and `meta/principles.md`.
 
 ## Before adding anything

@@ -8,17 +8,17 @@ last-updated: 2026-07-19
 added-on: 2026-07-19
 instrument: lived-experience
 draws-on:
-  - backlog/home-organization.md (source_id 2024-09-30-a)
+  - forge/home-organization.md (source_id 2024-09-30-a)
 ---
 
 # Reference: Declutter, ADHD, Family Functioning
 
 ## Provenance
 
-Sourced from `backlog/home-organization.md` (source_id `2024-09-30-a`),
+Sourced from `forge/home-organization.md` (source_id `2024-09-30-a`),
 staged via Drive session `ai-brain-session-2026-07-18-skills-layer-
 resolution-and-placement.json`. That file proposed this content under
-an ad-hoc flat schema (id/source_backlog/parent_map/draft_content/
+an ad-hoc flat schema (id/source_forge/parent_map/draft_content/
 tags) that predated — and didn't match — the two-file SKILL.md +
 reference.md pattern already established and tested twice this session
 (`relationship-conflict-regulation`, `things-to-teach-kids`). Rebuilt

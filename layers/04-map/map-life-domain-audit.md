@@ -8,7 +8,7 @@ state:
 last-updated: 2026-07-19
 added-on: 2026-07-19
 instrument: multi
-source-backlog: backlog/life-audit.md (source_id 2025-06-03-b) — raw 8-area artifact discarded, only the third-party-voice mechanism kept
+source-backlog: forge/life-audit.md (source_id 2025-06-03-b) — raw 8-area artifact discarded, only the third-party-voice mechanism kept
 connections:
   supports: [audit-framework, map-life-direction-cycle, philo-wealth-freedom, branch-work-vocation, branch-relationships-family, branch-physical-wellbeing, branch-aliveness, branch-self-worth-identity, philo-stoicism, leaf-just-cause-motivation-architecture, leaf-ability-translator-role]
 ---
@@ -17,7 +17,7 @@ connections:
 
 A periodic cross-branch life review, run in third-party/external-observer voice rather than first-person, as a deliberate friction point against a confirmed self-examination-avoidance pattern (see `leaf-just-cause-motivation-architecture`'s open-thread crossroads: "reading one's own motivation is harder than reading others'" — and `leaf-ability-translator-role`'s tied-together open question). Stage 1 of `map-life-direction-cycle` (Audit → Design → Strategy → Execution → Weekly Review).
 
-Sourced from `backlog/life-audit.md`'s generic 8-area Instagram framework — the specific area list was discarded as content (unattributed, low-tier per this project's source-verification standard). What survived, and what this node is actually built from, is the third-party-voice mechanism plus a full restructure (2026-07-19) that absorbs `audit-framework`'s diagnostic machinery into every domain pass.
+Sourced from `forge/life-audit.md`'s generic 8-area Instagram framework — the specific area list was discarded as content (unattributed, low-tier per this project's source-verification standard). What survived, and what this node is actually built from, is the third-party-voice mechanism plus a full restructure (2026-07-19) that absorbs `audit-framework`'s diagnostic machinery into every domain pass.
 
 ## Restructure summary (2026-07-19)
 

@@ -50,7 +50,7 @@ See `philo-wealth-freedom` for the fuller Roots-layer wealth/freedom material th
 
 ## Practice: the life direction cycle
 
-`map-life-direction-cycle` — Audit → Design → Strategy → Execution → Weekly Review, a circular Map-layer cycle unifying `map-life-domain-audit` with the mechanism kept from `backlog/life-planning.md`'s discarded 6-step framework. Full content: `layers/04-map/map-life-direction-cycle.md`.
+`map-life-direction-cycle` — Audit → Design → Strategy → Execution → Weekly Review, a circular Map-layer cycle unifying `map-life-domain-audit` with the mechanism kept from `forge/life-planning.md`'s discarded 6-step framework. Full content: `layers/04-map/map-life-direction-cycle.md`.
 
 ## Skills library
 

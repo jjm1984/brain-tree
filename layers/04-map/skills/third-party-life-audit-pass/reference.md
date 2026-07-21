@@ -9,14 +9,14 @@ added-on: 2026-07-19
 instrument: multi
 draws-on:
   - map-life-domain-audit
-  - backlog/life-audit.md (source_id 2025-06-03-b)
+  - forge/life-audit.md (source_id 2025-06-03-b)
 ---
 
 # Reference: Third-Party Life-Domain Audit Pass
 
 ## Provenance
 
-Sourced from `backlog/life-audit.md`'s 8-areas framework, staged via
+Sourced from `forge/life-audit.md`'s 8-areas framework, staged via
 Drive session `ai-brain-session-2026-07-18-skills-layer-resolution-
 and-placement.json`. That session correctly reclassified the parent
 concept from a Skill candidate to a Map node (`map-life-domain-audit`)
