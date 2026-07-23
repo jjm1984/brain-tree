@@ -3,13 +3,13 @@ node_modules/
 *.log
 .env
 
-# raw backlog source screenshots — local-only, not pushed (large binaries; content is
-# extracted into backlog/*.md instead)
-backlog/*.PNG
-backlog/*.png
-backlog/*.JPG
-backlog/*.jpg
-backlog/*.JPEG
-backlog/*.jpeg
-backlog/*.MOV
-backlog/*.mov
+# raw forge source screenshots — local-only, not pushed (large binaries; content is
+# extracted into forge/*.md instead)
+forge/*.PNG
+forge/*.png
+forge/*.JPG
+forge/*.jpg
+forge/*.JPEG
+forge/*.jpeg
+forge/*.MOV
+forge/*.mov
